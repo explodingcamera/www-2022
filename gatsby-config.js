@@ -1,10 +1,8 @@
-const cfg = require('package.json');
-
 module.exports = {
 	siteMetadata: {
-		title: cfg.name,
-		description: cfg.description,
-		author: cfg.author,
+		title: 'Henry Gressmann',
+		description: '',
+		author: 'Henry Gressmann',
 	},
 	plugins: [
 		`gatsby-plugin-styled-components`,
@@ -27,7 +25,7 @@ module.exports = {
 				background_color: `#663399`,
 				theme_color: `#663399`,
 				display: `minimal-ui`,
-				// Icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+				icon: `src/images/explodingcamera.png`,
 			},
 		},
 	],
