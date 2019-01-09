@@ -8,9 +8,9 @@ const Home = styled.div`
 	align-items: center;
 `;
 
-const HomeComponent = () => (
+const HomeComponent = props => (
 	<Home>
-		<h1>HenryGressmann.de</h1>
+		<h1>henrygressmann.de</h1>
 	</Home>
 );
 
