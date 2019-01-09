@@ -18,7 +18,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "deploy": "npm run build && echo '' > out/.nojekyll && gh-pages -d out"
+    "deploy": "npm run build && cp CNAME out/ && gh-pages -t -d out"
   },
   "devDependencies": {
     "@canx/eslint-config": "0.0.1",
