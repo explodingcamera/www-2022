@@ -41,7 +41,7 @@ export default class extends React.Component {
 	render() {
 		return (
 			<Background ref={this.background}>
-				<video data-depth="0.3" autoPlay loop muted controls>
+				<video data-depth="0.3" autoPlay loop muted>
 					<source
 						src="/static/bg.webm"
 						type='video/webm; codecs="vp8, vorbis"'

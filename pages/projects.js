@@ -1,31 +1,201 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
-const gradient = keyframes`
-	0%{background-position:0% 50%}
-	50%{background-position:100% 50%}
-	100%{background-position:0% 50%}
+const ProjectWrapper = styled.div`
+	width: calc(${100 / 3}% - 1rem);
+
+	@media only screen and (max-width: 70rem) {
+		width: calc(${100 / 2}% - 1rem);
+	}
+	@media only screen and (max-width: 55rem) {
+		width: calc(${100 / 1}% - 1rem);
+	}
+
+	background: rgba(255, 255, 255, 0.07);
+	margin: 0.5rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	min-height: 32rem;
+
+	h1 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 1.7rem;
+		letter-spacing: -1px;
+
+		span {
+			font-size: 1rem;
+			color: aqua;
+			letter-spacing: -0.3px;
+		}
+	}
+
+	p {
+		margin: 0;
+		line-height: 1.4;
+		letter-spacing: -0.3px;
+	}
+
+	img {
+		height: 12rem;
+		object-fit: cover;
+		object-position: top;
+		margin: 1rem 0;
+	}
+
+	div:last-of-type {
+		padding-top: 1rem;
+		margin-top: auto;
+		display: flex;
+		a {
+			text-decoration: none;
+		}
+	}
 `;
+
+const ProjectButton = styled.button`
+	text-decoration: none;
+	user-select: none;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	color: rgb(60, 60, 60);
+	height: 2.7rem;
+	font-size: 1rem;
+	font-weight: 600;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 2px 0px,
+		rgba(0, 0, 0, 0.1) 0px 3px 1px -2px, rgba(0, 0, 0, 0.11) 0px 1px 5px 0px;
+	border-radius: 5px;
+	margin: 0px 0.5rem 0px 0px;
+	padding: 0px 0.8rem;
+	outline: none;
+	border-width: initial;
+	border-style: none;
+	border-color: initial;
+	border-image: initial;
+	background: linear-gradient(
+		135deg,
+		rgb(255, 255, 255) 10%,
+		rgb(219, 219, 219) 100%
+	);
+	transition: all 0.2s ease-in-out 0s;
+	&:hover {
+		transform: translateY(-1px);
+		box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 2px 0px,
+			rgba(0, 0, 0, 0.1) 0px 3px 1px -2px, rgba(0, 0, 0, 0.11) 0px 1px 5px 0px;
+	}
+`;
+
+const Project = ({ title, from, img, text, buttons }) => (
+	<ProjectWrapper>
+		<h1>
+			{title}
+			<span>{from}</span>
+		</h1>
+		<img src={`/static/projects/${img}`} alt={title} />
+		<p>{text}</p>
+		{buttons && (
+			<div>
+				{buttons.map(b => (
+					<a
+						target="_blank"
+						rel="noopener noreferrer"
+						key={buttons.indexOf(b)}
+						href={b.link}
+					>
+						<ProjectButton>{b.name}</ProjectButton>
+					</a>
+				))}
+			</div>
+		)}
+	</ProjectWrapper>
+);
 
 const Projects = styled.div`
 	flex: 1;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	h1 {
-		font-size: 8rem;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);
-		background-size: 600% 600%;
-		animation: ${gradient} 10s ease infinite;
-	}
+	flex-wrap: wrap;
+	margin-right: -0.5rem;
+	margin-left: -0.5rem;
+	align-items: start;
 `;
+
+const projects = [
+	{
+		title: 'canX',
+		from: '2018 - now',
+		img: 'canx.png',
+		text: `canX is the fair and open space for everyone to share creative ideas.
+We enable users and creators to produce content independently and get rewarded for doing what they love.`,
+		buttons: [
+			{
+				link: 'https://canx.org',
+				name: 'canX.org',
+			},
+		],
+	},
+	{
+		title: 'livecount.pro',
+		from: '2017 - now',
+		img: 'livecount.png',
+		text: `LiveCount is a realtime follower/subscriber counter with support for multiple social networks and multiple channels at the same time. I created this just as a quick project over the course of one weekend.`,
+		buttons: [
+			{
+				link: 'https://livecount.pro',
+				name: 'livecount.pro',
+			},
+			{
+				link: 'https://github.com/explodingcamera/livecount.pro',
+				name: 'code',
+			},
+		],
+	},
+	{
+		title: 'musiqpad',
+		from: '2016',
+		img: 'musiqpad.png',
+		text: `Musiqpad was/is a social-music software platform for users to host their own rooms and enjoy music together with others. Our Team sadly doesn't have enought time for it anymore but I hope we can continue to work on it in the future.`,
+		buttons: [
+			{
+				link: 'https://github.com/musiqpad/mqp-server',
+				name: 'code',
+			},
+		],
+	},
+	{
+		title: 'musiqplus',
+		from: '2016',
+		img: 'musiqplus.jpg',
+		text: `MusiqPlus was a Chrome plugin that enhanced the experience on musiqpad servers with a ton of extra features. This started my involvement with Musiqpad and was one of my first "big" projects.`,
+		buttons: [
+			{
+				link: 'https://github.com/explodingcamera/musiqplus',
+				name: 'code',
+			},
+		],
+	},
+	{
+		title: 'multitube.cf',
+		from: '2016',
+		img: 'musiqpad.png',
+		text: `My first Node.Js Project, Multitube was a website for viewing two youtube videos side-by-side. I was inspired by youtubemultiplier but their implementation was lacking features and ux was horrible so I build my own site.`,
+		buttons: [
+			{
+				link: 'https://github.com/explodingcamera/multitube',
+				name: 'code',
+			},
+		],
+	},
+];
 
 const ProjectsComponent = () => (
 	<Projects>
-		<h1>💎 WIP 💎</h1>
+		{projects.map(p => (
+			<Project key={projects.indexOf(p)} {...p} />
+		))}
 	</Projects>
 );
 

@@ -17,6 +17,11 @@ const GlobalCSS = createGlobalStyle`
 	h6 {
 		margin: 0;
 	}
+	body {
+		position: absolute;
+    width: 100vw;
+    overflow-x: hidden;
+	}
 `;
 
 const Layout = styled.div`

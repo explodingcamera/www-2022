@@ -25,21 +25,43 @@ const Home = styled.div`
 	h2 {
 		font-size: 3rem;
 		margin: 1rem 0;
-		font-weight: 500;
+		font-weight: 400;
 
 		span,
 		a {
 			font-weight: 700;
 		}
+
+		span {
+			font-weight: 800;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);
+			background-size: 600% 600%;
+			animation: ${gradient} 10s ease infinite;
+		}
+
+		&:last-of-type {
+			a {
+				font-weight: 400;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 60rem) {
+		h1 {
+			font-size: 15vw;
+		}
+		h2 {
+			font-size: 5vw;
+		}
+		img {
+			height: 7vw;
+		}
 	}
 `;
 
-const Logo = styled.img`
-	display: inline-flex;
-	height: 2.4rem;
-`;
-
-const HomeComponent = props => (
+const HomeComponent = () => (
 	<Home>
 		<h1>HI!</h1>
 		<h2>
@@ -53,7 +75,7 @@ const HomeComponent = props => (
 		<h2>
 			Currently, I'm creating{' '}
 			<Link href="https://canx.org">
-				<Logo src="https://canx.org/static/logo-light.svg" alt="canX" />
+				can<span>X</span>
 			</Link>
 		</h2>
 	</Home>
