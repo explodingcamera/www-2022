@@ -7928,7 +7928,7 @@ var lastHref = null;
 
                       case 2:
                         return _context3.abrupt("return", new _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_1___default.a(function (resolve) {
-                          ws = new WebSocket("ws://".concat(hostname, ":").concat(33595));
+                          ws = new WebSocket("ws://".concat(hostname, ":").concat(41671));
 
                           ws.onopen = function () {
                             return resolve();
