@@ -21,6 +21,13 @@ const Background = styled.div`
 		flex: 1;
 		object-fit: cover;
 	}
+
+	> div {
+		position: absolute;
+		background: rgba(0, 0, 0, 0.6);
+		height: 100vh;
+		width: 100vw;
+	}
 `;
 
 export default class extends React.Component {
@@ -34,7 +41,14 @@ export default class extends React.Component {
 	render() {
 		return (
 			<Background ref={this.background}>
-				<video data-depth="0.3" autoPlay loop muted src="static/bg.webm" />
+				<video data-depth="0.3" autoPlay loop muted controls>
+					<source
+						src="/static/bg.webm"
+						type='video/webm; codecs="vp8, vorbis"'
+					/>
+					<source src="/static/bg.mp4" type="video/mp4" />
+				</video>
+				<div data-depth="0" />
 			</Background>
 		);
 	}

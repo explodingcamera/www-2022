@@ -9,6 +9,14 @@ import Header from './../components/header';
 
 const GlobalCSS = createGlobalStyle`
 	${modernNormalize}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0;
+	}
 `;
 
 const Layout = styled.div`
@@ -21,8 +29,8 @@ const Layout = styled.div`
 	min-height: 100vh;
 	width: 100%;
 	max-width: 1280px;
-	width: 100%;
 	padding: 2rem 3rem;
+	margin: 0 auto;
 
 	> div {
 		flex: 1;

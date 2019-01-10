@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from './link';
 
+import { FiTwitter, FiGithub } from 'react-icons/fi';
+import { FaKey } from 'react-icons/fa';
+
 const Header = styled.nav`
 	ol {
 		list-style: none;
@@ -19,6 +22,7 @@ const Title = styled.li`
 
 const Item = styled.li`
 	margin-right: 0.5rem;
+	display: flex;
 
 	&:last-of-type {
 		margin-right: 0;
@@ -40,10 +44,26 @@ export default () => (
 				<Link href="/">home</Link>
 			</Item>
 			<Item>
-				<Link href="/yay">projects</Link>
+				<Link href="/projects">projects</Link>
 			</Item>
 			<Item>
 				<Link href="/yay">blog</Link>
+			</Item>
+			&nbsp;
+			<Item>
+				<Link href="https://twitter.com/explodingcamera">
+					<FiTwitter />
+				</Link>
+			</Item>
+			<Item>
+				<Link href="https://github.com/explodingcamera">
+					<FiGithub />
+				</Link>
+			</Item>
+			<Item>
+				<Link href="https://keybase.io/explodingcamera/pgp_keys.asc">
+					<FaKey />
+				</Link>
 			</Item>
 		</ol>
 	</Header>

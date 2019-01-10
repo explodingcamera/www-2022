@@ -14,7 +14,7 @@ const activeCSS = css`
 	content: '';
 	position: absolute;
 	width: 100%;
-	height: 0.1em;
+	height: 2px;
 	bottom: -5px;
 	left: 0;
 	background: linear-gradient(270deg, #ff0000, #008cff, #50ff00);
@@ -55,6 +55,13 @@ const Link = styled.a`
 			transform: scaleX(1);
 		}
 	}
+
+	svg {
+		display: flex;
+		height: 1.3rem;
+		width: 1.3rem;
+		color: white;
+	}
 `;
 
 const Item = ({ children, router, href, animateFontColor }) => {
@@ -66,7 +73,7 @@ const Item = ({ children, router, href, animateFontColor }) => {
 	return (
 		<Link
 			href={href}
-			onClick={handleClick}
+			onClick={href.includes(':') ? undefined : handleClick}
 			active={router.pathname === href}
 			animateFontColor={animateFontColor}
 		>
