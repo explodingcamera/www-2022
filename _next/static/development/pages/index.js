@@ -11965,18 +11965,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "/home/henry/stuff/school/bebra/web/www/pages/index.js";
 
-function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\tdisplay: inline-flex;\n\theight: 2.4rem;\n"]);
-
-  _templateObject3 = function _templateObject3() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\tflex: 1;\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\n\th1 {\n\t\tfont-size: 8rem;\n\t\t-webkit-background-clip: text;\n\t\t-webkit-text-fill-color: transparent;\n\t\tbackground-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);\n\t\tbackground-size: 600% 600%;\n\t\tanimation: ", " 10s ease infinite;\n\t}\n\th2 {\n\t\tfont-size: 3rem;\n\t\tmargin: 1rem 0;\n\t\tfont-weight: 500;\n\n\t\tspan,\n\t\ta {\n\t\t\tfont-weight: 700;\n\t\t}\n\t}\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\tflex: 1;\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\n\th1 {\n\t\tfont-size: 8rem;\n\t\t-webkit-background-clip: text;\n\t\t-webkit-text-fill-color: transparent;\n\t\tbackground-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);\n\t\tbackground-size: 600% 600%;\n\t\tanimation: ", " 10s ease infinite;\n\t}\n\th2 {\n\t\tfont-size: 3rem;\n\t\tmargin: 1rem 0;\n\t\tfont-weight: 400;\n\n\t\tspan,\n\t\ta {\n\t\t\tfont-weight: 700;\n\t\t}\n\n\t\tspan {\n\t\t\tfont-weight: 800;\n\t\t\t-webkit-background-clip: text;\n\t\t\t-webkit-text-fill-color: transparent;\n\t\t\tbackground-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);\n\t\t\tbackground-size: 600% 600%;\n\t\t\tanimation: ", " 10s ease infinite;\n\t\t}\n\n\t\t&:last-of-type {\n\t\t\ta {\n\t\t\t\tfont-weight: 400;\n\t\t\t}\n\t\t}\n\t}\n\n\t@media only screen and (max-width: 60rem) {\n\t\th1 {\n\t\t\tfont-size: 15vw;\n\t\t}\n\t\th2 {\n\t\t\tfont-size: 5vw;\n\t\t}\n\t\timg {\n\t\t\theight: 7vw;\n\t\t}\n\t}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -11999,83 +11989,80 @@ function _templateObject() {
 
 
 var gradient = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["keyframes"])(_templateObject());
-var Home = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), gradient);
-var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject3());
+var Home = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), gradient, gradient);
 
-var HomeComponent = function HomeComponent(props) {
+var HomeComponent = function HomeComponent() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Home, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 66
     },
     __self: this
   }, "HI!"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 67
     },
     __self: this
   }, "I'm ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 68
     },
     __self: this
   }, "Henry"), " and I do a lot of fun", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
     href: "/projects",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 69
     },
     __self: this
   }, "projects")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 71
     },
     __self: this
   }, "Contact me at", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
     href: "mailto:mail@henrygressmann.de",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 73
     },
     __self: this
   }, "mail@henrygressmann.de")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 75
     },
     __self: this
   }, "Currently, I'm creating", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
     href: "https://canx.org",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 77
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Logo, {
-    src: "https://canx.org/static/logo-light.svg",
-    alt: "canX",
+  }, "can", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 78
     },
     __self: this
-  }))));
+  }, "X"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HomeComponent);
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fhenry%2Fstuff%2Fschool%2Fbebra%2Fweb%2Fwww%2Fpages%2Findex.js ***!
   \****************************************************************************************************************************************/
@@ -12098,5 +12085,5 @@ module.exports = dll_ffeacae9230d9b7216be;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
