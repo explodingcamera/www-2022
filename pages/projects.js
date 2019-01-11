@@ -16,7 +16,8 @@ const ProjectWrapper = styled.div`
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
-	min-height: 32rem;
+	min-height: 33.5rem;
+	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.35);
 
 	h1 {
 		display: flex;
@@ -36,6 +37,7 @@ const ProjectWrapper = styled.div`
 		margin: 0;
 		line-height: 1.4;
 		letter-spacing: -0.3px;
+		text-shadow: 0px 0px 5px black;
 	}
 
 	img {
@@ -43,6 +45,7 @@ const ProjectWrapper = styled.div`
 		object-fit: cover;
 		object-position: top;
 		margin: 1rem 0;
+		box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.6);
 	}
 
 	div:last-of-type {
@@ -62,13 +65,12 @@ const ProjectButton = styled.button`
 	cursor: pointer;
 	display: flex;
 	align-items: center;
-	color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
 	height: 2.7rem;
 	font-size: 1rem;
 	font-weight: 600;
 	box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 2px 0px,
 		rgba(0, 0, 0, 0.1) 0px 3px 1px -2px, rgba(0, 0, 0, 0.11) 0px 1px 5px 0px;
-	border-radius: 5px;
 	margin: 0px 0.5rem 0px 0px;
 	padding: 0px 0.8rem;
 	outline: none;
@@ -78,8 +80,8 @@ const ProjectButton = styled.button`
 	border-image: initial;
 	background: linear-gradient(
 		135deg,
-		rgb(255, 255, 255) 10%,
-		rgb(219, 219, 219) 100%
+		rgba(97, 97, 97, 0.63) 10%,
+		rgba(72, 72, 72, 0.15) 100%
 	);
 	transition: all 0.2s ease-in-out 0s;
 	&:hover {

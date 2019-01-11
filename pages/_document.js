@@ -36,6 +36,7 @@ export default class extends Document {
 					<meta property="og:type" content="website" />
 					<meta property="og:site_name" content="Henry Gressmann" />
 					<meta name="twitter:site" content="@explodingcamera" />
+					<title>henrygressmann.de</title>
 				</Head>
 				<body>
 					<Main />
