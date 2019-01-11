@@ -340,7 +340,7 @@ module.exports = function (it) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.1' };
+var core = module.exports = { version: '2.6.2' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -944,7 +944,7 @@ var store = global[SHARED] || (global[SHARED] = {});
 })('versions', []).push({
   version: core.version,
   mode: __webpack_require__(/*! ./_library */ "./node_modules/core-js/library/modules/_library.js") ? 'pure' : 'global',
-  copyright: '© 2018 Denis Pushkarev (zloirock.ru)'
+  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
 });
 
 
@@ -4927,7 +4927,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n\ttext-decoration: none;\n\tuser-select: none;\n\tposition: relative;\n\tcursor: pointer;\n\tdisplay: flex;\n\talign-items: center;\n\tcolor: rgb(60, 60, 60);\n\theight: 2.7rem;\n\tfont-size: 1rem;\n\tfont-weight: 600;\n\tbox-shadow: rgba(0, 0, 0, 0.02) 0px 2px 2px 0px,\n\t\trgba(0, 0, 0, 0.1) 0px 3px 1px -2px, rgba(0, 0, 0, 0.11) 0px 1px 5px 0px;\n\tborder-radius: 5px;\n\tmargin: 0px 0.5rem 0px 0px;\n\tpadding: 0px 0.8rem;\n\toutline: none;\n\tborder-width: initial;\n\tborder-style: none;\n\tborder-color: initial;\n\tborder-image: initial;\n\tbackground: linear-gradient(\n\t\t135deg,\n\t\trgb(255, 255, 255) 10%,\n\t\trgb(219, 219, 219) 100%\n\t);\n\ttransition: all 0.2s ease-in-out 0s;\n\t&:hover {\n\t\ttransform: translateY(-1px);\n\t\tbox-shadow: rgba(0, 0, 0, 0.09) 0px 2px 2px 0px,\n\t\t\trgba(0, 0, 0, 0.1) 0px 3px 1px -2px, rgba(0, 0, 0, 0.11) 0px 1px 5px 0px;\n\t}\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n\ttext-decoration: none;\n\tuser-select: none;\n\tposition: relative;\n\tcursor: pointer;\n\tdisplay: flex;\n\talign-items: center;\n\tcolor: rgb(255, 255, 255);\n\theight: 2.7rem;\n\tfont-size: 1rem;\n\tfont-weight: 600;\n\tbox-shadow: rgba(0, 0, 0, 0.02) 0px 2px 2px 0px,\n\t\trgba(0, 0, 0, 0.1) 0px 3px 1px -2px, rgba(0, 0, 0, 0.11) 0px 1px 5px 0px;\n\tmargin: 0px 0.5rem 0px 0px;\n\tpadding: 0px 0.8rem;\n\toutline: none;\n\tborder-width: initial;\n\tborder-style: none;\n\tborder-color: initial;\n\tborder-image: initial;\n\tbackground: linear-gradient(\n\t\t135deg,\n\t\trgba(97, 97, 97, 0.63) 10%,\n\t\trgba(72, 72, 72, 0.15) 100%\n\t);\n\ttransition: all 0.2s ease-in-out 0s;\n\t&:hover {\n\t\ttransform: translateY(-1px);\n\t\tbox-shadow: rgba(0, 0, 0, 0.09) 0px 2px 2px 0px,\n\t\t\trgba(0, 0, 0, 0.1) 0px 3px 1px -2px, rgba(0, 0, 0, 0.11) 0px 1px 5px 0px;\n\t}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -4937,7 +4937,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n\twidth: calc(", "% - 1rem);\n\n\t@media only screen and (max-width: 70rem) {\n\t\twidth: calc(", "% - 1rem);\n\t}\n\t@media only screen and (max-width: 55rem) {\n\t\twidth: calc(", "% - 1rem);\n\t}\n\n\tbackground: rgba(255, 255, 255, 0.07);\n\tmargin: 0.5rem;\n\tpadding: 1rem;\n\tdisplay: flex;\n\tflex-direction: column;\n\tmin-height: 32rem;\n\n\th1 {\n\t\tdisplay: flex;\n\t\tjustify-content: space-between;\n\t\talign-items: center;\n\t\tfont-size: 1.7rem;\n\t\tletter-spacing: -1px;\n\n\t\tspan {\n\t\t\tfont-size: 1rem;\n\t\t\tcolor: aqua;\n\t\t\tletter-spacing: -0.3px;\n\t\t}\n\t}\n\n\tp {\n\t\tmargin: 0;\n\t\tline-height: 1.4;\n\t\tletter-spacing: -0.3px;\n\t}\n\n\timg {\n\t\theight: 12rem;\n\t\tobject-fit: cover;\n\t\tobject-position: top;\n\t\tmargin: 1rem 0;\n\t}\n\n\tdiv:last-of-type {\n\t\tpadding-top: 1rem;\n\t\tmargin-top: auto;\n\t\tdisplay: flex;\n\t\ta {\n\t\t\ttext-decoration: none;\n\t\t}\n\t}\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n\twidth: calc(", "% - 1rem);\n\n\t@media only screen and (max-width: 70rem) {\n\t\twidth: calc(", "% - 1rem);\n\t}\n\t@media only screen and (max-width: 55rem) {\n\t\twidth: calc(", "% - 1rem);\n\t}\n\n\tbackground: rgba(255, 255, 255, 0.07);\n\tmargin: 0.5rem;\n\tpadding: 1rem;\n\tdisplay: flex;\n\tflex-direction: column;\n\tmin-height: 33.5rem;\n\tbox-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.35);\n\n\th1 {\n\t\tdisplay: flex;\n\t\tjustify-content: space-between;\n\t\talign-items: center;\n\t\tfont-size: 1.7rem;\n\t\tletter-spacing: -1px;\n\n\t\tspan {\n\t\t\tfont-size: 1rem;\n\t\t\tcolor: aqua;\n\t\t\tletter-spacing: -0.3px;\n\t\t}\n\t}\n\n\tp {\n\t\tmargin: 0;\n\t\tline-height: 1.4;\n\t\tletter-spacing: -0.3px;\n\t\ttext-shadow: 0px 0px 5px black;\n\t}\n\n\timg {\n\t\theight: 12rem;\n\t\tobject-fit: cover;\n\t\tobject-position: top;\n\t\tmargin: 1rem 0;\n\t\tbox-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.6);\n\t}\n\n\tdiv:last-of-type {\n\t\tpadding-top: 1rem;\n\t\tmargin-top: auto;\n\t\tdisplay: flex;\n\t\ta {\n\t\t\ttext-decoration: none;\n\t\t}\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -4960,19 +4960,19 @@ var Project = function Project(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ProjectWrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 95
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 96
     },
     __self: this
   }, title, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 98
     },
     __self: this
   }, from)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
@@ -4980,19 +4980,19 @@ var Project = function Project(_ref) {
     alt: title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 100
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 101
     },
     __self: this
   }, text), buttons && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 103
     },
     __self: this
   }, buttons.map(function (b) {
@@ -5003,13 +5003,13 @@ var Project = function Project(_ref) {
       href: b.link,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 103
+        lineNumber: 105
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ProjectButton, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 109
+        lineNumber: 111
       },
       __self: this
     }, b.name));
@@ -5071,7 +5071,7 @@ var ProjectsComponent = function ProjectsComponent() {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Projects, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 195
+      lineNumber: 197
     },
     __self: this
   }, projects.map(function (p) {
@@ -5080,7 +5080,7 @@ var ProjectsComponent = function ProjectsComponent() {
     }, p, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 197
+        lineNumber: 199
       },
       __self: this
     }));
@@ -5091,7 +5091,7 @@ var ProjectsComponent = function ProjectsComponent() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects&absolutePagePath=%2Fhome%2Fhenry%2Fstuff%2Fschool%2Fbebra%2Fweb%2Fwww%2Fpages%2Fprojects.js ***!
   \***************************************************************************************************************************************************/
@@ -5114,5 +5114,5 @@ module.exports = dll_ffeacae9230d9b7216be;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=projects.js.map

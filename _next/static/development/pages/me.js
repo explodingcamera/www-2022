@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/me.js"],{
 
 /***/ "./components/link.js":
 /*!****************************!*\
@@ -5647,21 +5647,21 @@ exports.loadGetInitialProps = loadGetInitialProps;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fhenry%2Fstuff%2Fschool%2Fbebra%2Fweb%2Fwww%2Fpages%2Findex.js!./":
-/*!************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fhenry%2Fstuff%2Fschool%2Fbebra%2Fweb%2Fwww%2Fpages%2Findex.js ***!
-  \************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fme&absolutePagePath=%2Fhome%2Fhenry%2Fstuff%2Fschool%2Fbebra%2Fweb%2Fwww%2Fpages%2Fme.js!./":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fme&absolutePagePath=%2Fhome%2Fhenry%2Fstuff%2Fschool%2Fbebra%2Fweb%2Fwww%2Fpages%2Fme.js ***!
+  \***********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var page = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/me", function() {
+      var page = __webpack_require__(/*! ./pages/me.js */ "./pages/me.js")
       if(true) {
-        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
-          next.router.update("/", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/me.js */ "./pages/me.js", function() {
+          if(!next.router.components["/me"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/me.js */ "./pages/me.js")
+          next.router.update("/me", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -11948,10 +11948,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/me.js":
+/*!*********************!*\
+  !*** ./pages/me.js ***!
+  \*********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11963,10 +11963,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../components/link */ "./components/link.js");
 
-var _jsxFileName = "/home/henry/stuff/school/bebra/web/www/pages/index.js";
+var _jsxFileName = "/home/henry/stuff/school/bebra/web/www/pages/me.js";
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\tflex: 1;\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\n\th1 {\n\t\tfont-size: 8rem;\n\t\t-webkit-background-clip: text;\n\t\t-webkit-text-fill-color: transparent;\n\t\tbackground-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);\n\t\tbackground-size: 600% 600%;\n\t\tanimation: ", " 10s ease infinite;\n\t}\n\th2 {\n\t\tfont-size: 3rem;\n\t\tmargin: 1rem 0;\n\t\tfont-weight: 400;\n\n\t\tspan,\n\t\ta {\n\t\t\tfont-weight: 700;\n\t\t}\n\n\t\tspan {\n\t\t\tfont-weight: 800;\n\t\t\t-webkit-background-clip: text;\n\t\t\t-webkit-text-fill-color: transparent;\n\t\t\tbackground-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);\n\t\t\tbackground-size: 600% 600%;\n\t\t\tanimation: ", " 10s ease infinite;\n\t\t}\n\n\t\t&:last-of-type {\n\t\t\ta {\n\t\t\t\tfont-weight: 400;\n\t\t\t}\n\t\t}\n\t}\n\n\t@media only screen and (max-width: 60rem) {\n\t\th1 {\n\t\t\tfont-size: 15vw;\n\t\t}\n\t\th2 {\n\t\t\tfont-size: 5vw;\n\t\t}\n\t\timg {\n\t\t\theight: 7vw;\n\t\t}\n\t}\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\tflex: 1;\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\n\th1 {\n\t\tfont-size: 3em;\n\t\t-webkit-background-clip: text;\n\t\t-webkit-text-fill-color: transparent;\n\t\tbackground-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);\n\t\tbackground-size: 600% 600%;\n\t\tanimation: ", " 10s ease infinite;\n\t}\n\n\tp {\n\t\tfont-size: 1.4rem;\n\t\tline-height: 1.5;\n\t\tmax-width: 40rem;\n\t\ta {\n\t\t\twhite-space: pre;\n\t\t}\n\t}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -11989,87 +11989,134 @@ function _templateObject() {
 
 
 var gradient = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["keyframes"])(_templateObject());
-var Home = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), gradient, gradient);
+var Me = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), gradient);
 
-var HomeComponent = function HomeComponent() {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Home, {
+var MeComponent = function MeComponent() {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Me, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, "about me"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, "I'm currently doing my Abitur at", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "http://bs-bebra.de/index.php/angebote/berufliches-gymnasium-bg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, "Berufliches\xA0Gymnasium"), ' ', "and will study Software Engineering at the", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "https://code.berlin/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, "CODE-University\xA0Berlin"), ' starting 10/2019.', "\u200B", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }), "I've been working on Open Source projects since about 2014\u200B and mainly work with ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "https://golang.org",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }, "Go"), ",", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "https://reactjs.org",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }, "React"), ",", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "https://kubernetes.io",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }, "Docker/Kubernetes"), " an am a huge Free Software and Linux advocate.", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "https://www.discogs.com/user/_henry/collection?sort_by=artists_sort",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, "Music"), ' ', "is really important to me but I'm also very interested in Security, Cryptography and", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "https://www.coursera.org/account/accomplishments/verify/NWNS4QMPHWEU",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: this
+  }, "Machine Learning."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 66
     },
     __self: this
-  }, "HI!"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: this
-  }, "I'm ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+  }), "By the way: This entire website is", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "https://github.com/explodingcamera/www",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 68
     },
     __self: this
-  }, "Henry"), " and I do a lot of fun", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    href: "/projects",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  }, "projects")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, "Contact me at", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    href: "mailto:mail@henrygressmann.de",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }, "mail@henrygressmann.de")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: this
-  }, "Currently, I'm creating", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    href: "https://canx.org",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
-  }, "can", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: this
-  }, "X"))));
+  }, "open-source")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (HomeComponent);
+/* harmony default export */ __webpack_exports__["default"] = (MeComponent);
 
 /***/ }),
 
-/***/ 1:
-/*!****************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fhenry%2Fstuff%2Fschool%2Fbebra%2Fweb%2Fwww%2Fpages%2Findex.js ***!
-  \****************************************************************************************************************************************/
+/***/ 3:
+/*!***************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fme&absolutePagePath=%2Fhome%2Fhenry%2Fstuff%2Fschool%2Fbebra%2Fweb%2Fwww%2Fpages%2Fme.js ***!
+  \***************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fhenry%2Fstuff%2Fschool%2Fbebra%2Fweb%2Fwww%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fhenry%2Fstuff%2Fschool%2Fbebra%2Fweb%2Fwww%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fme&absolutePagePath=%2Fhome%2Fhenry%2Fstuff%2Fschool%2Fbebra%2Fweb%2Fwww%2Fpages%2Fme.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fme&absolutePagePath=%2Fhome%2Fhenry%2Fstuff%2Fschool%2Fbebra%2Fweb%2Fwww%2Fpages%2Fme.js!./");
 
 
 /***/ }),
@@ -12085,5 +12132,5 @@ module.exports = dll_ffeacae9230d9b7216be;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=index.js.map
+},[[3,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=me.js.map
