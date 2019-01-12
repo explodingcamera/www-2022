@@ -50,7 +50,7 @@ const MeComponent = () => (
 			I've been working on Open Source projects since about 2014​ and mainly
 			work with <Link href="https://golang.org">Go</Link>,{' '}
 			<Link href="https://reactjs.org">React</Link>,{' '}
-			<Link href="https://kubernetes.io">Docker/Kubernetes</Link> an am a huge
+			<Link href="https://kubernetes.io">Docker/Kubernetes</Link> and am a huge
 			Free Software and Linux advocate.
 			<br />
 			<br />
