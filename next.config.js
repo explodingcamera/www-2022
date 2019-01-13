@@ -8,6 +8,7 @@ const config = {
 
 		return config;
 	},
+	assetPrefix: './',
 	poweredByHeader: false,
 };
 

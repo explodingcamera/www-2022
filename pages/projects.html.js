@@ -97,7 +97,7 @@ const Project = ({ title, from, img, text, buttons }) => (
 			{title}
 			<span>{from}</span>
 		</h1>
-		<img src={`/static/projects/${img}`} alt={title} />
+		<img src={`static/projects/${img}`} alt={title} />
 		<p>{text}</p>
 		{buttons && (
 			<div>

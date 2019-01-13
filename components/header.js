@@ -27,13 +27,6 @@ const Title = styled.li`
 	margin-right: auto;
 	font-size: 1rem;
 
-	animation-duration: 0.6s;
-	animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
-	animation-fill-mode: forwards;
-	animation-name: ${slideIn};
-	transform: translateY(1.6rem);
-	animation-delay: 0s;
-
 	@media only screen and (max-width: 30rem) {
 		display: none;
 	}
@@ -42,13 +35,6 @@ const Title = styled.li`
 const Item = styled.li`
 	margin-right: 0.5rem;
 	display: flex;
-
-	animation-duration: 0.6s;
-	animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
-	animation-fill-mode: forwards;
-	animation-name: ${slideIn};
-	transform: translateY(1.6rem);
-	animation-delay: ${props => props.delay};
 
 	&:last-of-type {
 		margin-right: 0;
@@ -59,18 +45,18 @@ export default () => (
 	<Header>
 		<ol>
 			<Title>
-				<Link href="/" animateFontColor>
+				<Link href="index.html" animateFontColor>
 					explodingcamera
 				</Link>
 			</Title>
 			<Item delay=".2s">
-				<Link href="/">home</Link>
+				<Link href="index.html">home</Link>
 			</Item>
 			<Item delay=".3s">
-				<Link href="/projects">projects</Link>
+				<Link href="projects.html">projects</Link>
 			</Item>
 			<Item delay=".4s">
-				<Link href="/me">about me</Link>
+				<Link href="me.html">about me</Link>
 			</Item>
 			&nbsp;
 			<Item delay=".5s">

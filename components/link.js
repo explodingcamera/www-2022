@@ -46,7 +46,11 @@ const Link = styled.a`
 
 	&:before {
 		${props => !props.animateFontColor && activeCSS}
-		${props => props.active && 'transform: scaleX(1);'}
+		${props =>
+			props.active &&
+			css`
+				transform: scaleX(1);
+			`}
 	}
 	&:hover {
 		color: white;
@@ -67,14 +71,18 @@ const Link = styled.a`
 const Item = ({ children, router, href, animateFontColor }) => {
 	const handleClick = e => {
 		e.preventDefault();
-		router.push(href);
+
+		global.document.location.assign(href);
+		// Router.push(href);
 	};
+
+	const active = router.asPath.includes(href);
 
 	return (
 		<Link
 			href={href}
 			onClick={href.includes(':') ? undefined : handleClick}
-			active={router.pathname === href}
+			active={active}
 			animateFontColor={animateFontColor}
 		>
 			{children}

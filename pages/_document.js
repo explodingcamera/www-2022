@@ -24,7 +24,7 @@ export default class extends Document {
 			<html>
 				<Head>
 					<link
-						href="/static/fonts/roboto-mono/roboto-mono.css"
+						href="static/fonts/roboto-mono/roboto-mono.css"
 						rel="stylesheet"
 					/>
 					<meta name="viewport" content="width=device-width, initial-scale=1" />

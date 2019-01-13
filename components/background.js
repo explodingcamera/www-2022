@@ -43,10 +43,10 @@ export default class extends React.Component {
 			<Background ref={this.background}>
 				<video data-depth="0.3" autoPlay loop muted preload="auto">
 					<source
-						src="/static/bg.webm"
+						src="static/bg.webm"
 						type='video/webm; codecs="vp8, vorbis"'
 					/>
-					<source src="/static/bg.mp4" type="video/mp4" />
+					<source src="static/bg.mp4" type="video/mp4" />
 				</video>
 				<div data-depth="0" />
 			</Background>
