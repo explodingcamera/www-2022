@@ -129,7 +129,7 @@ const projects = [
 	{
 		title: 'canX',
 		from: '2018 - now',
-		img: 'canx.png',
+		img: 'canx-min.png',
 		text: `canX is the fair and open space for everyone to share creative ideas.
 We enable users and creators to produce content independently and get rewarded for doing what they love.`,
 		buttons: [
@@ -142,7 +142,7 @@ We enable users and creators to produce content independently and get rewarded f
 	{
 		title: 'livecount.pro',
 		from: '2017 - now',
-		img: 'livecount.png',
+		img: 'livecount-min.png',
 		text: `LiveCount is a realtime follower/subscriber counter with support for multiple social networks and multiple channels at the same time. I created this just as a quick project over the course of one weekend.`,
 		buttons: [
 			{
@@ -158,7 +158,7 @@ We enable users and creators to produce content independently and get rewarded f
 	{
 		title: 'musiqpad',
 		from: '2016',
-		img: 'musiqpad.png',
+		img: 'musiqpad-min.png',
 		text: `Musiqpad was/is a social-music software platform for users to host their own rooms and enjoy music together with others. Our Team sadly doesn't have enought time for it anymore but I hope we can continue to work on it in the future.`,
 		buttons: [
 			{
@@ -169,7 +169,7 @@ We enable users and creators to produce content independently and get rewarded f
 	},
 	{
 		title: 'musiqplus',
-		from: '2016',
+		from: '2015-min-2016',
 		img: 'musiqplus.jpg',
 		text: `MusiqPlus was a Chrome plugin that enhanced the experience on musiqpad servers with a ton of extra features. This started my involvement with Musiqpad and was one of my first "big" projects.`,
 		buttons: [
@@ -181,8 +181,8 @@ We enable users and creators to produce content independently and get rewarded f
 	},
 	{
 		title: 'multitube.cf',
-		from: '2016',
-		img: 'musiqpad.png',
+		from: '2014',
+		img: 'multitube-min.png',
 		text: `My first Node.Js Project, Multitube was a website for viewing two youtube videos side-by-side. I was inspired by youtubemultiplier but their implementation was lacking features and ux was horrible so I build my own site.`,
 		buttons: [
 			{
