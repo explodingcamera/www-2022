@@ -38,13 +38,11 @@ const MeComponent = () => (
 	<Me>
 		<h1>about me</h1>
 		<p>
-			I'm currently doing my Abitur at{' '}
-			<Link href="http://bs-bebra.de/index.php/angebote/berufliches-gymnasium-bg">
-				Berufliches&nbsp;Gymnasium
-			</Link>{' '}
-			and will study Software Engineering at the{' '}
-			<Link href="https://code.berlin/">CODE-University&nbsp;Berlin</Link>
-			{' starting 10/2019.'}​
+			I'm currently studying Software Engineering at{' '}
+			<Link href="https://code.berlin/">
+				CODE University of Applied Sciences
+			</Link>
+			.
 			<br />
 			<br />
 			I've been working on Open Source projects since about 2014​ and mainly

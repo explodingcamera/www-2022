@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import App, { Container } from 'next/app';
+import App from 'next/app';
+import Head from 'next/head';
 
 import modernNormalize from 'modern-normalize';
 
@@ -10,7 +11,7 @@ import Header from './../components/header';
 const GlobalCSS = createGlobalStyle`
 	${modernNormalize}
 	h1,
-	h2,
+	h2, 
 	h3,
 	h4,
 	h5,
@@ -47,14 +48,17 @@ export default class extends App {
 		const { Component, pageProps } = this.props;
 
 		return (
-			<Container>
+			<>
+				<Head>
+					<title>henrygressmann.de</title>
+				</Head>
 				<GlobalCSS />
 				<Background />
 				<Layout>
 					<Header />
 					<Component {...pageProps} />
 				</Layout>
-			</Container>
+			</>
 		);
 	}
 }
