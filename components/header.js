@@ -59,18 +59,24 @@ export default () => (
 	<Header>
 		<ol>
 			<Title>
-				<Link href="/" animateFontColor>
+				<Link prefetch href="/" animateFontColor>
 					explodingcamera
 				</Link>
 			</Title>
 			<Item delay=".2s">
-				<Link href="/">home</Link>
+				<Link prefetch href="/">
+					home
+				</Link>
 			</Item>
 			<Item delay=".3s">
-				<Link href="/projects">projects</Link>
+				<Link prefetch href="/projects">
+					projects
+				</Link>
 			</Item>
 			<Item delay=".4s">
-				<Link href="/me">about me</Link>
+				<Link prefetch href="/me">
+					about me
+				</Link>
 			</Item>
 			&nbsp;
 			<Item delay=".5s">
