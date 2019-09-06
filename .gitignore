@@ -67,3 +67,4 @@ yarn-error.log
 .next
 out/*
 !out/.nojekyll
+!out/CNAME
