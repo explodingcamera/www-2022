@@ -5,17 +5,17 @@
   "version": "0.1.0",
   "author": "Henry GRessmann",
   "dependencies": {
-    "@ibm/plex": "2.0.0",
+    "@ibm/plex": "4.0.2",
     "babel-plugin-styled-components": "1.10.6",
     "modern-normalize": "0.5.0",
-    "next": "9.0.5",
+    "next": "9.1.5",
     "parallax-js": "3.1.0",
     "prop-types": "15.7.2",
-    "raw-loader": "3.1.0",
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
-    "react-icons": "3.7.0",
-    "styled-components": "4.3.2"
+    "raw-loader": "4.0.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-icons": "3.8.0",
+    "styled-components": "4.4.1"
   },
   "scripts": {
     "dev": "next",
@@ -23,11 +23,11 @@
     "deploy": "npm run build && gh-pages -t -d out -s '{**/*,.nojekyll}'"
   },
   "devDependencies": {
-    "@canx/eslint-config": "7.2.1",
-    "eslint": "6.3.0",
+    "@explodingcamera/eslint-config": "1.1.1",
+    "babel-plugin-module-resolver": "4.0.0",
+    "eslint": "6.7.2",
     "gh-pages": "2.1.1",
-    "prettier": "1.18.2",
-    "babel-plugin-module-resolver": "3.2.0"
+    "prettier": "1.19.1"
   },
   "repository": {
     "type": "git",
