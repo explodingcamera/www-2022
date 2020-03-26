@@ -21,7 +21,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "deploy": "npm run build && gh-pages -t -d out -s '{**/*,.nojekyll}'"
+    "deploy": "npm run build && gh-pages -t -d out"
   },
   "devDependencies": {
     "@explodingcamera/eslint-config": "4.1.0",
