@@ -1,3 +1,5 @@
+const nextPluginSC = require('@explodingcamera/next-plugin-styled-components');
+
 const config = {
 	webpack: config => {
 		// Add Raw-Loader
@@ -11,4 +13,4 @@ const config = {
 	poweredByHeader: false,
 };
 
-module.exports = config;
+module.exports = nextPluginSC(config);

@@ -127,6 +127,38 @@ const Projects = styled.div`
 
 const projects = [
 	{
+		title: 'TwoWeeksOfFood',
+		from: '2020',
+		img: 'twof.jpeg',
+		text: `Created at the #wirvsvirus hackathon, TwoWeeksOfFood aims to solve some of the supply issues created by the CORVID-19 Crisis. (Created by Arthur Hoge and me)`,
+		buttons: [
+			{
+				link: 'https://twoweeksoffood.netlify.com',
+				name: 'website',
+			},
+			{
+				link: 'https://www.linkedin.com/posts/arthurhoge_wevsvirus-activity-6648368790553800704-gTAQ',
+				name: 'more infos'
+			},
+			{
+				link: 'https://github.com/twoweeksoffood/twoweeksoffood',
+				name: "code",
+			}
+		],
+	},
+	{
+		title: 'recordskip',
+		from: '2019',
+		img: 'recordskip.jpeg',
+		text: `Recordskip was my first semester-project at Code University. It's an app for vinyl music lovers that tracks your collection and gives you music recomendations for your vinyl collation.`,
+		buttons: [
+			{
+				link: 'https://github.com/recordskip/recordskip-app',
+				name: 'code',
+			},
+		],
+	},
+	{
 		title: 'canX',
 		from: '2018 - now',
 		img: 'canx-min.png',
@@ -141,7 +173,7 @@ We enable users and creators to produce content independently and get rewarded f
 	},
 	{
 		title: 'livecount.pro',
-		from: '2017 - now',
+		from: '2017 - 2019',
 		img: 'livecount-min.png',
 		text: `LiveCount is a realtime follower/subscriber counter with support for multiple social networks and multiple channels at the same time. I created this just as a quick project over the course of one weekend.`,
 		buttons: [
@@ -169,7 +201,7 @@ We enable users and creators to produce content independently and get rewarded f
 	},
 	{
 		title: 'musiqplus',
-		from: '2015-min-2016',
+		from: '2015-2016',
 		img: 'musiqplus.jpg',
 		text: `MusiqPlus was a Chrome plugin that enhanced the experience on musiqpad servers with a ton of extra features. This started my involvement with Musiqpad and was one of my first "big" projects.`,
 		buttons: [
