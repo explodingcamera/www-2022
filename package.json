@@ -9,14 +9,14 @@
     "@ibm/plex": "4.0.2",
     "babel-plugin-styled-components": "1.10.7",
     "modern-normalize": "0.6.0",
-    "next": "9.3.3",
+    "next": "9.3.5",
     "parallax-js": "3.1.0",
     "prop-types": "15.7.2",
-    "raw-loader": "4.0.0",
+    "raw-loader": "4.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-icons": "3.9.0",
-    "styled-components": "5.0.1"
+    "react-icons": "3.10.0",
+    "styled-components": "5.1.0"
   },
   "scripts": {
     "dev": "next",
@@ -24,11 +24,11 @@
     "deploy": "npm run build && gh-pages -t -d out"
   },
   "devDependencies": {
-    "@explodingcamera/eslint-config": "4.1.0",
+    "@explodingcamera/eslint-config": "5.1.0",
     "babel-plugin-module-resolver": "4.0.0",
     "eslint": "6.8.0",
     "gh-pages": "2.2.0",
-    "prettier": "2.0.2"
+    "prettier": "2.0.5"
   },
   "repository": {
     "type": "git",
