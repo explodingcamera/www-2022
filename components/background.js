@@ -9,12 +9,16 @@ const Background = styled.div`
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: black;
+	background: #0f0f0f;
 	z-index: -1;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@media print {
+		background: white;
+	}
 
 	> video {
 		height: 130vh;

@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 import Link from './../components/link';
+import Layout from '../components/layout';
 
 const gradient = keyframes`
 	0%{background-position:0% 50%}
@@ -35,37 +36,41 @@ const Me = styled.div`
 `;
 
 const MeComponent = () => (
-	<Me>
-		<h1>about me</h1>
-		<p>
-			I'm currently studying Software Engineering at{' '}
-			<Link href="https://code.berlin/">
-				CODE University of Applied Sciences
-			</Link>
-			.
-			<br />
-			<br />
-			I've been working on Open Source projects since about 2014​ and mainly
-			work with <Link href="https://golang.org">Go</Link>,{' '}
-			<Link href="https://reactjs.org">React</Link>,{' '}
-			<Link href="https://kubernetes.io">Docker/Kubernetes</Link> and am a huge
-			Free Software and Linux advocate.
-			<br />
-			<br />
-			<Link href="https://www.discogs.com/user/_henry/collection?sort_by=artists_sort">
-				Music
-			</Link>{' '}
-			is really important to me but I'm also very interested in Security,
-			Cryptography and{' '}
-			<Link href="https://www.coursera.org/account/accomplishments/verify/NWNS4QMPHWEU">
-				Machine Learning.
-			</Link>
-			<br />
-			<br />
-			By the way: This entire website is{' '}
-			<Link href="https://github.com/explodingcamera/www">open-source</Link>
-		</p>
-	</Me>
+	<Layout>
+		<Me>
+			<h1>about me</h1>
+			<p>
+				If you're into that sort of thing, you can also check out my{' '}
+				<Link href="/cv">Resume</Link>.<br />
+				<br /> I'm currently studying Software Engineering at{' '}
+				<Link href="https://code.berlin/">
+					CODE University of Applied Sciences
+				</Link>
+				.
+				<br />
+				<br />
+				I've been working on Open Source projects since about 2014​ and mainly
+				work with <Link href="https://golang.org">Go</Link>,{' '}
+				<Link href="https://reactjs.org">React</Link>,{' '}
+				<Link href="https://kubernetes.io">Docker/Kubernetes</Link> and am a
+				huge Free Software and Linux advocate.
+				<br />
+				<br />
+				<Link href="https://www.discogs.com/user/_henry/collection?sort_by=artists_sort">
+					Music
+				</Link>{' '}
+				is really important to me but I'm also very interested in Security,
+				Cryptography and{' '}
+				<Link href="https://www.coursera.org/account/accomplishments/verify/NWNS4QMPHWEU">
+					Machine Learning.
+				</Link>
+				<br />
+				<br />
+				By the way: This entire website is{' '}
+				<Link href="https://github.com/explodingcamera/www">open-source</Link>
+			</p>
+		</Me>
+	</Layout>
 );
 
 export default MeComponent;

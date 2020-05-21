@@ -1,17 +1,29 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import App from 'next/app';
 import Head from 'next/head';
 
 import modernNormalize from 'modern-normalize';
+import GlobalProvider from './../components/context';
 
-import Background from './../components/background';
-import Header from './../components/header';
+import NextNprogress from 'nextjs-progressbar';
 
 const GlobalCSS = createGlobalStyle`
 	${modernNormalize}
+
+	#nprogress .bar {
+		background: linear-gradient(270deg, #ff0000, #008cff, #50ff00);
+	}
+
+	@media print {
+		body {
+			filter: invert(1);
+			background: black;
+		}
+	}
+
 	h1,
-	h2, 
+	h2,
 	h3,
 	h4,
 	h5,
@@ -25,24 +37,6 @@ const GlobalCSS = createGlobalStyle`
 	}
 `;
 
-const Layout = styled.div`
-	font-family: 'Roboto Mono', 'Menlo', 'DejaVu Sans Mono',
-		'Bitstream Vera Sans Mono', Courier, monospace;
-	color: white;
-
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	width: 100%;
-	max-width: 1280px;
-	padding: 2rem 3rem;
-	margin: 0 auto;
-
-	> div {
-		flex: 1;
-	}
-`;
-
 export default class extends App {
 	render() {
 		const { Component, pageProps } = this.props;
@@ -53,11 +47,10 @@ export default class extends App {
 					<title>henrygressmann.de</title>
 				</Head>
 				<GlobalCSS />
-				<Background />
-				<Layout>
-					<Header />
+				<NextNprogress />
+				<GlobalProvider>
 					<Component {...pageProps} />
-				</Layout>
+				</GlobalProvider>
 			</>
 		);
 	}

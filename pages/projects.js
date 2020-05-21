@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Layout from '../components/layout';
 
 const ProjectWrapper = styled.div`
 	width: calc(${100 / 3}% - 1rem);
@@ -137,13 +138,14 @@ const projects = [
 				name: 'website',
 			},
 			{
-				link: 'https://www.linkedin.com/posts/arthurhoge_wevsvirus-activity-6648368790553800704-gTAQ',
-				name: 'more infos'
+				link:
+					'https://www.linkedin.com/posts/arthurhoge_wevsvirus-activity-6648368790553800704-gTAQ',
+				name: 'more infos',
 			},
 			{
 				link: 'https://github.com/twoweeksoffood/twoweeksoffood',
-				name: "code",
-			}
+				name: 'code',
+			},
 		],
 	},
 	{
@@ -226,11 +228,13 @@ We enable users and creators to produce content independently and get rewarded f
 ];
 
 const ProjectsComponent = () => (
-	<Projects>
-		{projects.map(p => (
-			<Project key={projects.indexOf(p)} {...p} />
-		))}
-	</Projects>
+	<Layout>
+		<Projects>
+			{projects.map(p => (
+				<Project key={projects.indexOf(p)} {...p} />
+			))}
+		</Projects>
+	</Layout>
 );
 
 export default ProjectsComponent;

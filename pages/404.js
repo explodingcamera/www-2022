@@ -12,22 +12,37 @@ const Home = styled.div`
 	flex: 1;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 
 	h1 {
-		font-size: 8rem;
+		font-size: 4rem;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);
 		background-size: 600% 600%;
 		animation: ${gradient} 10s ease infinite;
 	}
+
+	p {
+		text-indent: -1em;
+		font-size: 2rem;
+	}
 `;
 
 const ErrorComponent = () => (
 	<Layout>
 		<Home>
-			<h1>Not Found 🐶</h1>
+			<div>
+				<h1>Not Found</h1>
+				<p>
+					These three are certain:
+					<br />
+					Death, taxes, and site not found.
+					<br />
+					You, victim of one.
+				</p>
+			</div>
 		</Home>
 	</Layout>
 );

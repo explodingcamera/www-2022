@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Link from './../components/link';
+import Layout from '../components/layout';
 
 const gradient = keyframes`
 	0%{background-position:0% 50%}
@@ -62,23 +63,25 @@ const Home = styled.div`
 `;
 
 const HomeComponent = () => (
-	<Home>
-		<h1>HI!</h1>
-		<h2>
-			I'm <span>Henry</span> and I do a lot of fun{' '}
-			<Link href="/projects">projects</Link>
-		</h2>
-		<h2>
-			Contact me at{' '}
-			<Link href="mailto:mail@henrygressmann.de">mail@henrygressmann.de</Link>
-		</h2>
-		<h2>
-			Currently, I'm creating{' '}
-			<Link href="https://canx.org">
-				can<span>X</span>
-			</Link>
-		</h2>
-	</Home>
+	<Layout>
+		<Home>
+			<h1>HI!</h1>
+			<h2>
+				I'm <span>Henry</span> and I do a lot of fun{' '}
+				<Link href="/projects">projects</Link>
+			</h2>
+			<h2>
+				Contact me at{' '}
+				<Link href="mailto:mail@henrygressmann.de">mail@henrygressmann.de</Link>
+			</h2>
+			<h2>
+				Currently, I'm creating{' '}
+				<Link href="https://canx.org">
+					can<span>X</span>
+				</Link>
+			</h2>
+		</Home>
+	</Layout>
 );
 
 export default HomeComponent;
