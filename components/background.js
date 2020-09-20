@@ -9,7 +9,7 @@ const Background = styled.div`
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #0f0f0f;
+	background: black;
 	z-index: -1;
 	overflow: hidden;
 	display: flex;

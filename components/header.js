@@ -71,7 +71,6 @@ const Item = styled.li`
 `;
 
 export default ({ hasAnimated }) => {
-	console.log(hasAnimated);
 	return (
 		<Header>
 			<ol>
