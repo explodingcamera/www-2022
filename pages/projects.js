@@ -128,6 +128,32 @@ const Projects = styled.div`
 
 const projects = [
 	{
+		title: 'Etournity',
+		from: '2020',
+		img: 'etournity.png',
+		text: `Effortlessly organize - and smoothly participate in - online esports tournaments for small to medium-sized games.
+
+		I've joined the fantasymarket team as a developer in the summer of 2020.`,
+		buttons: [
+			{
+				link: 'https://etournity.com',
+				name: 'etournity.com',
+			},
+		],
+	},
+	{
+		title: 'FantasyMarket',
+		from: '2020',
+		img: 'fantasymarket.png',
+		text: `We are creating a working stock market simulation, where the user can invest in-game currency in a simulated market completely separated from the real world.`,
+		buttons: [
+			{
+				link: 'https://github.com/fantasymarket',
+				name: 'code',
+			},
+		],
+	},
+	{
 		title: 'TwoWeeksOfFood',
 		from: '2020',
 		img: 'twof.jpeg',
