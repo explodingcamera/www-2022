@@ -67,12 +67,14 @@ const HomeComponent = () => (
 		<Home>
 			<h1>HI!</h1>
 			<h2>
-				Contact me at{' '}<Link href="mailto:mail@henrygressmann.de">mail@henrygressmann.de</Link>
-				{' '}or check out some of my <Link href="/projects"><span>projects</span></Link>
+				Contact me at{' '}
+				<Link href="mailto:mail@henrygressmann.de">mail@henrygressmann.de</Link>{' '}
+				or check out some of my{' '}
+				<Link href="/projects">
+					<span>projects</span>
+				</Link>
 			</h2>
-			<h2>
-				
-			</h2>
+			<h2 />
 			{/* <h2>
 				Currently, I'm creating{' '}
 				<Link href="https://canx.org">

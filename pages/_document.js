@@ -1,12 +1,12 @@
 import React from 'react';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
 
 export default class extends Document {
 	render() {
 		return (
 			<Html>
 				<Head>
+					{this.props.headTags}
 					<link
 						href="/static/fonts/roboto-mono/roboto-mono.css"
 						rel="stylesheet"

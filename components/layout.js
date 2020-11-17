@@ -33,7 +33,7 @@ const FallbackBG = styled.div`
 	overflow: hidden;
 `;
 
-const Layout = ({ children, disableBackground }) => {
+const Layout = ({ children, disableBackground, ...props }) => {
 	const { hasAnimated, update } = useGlobal();
 
 	useEffect(() => {
@@ -44,7 +44,7 @@ const Layout = ({ children, disableBackground }) => {
 		<>
 			<FallbackBG />
 			{!disableBackground && <Background />}
-			<LayoutWrapper>
+			<LayoutWrapper {...props}>
 				<Header hasAnimated={hasAnimated} />
 				{children}
 			</LayoutWrapper>

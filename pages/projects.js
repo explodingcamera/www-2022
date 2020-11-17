@@ -17,7 +17,7 @@ const ProjectWrapper = styled.div`
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
-	min-height: 33.5rem;
+	min-height: 34rem;
 	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.35);
 
 	h1 {
@@ -133,7 +133,7 @@ const projects = [
 		img: 'etournity.png',
 		text: `Effortlessly organize - and smoothly participate in - online esports tournaments for small to medium-sized games.
 
-		I've joined the fantasymarket team as a developer in the summer of 2020.`,
+		I've joined the etournity team as a developer in the summer of 2020 and worked on transitioning the project to next.js and securing the graphql api.`,
 		buttons: [
 			{
 				link: 'https://etournity.com',
@@ -145,7 +145,7 @@ const projects = [
 		title: 'FantasyMarket',
 		from: '2020',
 		img: 'fantasymarket.png',
-		text: `We are creating a working stock market simulation, where the user can invest in-game currency in a simulated market completely separated from the real world.`,
+		text: `FantasyMarket is a working stock market simulation where the user can invest in-game currency in a simulated market completely separated from the real world. I created the frontend also worked on the general project structure.`,
 		buttons: [
 			{
 				link: 'https://github.com/fantasymarket',
@@ -178,7 +178,7 @@ const projects = [
 		title: 'recordskip',
 		from: '2019',
 		img: 'recordskip.jpeg',
-		text: `Recordskip was my first semester-project at Code University. It's an app for vinyl music lovers that tracks your collection and gives you music recomendations for your vinyl collation.`,
+		text: `Recordskip was my first semester-project at Code University. It's an app for record music lovers that tracks your collection and gives you music recomendations for your record collation.`,
 		buttons: [
 			{
 				link: 'https://github.com/recordskip/recordskip-app',
@@ -191,7 +191,7 @@ const projects = [
 		from: '2018 - now',
 		img: 'canx-min.png',
 		text: `canX is the fair and open space for everyone to share creative ideas.
-We enable users and creators to produce content independently and get rewarded for doing what they love.`,
+We enable users and creators to produce content independently and get rewarded for doing what they love. I solely implemented most parts of this platform.`,
 		buttons: [
 			{
 				link: 'https://canx.org',

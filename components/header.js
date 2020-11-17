@@ -70,7 +70,7 @@ const Item = styled.li`
 	}
 `;
 
-export default ({ hasAnimated }) => {
+const HeaderComponent = ({ hasAnimated }) => {
 	return (
 		<Header>
 			<ol>
@@ -119,3 +119,5 @@ export default ({ hasAnimated }) => {
 		</Header>
 	);
 };
+
+export default HeaderComponent;

@@ -1,41 +1,45 @@
 {
-  "name": "explodingcamera.com",
-  "private": true,
-  "description": "New Personal Website, initialy created as part of a school project",
-  "version": "0.1.0",
-  "author": "Henry GRessmann",
-  "dependencies": {
-    "@explodingcamera/next-plugin-styled-components": "^2.0.0",
-    "@ibm/plex": "5.1.3",
-    "babel-plugin-styled-components": "1.11.1",
-    "modern-normalize": "1.0.0",
-    "next": "9.5.5",
-    "nextjs-progressbar": "^0.0.6",
-    "parallax-js": "3.1.0",
-    "prop-types": "15.7.2",
-    "raw-loader": "4.0.2",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-icons": "3.11.0",
-    "styled-components": "5.2.0"
-  },
-  "scripts": {
-    "dev": "next",
-    "build": "next build && next export",
-    "deploy": "npm run build && gh-pages -t -d out"
-  },
-  "devDependencies": {
-    "@explodingcamera/eslint-config": "10.0.0",
-    "babel-plugin-module-resolver": "4.0.0",
-    "eslint": "7.11.0",
-    "gh-pages": "3.1.0",
-    "prettier": "2.1.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+	"name": "explodingcamera.com",
+	"private": true,
+	"description": "New Personal Website, initialy created as part of a school project",
+	"version": "0.1.0",
+	"author": "Henry GRessmann",
+	"dependencies": {
+		"1dca47f33f5a5cce": "https://api.observablehq.com/d/1dca47f33f5a5cce.tgz?v=3",
+		"@explodingcamera/next-plugin-styled-components": "2.1.0",
+		"@ibm/plex": "5.1.3",
+		"@observablehq/runtime": "4",
+		"babel-plugin-styled-components": "1.11.1",
+		"modern-normalize": "1.0.0",
+		"murmurhash": "^2.0.0",
+		"next": "10.0.1",
+		"next-transpile-modules": "^4.1.0",
+		"nextjs-progressbar": "^0.0.7",
+		"parallax-js": "3.1.0",
+		"prop-types": "15.7.2",
+		"raw-loader": "4.0.2",
+		"react": "17.0.1",
+		"react-dom": "17.0.1",
+		"react-icons": "3.11.0",
+		"styled-components": "5.2.1"
+	},
+	"scripts": {
+		"dev": "next",
+		"build": "next build && next export",
+		"deploy": "npm run build && gh-pages -t -d out"
+	},
+	"devDependencies": {
+		"@explodingcamera/eslint-config": "10.0.0",
+		"babel-plugin-module-resolver": "4.0.0",
+		"eslint": "7.13.0",
+		"gh-pages": "3.1.0",
+		"prettier": "2.1.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gatsbyjs/gatsby-starter-default"
+	},
+	"bugs": {
+		"url": "https://github.com/gatsbyjs/gatsby/issues"
+	}
 }
