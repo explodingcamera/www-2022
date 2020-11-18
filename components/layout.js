@@ -1,8 +1,13 @@
 import React, { useEffect } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Background from './../components/background';
 import Header from './../components/header';
 import { useGlobal } from './context';
+
+const slideIn = keyframes`
+	0% {transform: translateY(1rem);opacity: 0;}
+	100% {transform: translateY(0);opacity: 1;}
+`;
 
 const LayoutWrapper = styled.div`
 	font-family: 'Roboto Mono', 'Menlo', 'DejaVu Sans Mono',
@@ -16,6 +21,13 @@ const LayoutWrapper = styled.div`
 	max-width: 1280px;
 	padding: 2rem 3rem;
 	margin: 0 auto;
+
+	& > :not(:first-child) {
+		animation-duration: 0.6s;
+		animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+		animation-fill-mode: forwards;
+		animation-name: ${slideIn};
+	}
 
 	> div {
 		flex: 1;

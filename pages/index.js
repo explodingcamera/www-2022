@@ -23,6 +23,7 @@ const Home = styled.div`
 		background-size: 600% 600%;
 		animation: ${gradient} 10s ease infinite;
 	}
+
 	h2 {
 		font-size: 3rem;
 		margin: 1rem 0;
