@@ -19,6 +19,7 @@
 		"prop-types": "15.7.2",
 		"raw-loader": "4.0.2",
 		"react": "17.0.1",
+		"react-dark-mode-toggle": "^0.0.10",
 		"react-dom": "17.0.1",
 		"react-icons": "3.11.0",
 		"styled-components": "5.2.1"

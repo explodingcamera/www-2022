@@ -1,21 +1,55 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Runtime, Inspector } from '@observablehq/runtime';
 import notebook from '1dca47f33f5a5cce';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Layout from '../components/layout';
+import DarkModeToggel from 'react-dark-mode-toggle';
 
 const LayoutWrapper = styled(Layout)`
-	background-color: rgba(40, 42, 54, 1) !important;
+	${props =>
+		props.inverted &&
+		css`
+			background-color: black;
+			filter: invert(1);
+
+			iframe {
+				filter: invert(1);
+			}
+
+			button {
+				filter: invert(1);
+			}
+		`}
+	button svg {
+		filter: none;
+	}
 `;
 
 const dracula = `.hljs{display:block;overflow-x:auto;padding:.5em;background:#282a36}.hljs-built_in,.hljs-selector-tag,.hljs-section,.hljs-link{color:#8be9fd}.hljs-keyword{color:#ff79c6}.hljs,.hljs-subst{color:#f8f8f2}.hljs-title{color:#50fa7b}.hljs-string,.hljs-meta,.hljs-name,.hljs-type,.hljs-attr,.hljs-symbol,.hljs-bullet,.hljs-addition,.hljs-variable,.hljs-template-tag,.hljs-template-variable{color:#f1fa8c}.hljs-comment,.hljs-quote,.hljs-deletion{color:#6272a4}.hljs-keyword,.hljs-selector-tag,.hljs-literal,.hljs-title,.hljs-section,.hljs-doctag,.hljs-type,.hljs-name,.hljs-strong{font-weight:700}.hljs-literal,.hljs-number{color:#bd93f9}.hljs-emphasis{font-style:italic}`;
 const Wrapper = styled.div`
 	display: flex;
 	justify-content: center;
+	position: relative;
+
+	.darkMode {
+		position: absolute;
+		right: 0;
+		height: 100%;
+
+		button {
+			position: sticky;
+			top: 1rem;
+			right: 0;
+		}
+	}
 
 	.Notebook {
 		max-width: 85ch;
 		width: 100%;
+	}
+
+	.katex svg {
+		fill: black;
 	}
 
 	font-family: 'Source Serif Pro', Iowan Old Style, Apple Garamond,
@@ -68,7 +102,11 @@ const Wrapper = styled.div`
 	[id*='header'],
 	[class*='header'],
 	[class*='header'] td {
-		color: rgba(255, 184, 108, 1) !important;
+		color: rgb(252, 252, 253) !important;
+	}
+
+	h2 {
+		color: rgb(226, 226, 229) !important;
 	}
 
 	h4 {
@@ -76,14 +114,23 @@ const Wrapper = styled.div`
 	}
 
 	table {
-		background-color: rgba(40, 42, 54, 1) !important;
+		color: rgb(226, 226, 229) !important;
 	}
 `;
 
 const NotebookComponent = () => {
+	const [darkMode, setDarkMode] = useState(true);
+
 	return (
-		<LayoutWrapper disableBackground>
+		<LayoutWrapper
+			inverted={!darkMode}
+			disableBackground
+			backgroundColor="rgba(40, 42, 54, 1)"
+		>
 			<Wrapper>
+				<div className="darkMode">
+					<DarkModeToggel onChange={setDarkMode} checked={darkMode} />
+				</div>
 				<Notebook />
 			</Wrapper>
 		</LayoutWrapper>

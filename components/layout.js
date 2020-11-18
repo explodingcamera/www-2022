@@ -28,12 +28,12 @@ const FallbackBG = styled.div`
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: black;
+	background: ${props => props.backgroundColor || 'black'};
 	z-index: -1;
 	overflow: hidden;
 `;
 
-const Layout = ({ children, disableBackground, ...props }) => {
+const Layout = ({ children, disableBackground, backgroundColor, ...props }) => {
 	const { hasAnimated, update } = useGlobal();
 
 	useEffect(() => {
@@ -42,7 +42,7 @@ const Layout = ({ children, disableBackground, ...props }) => {
 
 	return (
 		<>
-			<FallbackBG />
+			<FallbackBG backgroundColor={backgroundColor} />
 			{!disableBackground && <Background />}
 			<LayoutWrapper {...props}>
 				<Header hasAnimated={hasAnimated} />
