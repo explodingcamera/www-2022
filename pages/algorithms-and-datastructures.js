@@ -148,6 +148,10 @@ const Notebook = () => {
 				return Inspector.into(ref.current.querySelector('.intro'))();
 			if (name === 'abstract')
 				return Inspector.into(ref.current.querySelector('.abstract'))();
+			if (name === 'timecomplexity')
+				return Inspector.into(ref.current.querySelector('.timecomplexity'))();
+			if (name === 'bubblesort')
+				return Inspector.into(ref.current.querySelector('.bubblesort'))();
 			if (name === 'euclid')
 				return Inspector.into(ref.current.querySelector('.euclid'))();
 			if (name === 'gcdmd')
@@ -211,6 +215,8 @@ const Notebook = () => {
 		<div className="Notebook" ref={ref}>
 			<div className="intro" id="intro" />
 			<div className="abstract" id="abstract" />
+			<div className="timecomplexity" id="timecomplexity" />
+			<div className="bubblesort" id="bubblesort" />
 			<div className="euclid" id="euclid" />
 			<div className="gcdmd" id="gcdmd" />
 			<div className="viewof-args" id="viewof-args" />
