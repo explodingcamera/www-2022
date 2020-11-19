@@ -6,7 +6,7 @@
 	"author": "Henry Gressmann",
 	"dependencies": {
 		"1dca47f33f5a5cce": "https://api.observablehq.com/d/1dca47f33f5a5cce.tgz?v=3",
-		"@explodingcamera/next-plugin-styled-components": "2.1.0",
+		"@explodingcamera/next-plugin-styled-components": "10.0.2",
 		"@ibm/plex": "5.1.3",
 		"@observablehq/runtime": "4",
 		"babel-plugin-styled-components": "1.11.1",
