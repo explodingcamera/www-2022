@@ -3,8 +3,8 @@
 
 
 "1dca47f33f5a5cce@https://api.observablehq.com/d/1dca47f33f5a5cce.tgz?v=3":
-  version "1846.0.0"
-  resolved "https://api.observablehq.com/d/1dca47f33f5a5cce.tgz?v=3#8197f9c7d10bb304394db401223a129c91404a6f"
+  version "1853.0.0"
+  resolved "https://api.observablehq.com/d/1dca47f33f5a5cce.tgz?v=3#2bb903862530899c42e63ac652aca0869d1c778e"
 
 "@ampproject/toolbox-core@^2.6.0":
   version "2.6.1"

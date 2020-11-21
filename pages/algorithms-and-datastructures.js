@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 
 		button {
 			position: sticky;
-			top: 1rem;
+			top: 2.5rem;
 			right: 0;
 		}
 	}
@@ -119,7 +119,7 @@ const Wrapper = styled.div`
 `;
 
 const NotebookComponent = () => {
-	const [darkMode, setDarkMode] = useState(true);
+	const [darkMode, setDarkMode] = useState(false);
 
 	return (
 		<LayoutWrapper
