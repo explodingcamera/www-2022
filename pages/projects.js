@@ -145,7 +145,7 @@ const projects = [
 		title: 'FantasyMarket',
 		from: '2020',
 		img: 'fantasymarket.png',
-		text: `FantasyMarket is a working stock market simulation where the user can invest in-game currency in a simulated market completely separated from the real world. I created the frontend also worked on the general project structure.`,
+		text: `FantasyMarket is a working stock market simulation where the user can invest in-game currency in a simulated market completely separated from the real world. I've created the frontend and also worked on the general project structure.`,
 		buttons: [
 			{
 				link: 'https://github.com/fantasymarket',
@@ -188,7 +188,7 @@ const projects = [
 	},
 	{
 		title: 'canX',
-		from: '2018 - now',
+		from: '2018 - 2020',
 		img: 'canx-min.png',
 		text: `canX is the fair and open space for everyone to share creative ideas.
 We enable users and creators to produce content independently and get rewarded for doing what they love. I solely implemented most parts of this platform.`,
