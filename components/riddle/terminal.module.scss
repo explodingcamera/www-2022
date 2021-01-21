@@ -1,0 +1,109 @@
+.wrapper {
+	min-height: 100vh;
+	min-width: 30rem;
+	padding: 3rem;
+	display: flex;
+
+	&::before {
+		content: ' ';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: linear-gradient(
+				rgba(18, 16, 16, 0) 50%,
+				rgba(0, 0, 0, 0.25) 50%
+			),
+			linear-gradient(
+				90deg,
+				rgba(255, 0, 0, 0.06),
+				rgba(0, 255, 0, 0.02),
+				rgba(0, 0, 255, 0.06)
+			);
+		z-index: 2;
+		background-size: 100% 2px, 3px 100%;
+		pointer-events: none;
+	}
+
+	&:after {
+		content: ' ';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(18, 16, 16, 0.1);
+		opacity: 0;
+		z-index: 2;
+		pointer-events: none;
+		animation-name: flicker;
+		animation-duration: 0.15s;
+		animation-iteration-count: infinite;
+	}
+
+	.scrollbar::-webkit-scrollbar {
+		background-color: #fff;
+		width: 16px;
+	}
+
+	> div {
+		flex: 1;
+	}
+
+	:global(.xterm-rows) {
+		filter: drop-shadow(rgba(34, 255, 143, 1) 0px 0px 3px);
+	}
+
+	:global(.xterm-viewport) {
+		&::-webkit-scrollbar {
+			background-color: transparent;
+			width: 10px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background-color: transparent;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: white;
+			border-radius: 10px;
+		}
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: #a0a0a5;
+			border: 4px solid #f4f4f4;
+		}
+
+		&::-webkit-scrollbar-button {
+			display: none;
+		}
+	}
+
+	:global(.xterm-cursor-bar) {
+		animation-name: blink;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-timing-function: step-end;
+	}
+}
+
+@keyframes blink {
+	from,
+	to {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+@keyframes flicker {
+	$steps: 20;
+	@for $i from 0 through $steps {
+		#{percentage($i*(1/$steps))} {
+			opacity: random();
+		}
+	}
+}
