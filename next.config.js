@@ -1,4 +1,3 @@
-const nextPluginSC = require('@explodingcamera/next-plugin-styled-components');
 const withTM = require('next-transpile-modules')([
 	'1dca47f33f5a5cce',
 	'xterm-for-react',
@@ -17,4 +16,4 @@ const config = {
 	poweredByHeader: false,
 };
 
-module.exports = nextPluginSC(withTM(config));
+module.exports = withTM(config);
