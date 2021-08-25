@@ -34,7 +34,7 @@
 		"deploy": "npm run build && gh-pages -t -d out"
 	},
 	"devDependencies": {
-		"@explodingcamera/eslint-config": "17.0.0",
+		"@explodingcamera/eslint-config": "18.0.0",
 		"@types/node": "^16.7.1",
 		"@types/react": "^17.0.19",
 		"babel-plugin-module-resolver": "4.1.0",
