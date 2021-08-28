@@ -157,7 +157,7 @@ const projects = [
 		title: 'TwoWeeksOfFood',
 		from: '2020',
 		img: 'twof.jpeg',
-		text: `Created at the #wirvsvirus hackathon, TwoWeeksOfFood aims to solve some of the supply issues created by the CORVID-19 Crisis. (Created by Arthur Hoge and me)`,
+		text: `Created at the #wirvsvirus hackathon, TwoWeeksOfFood aims to help with some of the supply issues created by the COVID-19 Crisis. (Created by Arthur Hoge and me)`,
 		buttons: [
 			{
 				link: 'https://twoweeksoffood.netlify.com',
