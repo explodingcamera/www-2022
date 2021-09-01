@@ -14,7 +14,7 @@
 		"chalk": "^4.1.2",
 		"modern-normalize": "1.1.0",
 		"murmurhash": "^2.0.0",
-		"next": "11.1.0",
+		"next": "11.1.1",
 		"next-transpile-modules": "^8.0.0",
 		"nextjs-progressbar": "^0.0.11",
 		"parallax-js": "3.1.0",
