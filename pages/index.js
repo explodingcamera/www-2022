@@ -68,7 +68,7 @@ const HomeComponent = () => (
 	<Layout>
 		<Home>
 			<h2>
-				<span>Hi!</span> I'm an open source and freelance software developer
+				<span>Hi!</span> I'm an open source and freelance software engineer
 				<br />
 				<br />
 				<Link href="/work">work</Link>
@@ -77,12 +77,6 @@ const HomeComponent = () => (
 				<Link href="/me">about me</Link> <br />
 			</h2>
 			<h2 />
-			{/* <h2>
-				Currently, I'm creating{' '}
-				<Link href="https://canx.org">
-					can<span>X</span>
-				</Link>
-			</h2> */}
 		</Home>
 	</Layout>
 );

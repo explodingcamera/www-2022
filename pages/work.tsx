@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/layout';
-import Image from 'next/image';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
 const Projects = styled(Masonry)``;
@@ -11,7 +10,11 @@ const ProjectWrapper = styled.div`
 	flex-direction: column;
 	border-radius: 12px;
 	background: #4f4f4f69;
-	background: linear-gradient(135deg, #61616169 10%, #48484826 100%);
+	background: linear-gradient(
+		135deg,
+		rgb(0 0 0 / 41%) 10%,
+		rgb(72 72 72 / 40%) 100%
+	);
 	margin: 0.5rem;
 	padding: 1rem;
 	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.35);
