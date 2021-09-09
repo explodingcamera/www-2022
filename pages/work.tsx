@@ -90,6 +90,13 @@ const ImageWrapper = styled.div`
 	box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.6);
 	border-radius: 8px;
 	overflow: hidden;
+
+	img {
+		height: inherit;
+		width: 100%;
+		object-fit: cover;
+		object-position: center top;
+	}
 `;
 
 interface ProjectInterface {
@@ -107,13 +114,7 @@ const Project = ({ title, from, img, text, buttons }: ProjectInterface) => (
 			<span>{from}</span>
 		</h1>
 		<ImageWrapper>
-			<Image
-				src={`/static/projects/${img}`}
-				alt={title}
-				layout="fill"
-				objectFit="cover"
-				objectPosition="top"
-			/>
+			<img src={`/static/projects/${img}`} alt={title} layout="fill" />
 		</ImageWrapper>
 		<p>{text}</p>
 		{buttons && (
