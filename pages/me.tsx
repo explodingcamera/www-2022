@@ -50,7 +50,10 @@ const MeComponent = () => (
 				<Link href="https://github.com/fantasymarket/fantasymarket-api">
 					Go
 				</Link>
-				, <Link href="https://github.com/explodingcamera/snowstorm">React</Link>
+				,{' '}
+				<Link href="https://github.com/explodingcamera/snowstorm">
+					React, React Native
+				</Link>
 				, <Link href="https://kubernetes.io">Docker/Kubernetes</Link> and Rust
 				but I'm open for any challange.
 				<br />
@@ -58,9 +61,10 @@ const MeComponent = () => (
 				<Link href="https://pog.network">Crypto Currencies/Blockchain</Link>
 				<br />
 				<br />
-				I offer development support in any stack, including basic designs and
-				consulting for software architectures, react, open source software and
-				crypto currency development.
+				I offer development support with pretty much any stack, including basic
+				ui designs and consulting for software architectures,
+				react/react-native, open source software and crypto currency
+				development.
 				<br />
 				<br />
 				If you're into that sort of thing, you can also check out my{' '}
