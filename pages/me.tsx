@@ -19,6 +19,7 @@ const Me = styled.div`
 	h1 {
 		font-size: 3em;
 		-webkit-background-clip: text;
+		background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);
 		background-size: 600% 600%;
@@ -40,30 +41,31 @@ const MeComponent = () => (
 		<Me>
 			<h1>about me</h1>
 			<p>
+				I've been working on Open Source projects since about 2014 and mainly
+				work with{' '}
+				<Link href="https://github.com/explodingcamera/snowstorm">
+					Typescript
+				</Link>
+				,{' '}
+				<Link href="https://github.com/fantasymarket/fantasymarket-api">
+					Go
+				</Link>
+				, <Link href="https://github.com/explodingcamera/snowstorm">React</Link>
+				, <Link href="https://kubernetes.io">Docker/Kubernetes</Link> and Rust
+				but I'm open for any challange.
+				<br />
+				My expertise also include Security, Cryptography and{' '}
+				<Link href="https://pog.network">Crypto Currencies/Blockchain</Link>
+				<br />
+				<br />
+				I offer development support in any stack, including basic designs and
+				consulting for software architectures, react, open source software and
+				crypto currency development.
+				<br />
+				<br />
 				If you're into that sort of thing, you can also check out my{' '}
-				<Link href="/cv">Resume</Link>.<br />
-				<br /> I'm currently studying Software Engineering at{' '}
-				<Link href="https://code.berlin/">
-					CODE University of Applied Sciences
-				</Link>
-				.
-				<br />
-				<br />
-				I've been working on Open Source projects since about 2014​ and mainly
-				work with <Link href="https://golang.org">Go</Link>,{' '}
-				<Link href="https://reactjs.org">React</Link>,{' '}
-				<Link href="https://kubernetes.io">Docker/Kubernetes</Link> and am a
-				huge Free Software and Linux advocate.
-				<br />
-				<br />
-				<Link href="https://www.discogs.com/user/_henry/collection?sort_by=artists_sort">
-					Music
-				</Link>{' '}
-				is really important to me but I'm also very interested in Security,
-				Cryptography and{' '}
-				<Link href="https://www.coursera.org/account/accomplishments/verify/NWNS4QMPHWEU">
-					Machine Learning.
-				</Link>
+				<Link href="/static/CV.pdf">CV</Link> or{' '}
+				<Link href="mailto:mail@henrygressmann.de">contact me</Link> right away.
 				<br />
 				<br />
 				By the way: This entire website is{' '}

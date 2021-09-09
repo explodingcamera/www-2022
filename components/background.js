@@ -34,7 +34,7 @@ const Background = styled.div`
 	}
 `;
 
-export default class extends React.Component {
+export default class BackgroundComponent extends React.Component {
 	background = React.createRef();
 
 	componentDidMount() {

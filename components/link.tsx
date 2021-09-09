@@ -1,8 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { ReactNode } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
-import { withRouter } from 'next/router';
+import { NextRouter, withRouter } from 'next/router';
 
 const gradient = keyframes`
   0%{background-position:0% 50%}
@@ -30,10 +29,11 @@ const fontColorCSS = css`
 	background-size: 600% 600%;
 	animation: ${gradient} 5s linear infinite;
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 `;
 
-const Link = styled.a`
+const Link = styled.a<{ active?: boolean; animateFontColor?: boolean }>`
 	animation-delay: 0.5s;
 	animation-duration: 0.6s;
 	animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
@@ -64,10 +64,10 @@ const Link = styled.a`
 	}
 `;
 
-const Item = ({ children, router, href, animateFontColor }) => {
+const Item = ({ children, router, href, animateFontColor }: ItemProps) => {
 	const handleClick = e => {
 		e.preventDefault();
-		router.push(href);
+		void router.push(href);
 	};
 
 	return (
@@ -82,12 +82,12 @@ const Item = ({ children, router, href, animateFontColor }) => {
 	);
 };
 
-Item.propTypes = {
-	href: PropTypes.string.isRequired,
-	router: PropTypes.object.isRequired,
-	children: PropTypes.node.isRequired,
-	animateFontColor: PropTypes.bool,
-};
+interface ItemProps {
+	href: string;
+	router: NextRouter;
+	children?: ReactNode;
+	animateFontColor?: boolean;
+}
 
 Item.defaultProps = {
 	animateFontColor: false,

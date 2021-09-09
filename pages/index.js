@@ -28,6 +28,7 @@ const Home = styled.div`
 		font-size: 3rem;
 		margin: 1rem 0;
 		font-weight: 400;
+		max-width: 50rem;
 
 		span,
 		a {
@@ -66,14 +67,14 @@ const Home = styled.div`
 const HomeComponent = () => (
 	<Layout>
 		<Home>
-			<h1>HI!</h1>
 			<h2>
-				Contact me at{' '}
-				<Link href="mailto:mail@henrygressmann.de">mail@henrygressmann.de</Link>{' '}
-				or check out some of my{' '}
-				<Link href="/projects">
-					<span>projects</span>
-				</Link>
+				<span>Hi!</span> I'm an open source and freelance software developer
+				<br />
+				<br />
+				<Link href="/work">work</Link>
+				<br />
+				<Link href="mailto:mail@henrygressmann.de">contact</Link> <br />
+				<Link href="/me">about me</Link> <br />
 			</h2>
 			<h2 />
 			{/* <h2>

@@ -59,7 +59,7 @@ const GlobalCSS = createGlobalStyle`
 	}
 `;
 
-export default class extends App {
+export default class CustomApp extends App {
 	render() {
 		const { Component, pageProps } = this.props;
 

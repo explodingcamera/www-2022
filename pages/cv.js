@@ -118,9 +118,7 @@ const CVComponent = () => (
 					<h1>## Projects</h1>
 					<h2>
 						For a complete list, checkout my website at{' '}
-						<Link href="https://henrygressmann.de/projects">
-							henrygressmann.de/projects
-						</Link>
+						<Link href="https://henrygressmann.de">henrygressmann.de</Link>
 					</h2>
 				</section>
 				<section>

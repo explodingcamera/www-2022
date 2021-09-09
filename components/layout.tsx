@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { ReactElement, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Background from './../components/background';
 import Header from './../components/header';
@@ -10,8 +10,9 @@ const slideIn = keyframes`
 `;
 
 const LayoutWrapper = styled.div`
-	font-family: 'Roboto Mono', 'Menlo', 'DejaVu Sans Mono',
-		'Bitstream Vera Sans Mono', Courier, monospace;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+		'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
 	color: white;
 
 	display: flex;
@@ -19,7 +20,7 @@ const LayoutWrapper = styled.div`
 	min-height: 100vh;
 	width: 100%;
 	max-width: 1280px;
-	padding: 2rem 3rem;
+	padding: 2rem;
 	margin: 0 auto;
 
 	& > :not(:first-child) {
@@ -34,7 +35,7 @@ const LayoutWrapper = styled.div`
 	}
 `;
 
-const FallbackBG = styled.div`
+const FallbackBG = styled.div<{ backgroundColor?: string }>`
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -45,12 +46,19 @@ const FallbackBG = styled.div`
 	overflow: hidden;
 `;
 
-const Layout = ({ children, disableBackground, backgroundColor, ...props }) => {
+const Layout = ({
+	children,
+	disableBackground,
+	backgroundColor,
+	...props
+}: {
+	children: ReactElement;
+	disableBackground?: boolean;
+	backgroundColor?: string;
+}) => {
 	const { hasAnimated, update } = useGlobal();
 
-	useEffect(() => {
-		return () => update('hasAnimated', true);
-	}, []);
+	useEffect(() => () => update('hasAnimated', true), []);
 
 	return (
 		<>

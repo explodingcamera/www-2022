@@ -70,54 +70,47 @@ const Item = styled.li`
 	}
 `;
 
-const HeaderComponent = ({ hasAnimated }) => {
-	return (
-		<Header>
-			<ol>
-				<Title hasAnimated={hasAnimated}>
-					<Link prefetch href="/" animateFontColor>
-						explodingcamera
-					</Link>
-				</Title>
-				<Item hasAnimated={hasAnimated} delay=".2s">
-					<Link prefetch href="/">
-						home
-					</Link>
-				</Item>
-				<Item hasAnimated={hasAnimated} delay=".3s">
-					<Link prefetch href="/projects">
-						projects
-					</Link>
-				</Item>
-				<Item hasAnimated={hasAnimated} delay=".4s">
-					<Link prefetch href="/me">
-						about me
-					</Link>
-				</Item>
-				&nbsp;
-				<Item hasAnimated={hasAnimated} delay=".5s">
-					<Link href="https://twitter.com/explodingcamera">
-						<FiTwitter />
-					</Link>
-				</Item>
-				<Item hasAnimated={hasAnimated} delay=".6s">
-					<Link href="https://github.com/explodingcamera">
-						<FiGithub />
-					</Link>
-				</Item>
-				<Item hasAnimated={hasAnimated} delay=".7s">
-					<Link href="https://keybase.io/explodingcamera/pgp_keys.asc">
-						<FaKey />
-					</Link>
-				</Item>
-				<Item hasAnimated={hasAnimated} delay=".8s">
-					<Link href="https://www.linkedin.com/in/henrygressmann/">
-						<FiLinkedin />
-					</Link>
-				</Item>
-			</ol>
-		</Header>
-	);
-};
+const HeaderComponent = ({ hasAnimated }) => (
+	<Header>
+		<ol>
+			<Title hasAnimated={hasAnimated}>
+				<Link prefetch href="/" animateFontColor>
+					henry gressmann
+				</Link>
+			</Title>
+			<Item hasAnimated={hasAnimated} delay=".3s">
+				<Link prefetch href="/work">
+					work
+				</Link>
+			</Item>
+			<Item hasAnimated={hasAnimated} delay=".4s">
+				<Link prefetch href="/me">
+					about me
+				</Link>
+			</Item>
+			&nbsp;
+			<Item hasAnimated={hasAnimated} delay=".5s">
+				<Link href="https://twitter.com/explodingcamera">
+					<FiTwitter />
+				</Link>
+			</Item>
+			<Item hasAnimated={hasAnimated} delay=".6s">
+				<Link href="https://github.com/explodingcamera">
+					<FiGithub />
+				</Link>
+			</Item>
+			<Item hasAnimated={hasAnimated} delay=".7s">
+				<Link href="https://keybase.io/explodingcamera/pgp_keys.asc">
+					<FaKey />
+				</Link>
+			</Item>
+			<Item hasAnimated={hasAnimated} delay=".8s">
+				<Link href="https://www.linkedin.com/in/henrygressmann/">
+					<FiLinkedin />
+				</Link>
+			</Item>
+		</ol>
+	</Header>
+);
 
 export default HeaderComponent;
