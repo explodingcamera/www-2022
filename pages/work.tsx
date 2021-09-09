@@ -114,7 +114,7 @@ const Project = ({ title, from, img, text, buttons }: ProjectInterface) => (
 			<span>{from}</span>
 		</h1>
 		<ImageWrapper>
-			<img src={`/static/projects/${img}`} alt={title} layout="fill" />
+			<img src={`/static/projects/${img}`} alt={title} />
 		</ImageWrapper>
 		<p>{text}</p>
 		{buttons && (
