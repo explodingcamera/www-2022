@@ -14,6 +14,9 @@ const config = {
 		return config;
 	},
 	poweredByHeader: false,
+	eslint: {
+		ignoreDuringBuilds: true,
+	},
 };
 
 module.exports = withTM(config);
