@@ -44,7 +44,7 @@ const Title = styled.li`
 			animation-delay: 0s;
 		`}
 
-	@media only screen and (max-device-width: 410px) {
+	@media only screen and (max-device-width: 400px) {
 		display: none;
 	}
 `;
