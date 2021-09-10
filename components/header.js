@@ -25,6 +25,16 @@ const Header = styled.nav`
 		margin: 1rem 0 2rem 0;
 		overflow: hidden;
 	}
+
+	.home {
+		display: none;
+	}
+
+	@media only screen and (max-device-width: 400px) {
+		.home {
+			display: block;
+		}
+	}
 `;
 
 const Title = styled.li`
@@ -32,7 +42,9 @@ const Title = styled.li`
 	font-size: 1rem;
 
 	transform: translateY(0);
-
+	@media only screen and (max-device-width: 400px) {
+		display: none;
+	}
 	${props =>
 		!props.hasAnimated &&
 		css`
@@ -43,10 +55,6 @@ const Title = styled.li`
 			transform: translateY(1.6rem);
 			animation-delay: 0s;
 		`}
-
-	@media only screen and (max-device-width: 400px) {
-		display: none;
-	}
 `;
 
 const Item = styled.li`
@@ -78,6 +86,11 @@ const HeaderComponent = ({ hasAnimated }) => (
 					henry gressmann
 				</Link>
 			</Title>
+			<Item className="home" hasAnimated={hasAnimated}>
+				<Link prefetch href="/" animateFontColor>
+					home
+				</Link>
+			</Item>
 			<Item hasAnimated={hasAnimated} delay=".3s">
 				<Link prefetch href="/work">
 					work

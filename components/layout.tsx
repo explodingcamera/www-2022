@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import { Background } from './../components/background';
 import Header from './../components/header';
 import { useGlobal } from './context';
+import Link from './link';
 
 const slideIn = keyframes`
 	0% {transform: translateY(1rem);opacity: 0;}
@@ -50,6 +51,13 @@ const FallbackBG = styled.div<{ backgroundColor?: string }>`
 	overflow: hidden;
 `;
 
+const Impressum = styled.div`
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 1rem;
+`;
+
 const Layout = ({
 	children,
 	disableBackground,
@@ -70,6 +78,9 @@ const Layout = ({
 			{!disableBackground && <Background />}
 			<LayoutWrapper {...props}>
 				<Header hasAnimated={hasAnimated} />
+				<Impressum>
+					<Link href="/impressum">imprint</Link>
+				</Impressum>
 				{children}
 			</LayoutWrapper>
 		</>
