@@ -62,6 +62,12 @@ const Home = styled.div`
 			height: 7vw;
 		}
 	}
+
+	@media only screen and (max-device-width: 500px) {
+		h2 {
+			font-size: 2.6rem;
+		}
+	}
 `;
 
 const HomeComponent = () => (

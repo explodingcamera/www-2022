@@ -1,6 +1,6 @@
 import React, { ReactElement, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
-import Background from './../components/background';
+import { Background } from './../components/background';
 import Header from './../components/header';
 import { useGlobal } from './context';
 
@@ -22,6 +22,10 @@ const LayoutWrapper = styled.div`
 	max-width: 1280px;
 	padding: 2rem;
 	margin: 0 auto;
+
+	@media only screen and (max-device-width: 480px) {
+		padding: 1rem;
+	}
 
 	& > :not(:first-child) {
 		animation-duration: 0.6s;

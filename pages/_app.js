@@ -31,6 +31,9 @@ if (process.browser) {
 }
 
 const GlobalCSS = createGlobalStyle`
+	html {
+		background: black;
+	}
 	${modernNormalize}
 
 	#nprogress .bar {
