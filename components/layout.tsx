@@ -79,7 +79,7 @@ const Layout = ({
 			<LayoutWrapper {...props}>
 				<Header hasAnimated={hasAnimated} />
 				<Impressum>
-					<Link href="/impressum">imprint</Link>
+					<Link href="/impressum">legal notice/privacy policy</Link>
 				</Impressum>
 				{children}
 			</LayoutWrapper>
