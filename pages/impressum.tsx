@@ -45,21 +45,15 @@ const ImpressumComponent = () => (
 				Information according to § 5 TMG & Represented by:
 				<br />
 				<br />
-				Henry Gressmann
+				Henry Gressmann Software Engineering
 				<br />
-				{/* uncomment after gewerbeanmeldung */}
-				Hof Wehneberg
-				<br />
-				36251 Bad Hersfeld
-				<br />
-				Germany
-				{/* c/o Factory Works GmbH
+				c/o Factory Works GmbH
 				<br />
 				Lohmühlenstraße 65
 				<br />
 				12435 Berlin
 				<br />
-				Germany */}
+				Germany
 				<br />
 				<br />
 				E-Mail:{' '}
