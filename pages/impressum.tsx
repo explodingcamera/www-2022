@@ -77,6 +77,11 @@ const ImpressumComponent = () => (
 				on github pages.
 				<br />
 				<br />
+				If you scheudle a meeting, your data will be processed by cal.com, their
+				privacy policy is available at{' '}
+				<Link href="https://cal.com/privacy">cal.com/privacy</Link>.
+				<br />
+				<br />
 				Responsible person in terms of data protection laws, in particular the
 				EU General Data Protection Regulation (DSGVO), is Henry Gressmann
 				(contact information are above)
