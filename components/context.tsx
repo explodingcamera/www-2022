@@ -1,4 +1,4 @@
-import React, { ReactChildren, useMemo } from 'react';
+import React, { ReactChildren, ReactElement, useMemo } from 'react';
 
 const defaultState = {
 	hasAnimated: false,
@@ -9,7 +9,7 @@ export const GlobalContext = React.createContext({
 	update: (_key: string, _value: boolean): void => undefined,
 });
 
-const GlobalProvider = ({ children }: { children: ReactChildren }) => {
+const GlobalProvider = ({ children }: { children: ReactElement }) => {
 	const [state, setState] = React.useState(defaultState);
 
 	const value = useMemo(

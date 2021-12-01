@@ -1,14 +1,11 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import App from 'next/app';
+import { AppProps } from 'next/app';
 import Head from 'next/head';
-
-import modernNormalize from 'modern-normalize';
 import GlobalProvider from './../components/context';
-
 import NextNprogress from 'nextjs-progressbar';
-
 import { initRiddle } from './../components/riddle';
+import { modernNormalize } from '../components/normalize';
 
 if (process.browser) {
 	console.clear();
@@ -62,21 +59,17 @@ const GlobalCSS = createGlobalStyle`
 	}
 `;
 
-export default class CustomApp extends App {
-	render() {
-		const { Component, pageProps } = this.props;
-
-		return (
-			<>
-				<Head>
-					<title>henrygressmann.de</title>
-				</Head>
-				<GlobalCSS />
-				<NextNprogress />
-				<GlobalProvider>
-					<Component {...pageProps} />
-				</GlobalProvider>
-			</>
-		);
-	}
+export default function customApp({ Component, pageProps }: AppProps) {
+	return (
+		<>
+			<Head>
+				<title>henrygressmann.de</title>
+			</Head>
+			<GlobalCSS />
+			<NextNprogress />
+			<GlobalProvider>
+				<Component {...pageProps} />
+			</GlobalProvider>
+		</>
+	);
 }

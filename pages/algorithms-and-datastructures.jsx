@@ -144,6 +144,8 @@ const Notebook = () => {
 
 	useEffect(() => {
 		new Runtime().module(notebook, name => {
+			if (!ref.current) return;
+
 			if (name === 'intro')
 				return Inspector.into(ref.current.querySelector('.intro'))();
 			if (name === 'abstract')
@@ -186,7 +188,7 @@ const Notebook = () => {
 				return Inspector.into(ref.current.querySelector('.dfs'))();
 			if (name === 'depthFirstSearchResult')
 				return Inspector.into(
-					ref.current.querySelector('.depthFirstSearchResult'),
+					(ref.current).querySelector('.depthFirstSearchResult'),
 				)();
 			if (name === 'dfsmd')
 				return Inspector.into(ref.current.querySelector('.dfsmd'))();
@@ -206,7 +208,7 @@ const Notebook = () => {
 				return Inspector.into(ref.current.querySelector('.radixmd'))();
 			if (name === 'viewof randomArray')
 				return Inspector.into(
-					ref.current.querySelector('.viewof-randomArray'),
+					(ref.current).querySelector('.viewof-randomArray'),
 				)();
 			if (name === 'radixView')
 				return Inspector.into(ref.current.querySelector('.radixView'))();

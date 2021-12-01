@@ -41,9 +41,9 @@ const Home = styled.div`
 	}
 `;
 
-var GITHUB_ISSUES_LINK =
+const GITHUB_ISSUES_LINK =
 	'https://api.github.com/repos/explodingcamera/www-linkshortener/issues/';
-var PATH_SEGMENTS_TO_SKIP = 0;
+const PATH_SEGMENTS_TO_SKIP = 0;
 
 function isUrl(url) {
 	// Regex from https://stackoverflow.com/a/3809435, with a modification to allow for TLDs of up to 24 characters
@@ -53,7 +53,7 @@ function isUrl(url) {
 }
 
 async function redirect() {
-	const location = window.location;
+	const { location } = window;
 	const issueNumber = location.pathname.split('/')[PATH_SEGMENTS_TO_SKIP + 1];
 
 	const response = await fetch(GITHUB_ISSUES_LINK + issueNumber);
@@ -64,8 +64,8 @@ async function redirect() {
 		);
 
 	const payload = await response.json();
-	const message = payload.message;
-	const title = payload.title;
+	const { message } = payload;
+	const { title } = payload;
 
 	if (message !== 'Not Found' && title && isUrl(title)) {
 		// Check if the title of issue is a legitimate URL
