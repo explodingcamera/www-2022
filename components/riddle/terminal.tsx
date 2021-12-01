@@ -3,10 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import { XTerm } from 'xterm-for-react';
 import { FitAddon } from 'xterm-addon-fit';
 
-import { Instance } from 'chalk';
-
-const options: any = { enabled: true, level: 2 };
-const chalk = new Instance(options);
+import chalk from 'chalk';
 
 import { flicker, blink } from './keyframes';
 
