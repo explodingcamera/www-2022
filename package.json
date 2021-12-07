@@ -7,13 +7,13 @@
 	"dependencies": {
 		"@babel/core": "^7.16.0",
 		"@ibm/plex": "6.0.0",
-		"@observablehq/runtime": "4.18.0",
-		"@types/styled-components": "^5.1.16",
+		"@observablehq/runtime": "4.18.1",
+		"@types/styled-components": "^5.1.17",
 		"babel-plugin-styled-components": "2.0.2",
 		"chalk": "^5.0.0",
 		"modern-normalize": "1.1.0",
 		"murmurhash": "^2.0.0",
-		"next": "12.0.4",
+		"next": "12.0.7",
 		"next-transpile-modules": "^9.0.0",
 		"nextjs-progressbar": "^0.0.13",
 		"parallax-js": "3.1.0",
@@ -34,16 +34,16 @@
 		"deploy": "npm run build && gh-pages -t -d out"
 	},
 	"devDependencies": {
-		"@explodingcamera/eslint-config": "18.0.0",
+		"@explodingcamera/eslint-config": "20.1.0",
 		"@types/node": "^16.9.2",
 		"@types/react": "^17.0.21",
 		"babel-plugin-module-resolver": "4.1.0",
 		"eslint": "7.32.0",
-		"eslint-config-next": "^11.1.2",
+		"eslint-config-next": "^12.0.7",
 		"eslint-plugin-prettier": "^4.0.0",
-		"eslint-plugin-react": "7.25.2",
+		"eslint-plugin-react": "7.27.1",
 		"gh-pages": "3.2.3",
-		"prettier": "2.4.1",
+		"prettier": "2.5.1",
 		"typescript": "^4.4.3"
 	},
 	"resolutions": {

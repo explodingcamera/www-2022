@@ -159,7 +159,7 @@ const projects: ProjectInterface[] = [
 		title: 'Snowstorm',
 		from: '2021-now',
 		img: 'snowstorm.png',
-		text: `Snowstorm is a react framework I am working on. The goal is to create a lean and fast alternative to next.js by utilising new technologies like es-modules and esbuild. Further, snowstorm is build from the ground up with features of react's upcoming version in mind and supports a wider ecosystem instead of building a walled garden.`,
+		text: `Snowstorm is a React framework I am working on. The goal is to create a lean and fast alternative to next.js by utilizing new technologies like es-modules and ESbuild. Further, Snowstorm is build from the ground up with features of react's upcoming version in mind. It supports a broader ecosystem instead of building a walled garden.`,
 		buttons: [
 			{
 				link: 'https://github.com/explodingcamera/snowstorm',
@@ -175,9 +175,9 @@ const projects: ProjectInterface[] = [
 		title: 'Etournity',
 		from: '2020',
 		img: 'etournity.png',
-		text: `Effortlessly organize - and smoothly participate in - online esports tournaments for small to medium-sized games.
+		text: `Etournity wants gamers to organize and participate in online esports tournaments effortlessly.
 
-		I've joined the etournity team as a developer in the summer of 2020 and worked on transitioning the project to next.js and securing the GraphQL API.`,
+I've joined the Etournity team as a developer in the summer of 2020. My focus was on transitioning the project to next.js and securing the GraphQL API.`,
 		buttons: [
 			{
 				link: 'https://etournity.com',
@@ -189,7 +189,7 @@ const projects: ProjectInterface[] = [
 		title: 'FantasyMarket',
 		from: '2020',
 		img: 'fantasymarket.png',
-		text: `FantasyMarket is a working stock market simulation where the user can invest in-game currency in a simulated market completely separated from the real world.
+		text: `FantasyMarket is a working stock market simulation where the user can invest in-game currency in a simulated market wholly separated from the real world.
 
 I created the software architecture and designed and implemented the react frontend.`,
 		buttons: [
@@ -203,8 +203,7 @@ I created the software architecture and designed and implemented the react front
 		title: 'TwoWeeksOfFood',
 		from: '2020',
 		img: 'twof.jpeg',
-		text: `Created at the #wirvsvirus hackathon, TwoWeeksOfFood aims to help with some of the supply issues created by the COVID-19 Crisis.
-This is a small project which I've created together with Arthur Hoge on a single weekend.`,
+		text: `Created at the #wirvsvirus hackathon, TwoWeeksOfFood aims to help with some of the supply issues created by the COVID-19 Crisis. It is a small project I've created together with Arthur Hoge on a single weekend.`,
 		buttons: [
 			{
 				link: 'https://twoweeksoffood.netlify.com',
@@ -224,7 +223,7 @@ This is a small project which I've created together with Arthur Hoge on a single
 		title: 'recordskip',
 		from: '2019',
 		img: 'recordskip.jpeg',
-		text: `Recordskip was my first semester-project at Code University. It's an app for record music lovers that tracks your collection and gives you music recommendations for expanding your record collation.
+		text: `Recordskip was my first Semester Project at Code University. It's an app for record music lovers that tracks your collection and gives you music recommendations for expanding your record collation.
 
 I designed the App in Figma and implemented it with React Native.`,
 		buttons: [
@@ -238,9 +237,9 @@ I designed the App in Figma and implemented it with React Native.`,
 		title: 'canX',
 		from: '2018 - 2020',
 		img: 'canx-min.png',
-		text: `canX was my first startup. We created a multimedia streaming platform which wasn't supported by ads. Creators could earn money through donations which were made possible by our microtransaction platform.
+		text: `canX was my first startup. We created a multimedia streaming platform that isn't supported by ads. Creators could earn money through donations made possible by our microtransaction platform.
 
-I created the microservice architecture, implemented and designed the frontend and created the cdn and media processing pipeline`,
+I started the microservice architecture, implemented and designed the frontend, and created the CDN and media processing pipeline`,
 		buttons: [
 			{
 				link: 'https://canx.org',
@@ -252,7 +251,7 @@ I created the microservice architecture, implemented and designed the frontend a
 		title: 'livecount.pro',
 		from: '2017 - 2019',
 		img: 'livecount-min.png',
-		text: `LiveCount is/was a realtime follower/subscriber counter with support for multiple social networks and multiple channels at the same time. I created this just as a quick project over the course of one weekend.`,
+		text: `LiveCount Pro was a real-time follower/subscriber counter with support for multiple social networks and multiple channels simultaneously. I created the first version over the course of one weekend.`,
 		buttons: [
 			{
 				link: 'https://livecount.pro',
@@ -268,7 +267,7 @@ I created the microservice architecture, implemented and designed the frontend a
 		title: 'musiqpad',
 		from: '2016',
 		img: 'musiqpad-min.png',
-		text: `Musiqpad was/is a open source social-music software platform for users to host their own rooms and enjoy music together with others.
+		text: `Musiqpad was an open-source social-music software platform for users to host their own chatrooms and enjoy music together with others.
 
 I worked on modernizing the codebase and finding and fixing security vulnerabilities.`,
 		buttons: [
@@ -294,7 +293,7 @@ I worked on modernizing the codebase and finding and fixing security vulnerabili
 		title: 'multitube.cf',
 		from: '2014',
 		img: 'multitube-min.png',
-		text: `My first Node.Js Project, Multitube was a website for viewing two youtube videos side-by-side. I was inspired by youtubemultiplier but their implementation was lacking features and ux was horrible so I build my own site.`,
+		text: `Multitube was one of my first larger projects. I created a website for viewing two YouTube videos side-by-side to enable interesting ways for collaborations with other YouTubers. Multitube was inspired by youtubemultiplier.com, but - since their implementation lacked features and UX was horrible - I built my own site.`,
 		buttons: [
 			{
 				link: 'https://github.com/explodingcamera/multitube',

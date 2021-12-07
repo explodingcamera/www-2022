@@ -41,8 +41,7 @@ const MeComponent = () => (
 		<Me>
 			<h1>about me</h1>
 			<p>
-				I've been working on Open Source projects since about 2014 and mainly
-				work with{' '}
+				{`I've been working on open-source projects since about 2014 and mainly work with `}
 				<Link href="https://github.com/explodingcamera/snowstorm">
 					Typescript
 				</Link>
@@ -54,17 +53,19 @@ const MeComponent = () => (
 				<Link href="https://github.com/explodingcamera/snowstorm">
 					React, React Native
 				</Link>
-				, <Link href="https://kubernetes.io">Docker/Kubernetes</Link> and Rust
-				but I'm open for any challange.
+				, <Link href="https://kubernetes.io">Docker/Kubernetes</Link>, and Rust,
+				but I'm open to any challenge.
 				<br />
-				My expertise also include Security, Cryptography and{' '}
-				<Link href="https://pog.network">Crypto Currencies/Blockchain</Link>
+				My expertise also includes cybersecurity, cryptography, and{' '}
+				<Link href="https://pog.network">
+					cryptocurrencies/distributed ledgers
+				</Link>
+				.
 				<br />
 				<br />
-				I offer development support with pretty much any stack, including basic
-				ui designs and consulting for software architectures,
-				react/react-native, open source software and crypto currency
-				development.
+				I offer full-stack development support, including UI designs and
+				consulting for software architectures, react/react-native, open-source
+				software, and cryptocurrency development.
 				<br />
 				<br />
 				If you're into that sort of thing, you can also check out my{' '}

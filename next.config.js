@@ -1,7 +1,4 @@
-const withTM = require('next-transpile-modules')([
-	'1dca47f33f5a5cce',
-	'xterm-for-react',
-]); // Pass the modules you would like to see transpiled
+const withTM = require('next-transpile-modules')(['xterm-for-react']); // Pass the modules you would like to see transpiled
 
 const config = {
 	webpack: config => {
