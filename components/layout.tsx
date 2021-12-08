@@ -61,11 +61,13 @@ const Impressum = styled.div`
 const Layout = ({
 	children,
 	disableBackground,
+	disableHeader,
 	backgroundColor,
 	...props
 }: {
 	children: ReactElement;
 	disableBackground?: boolean;
+	disableHeader?: boolean;
 	backgroundColor?: string;
 }) => {
 	const { hasAnimated, update } = useGlobal();
@@ -77,7 +79,7 @@ const Layout = ({
 			<FallbackBG backgroundColor={backgroundColor} />
 			{!disableBackground && <Background />}
 			<LayoutWrapper {...props}>
-				<Header hasAnimated={hasAnimated} />
+				{!disableHeader && <Header hasAnimated={hasAnimated} />}
 				<Impressum>
 					<Link href="/impressum">legal notice/privacy policy</Link>
 				</Impressum>
