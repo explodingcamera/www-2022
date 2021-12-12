@@ -15,12 +15,16 @@ const Wrapper = styled.div`
 	details {
 		margin: 1rem 0;
 	}
-	details {
+	summary {
 		cursor: pointer;
+	}
+	li {
+		padding: 0.5rem 0;
+		line-height: 1.5;
 	}
 `;
 
-const Whitelist = () => (
+const Guide = () => (
 	<Layout
 		disableHeader
 		backgroundColor="linear-gradient(45deg, #07070b, #1155ff63)"
@@ -30,7 +34,7 @@ const Whitelist = () => (
 			<h1 id="codecraft-guide">CodeCraft Mod Guide</h1>
 			<p>
 				Hi! In this guide I&#39;ll explain how you can install various mods to
-				enhance your experience on the codecraft server. Please note that
+				enhance your experience on the CodeCraft server. Please note that
 				installing mods is optional but recommended. Especially
 				simple-voice-chat, which enables proximity based voice chat on our
 				server.
@@ -42,9 +46,9 @@ const Whitelist = () => (
 			</details>
 			<details>
 				<summary>Minecraft Launcher</summary>
-				<ul>
+				<ol>
 					<li>
-						Download and install the Minecarft Launcher on the Microsoft store
+						Download and install the Minecraft Launcher on the Microsoft store
 					</li>
 					<li>
 						Download the Fabric installer from{' '}
@@ -53,7 +57,7 @@ const Whitelist = () => (
 					<li>Ensure the Minecraft Launcher is not running</li>
 					<li>
 						Open the installer. In the window you need to select the latest
-						mapping and loader version for minecarft 1.18 and the install
+						mapping and loader version for minecraft 1.18.1 and the install
 						location (the default should be fine on most platforms).
 					</li>
 					<li>
@@ -69,7 +73,7 @@ const Whitelist = () => (
 						<a href="https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat/files/3551416">
 							here
 						</a>{' '}
-						(choose the latest [FABRIC] 1.18 version)
+						(choose the latest [FABRIC] 1.18.1 version)
 					</li>
 					<li>
 						Navigate to <code>%AppData%/.minecraft</code>
@@ -78,7 +82,7 @@ const Whitelist = () => (
 						Create a new folder called <code>mods</code> and move the{' '}
 						<code>.jar</code> file you&#39;ve downloaded here
 					</li>
-				</ul>
+				</ol>
 				<p>
 					If you have any issues, check out these guides:{' '}
 					<a href="https://shockbyte.com/billing/knowledgebase/212/How-to-install-FabricMC-on-your-PC.html">
@@ -97,9 +101,9 @@ const MultiMC = () => (
 	<ul>
 		<li>
 			<h3 id="installing-multimc">Installing MultiMC</h3>
-			<ul>
+			<ol>
 				<li>
-					Downlad and install Java 17 (I recommend you use{' '}
+					Download and install Java 17 (I recommend you use{' '}
 					<a href="https://adoptium.net/">this</a>)
 				</li>
 				<li>
@@ -107,8 +111,9 @@ const MultiMC = () => (
 					<ul>
 						<li>Arch-Based: Available on the AUR</li>
 						<li>
-							Debian/Ubuntu: Download The latest version{' '}
-							<a href="https://multimc.org/#Download">here</a> and install it:\
+							Debian/Ubuntu: Download the latest version{' '}
+							<a href="https://multimc.org/#Download">here</a> and install it:
+							<br />
 							<code>$ sudo apt install ~/Downloads/multimc_1.6-1.deb</code>
 						</li>
 						<li>
@@ -131,71 +136,42 @@ const MultiMC = () => (
 				</li>
 				<li>Start MultiMC</li>
 				<li>
-					If java 17 isn&#39;t detected, choose the correct folder, e.g.{' '}
+					If your java 17 installation isn't detected automatically, choose the
+					correct folder, in my case this was{' '}
 					<code>
 						C:/Program Files/Eclipse
 						Adoptium/jdk-17.0.1.12-hotspot/bin/javaw.exe
 					</code>{' '}
 					(If you used the link above to install java)
 				</li>
-				<li>Choose at least 4000mb of RAM for the minimum AND maximum</li>
-			</ul>
+			</ol>
 		</li>
 		<li>
 			<h3 id="installing-fabric-mods">Installing Fabric Mods</h3>
 			<p>
-				I reccomend you use fabric for installing mods, however it is also
-				possible to install the voice chat mod using forge. Fabric is also
-				compatible with optifine using{' '}
-				<a href="https://www.curseforge.com/minecraft/mc-mods/optifabric">
-					optifabric
-				</a>
-				, however I reccomend to use the Sodium and Lithium mods instead. These
-				are available{' '}
-				<a href="https://modrinth.com/mods?q=&amp;f=categories%3Autility&amp;v=1.18">
-					here
-				</a>
-				.<br />
+				I recommend you use fabric for installing mods, however it is also
+				possible to install the voice chat mod using forge.
 				<br />
-				So, let&#39;s install some mods!
+				For easier installation, I provide a prepacked zip with most necessary
+				mods already installed, including voice-chat and shader support.
 			</p>
-			<ul>
-				<li>Create a new game instance.</li>
+			<ol>
+				<li>Open MultiMC and press "Add Instance"</li>
+				<li>Select "Import from zip"</li>
 				<li>
-					Select “Edit Instance” in the instance context menu (right click on
-					your instance) or on the right side of the window.
-				</li>
-				<li>
-					On the Version tab of the configuration window, click “Install Fabric”
-					to bring up a dialog with all the available Fabric Loader versions.
-					Choose the latest available Loader version
-				</li>
-				<li>
-					Press OK. Your Fabric instance is ready to go - now let&#39;s add mods
-					to it!
-				</li>
-				<li>
-					Download the fabric API mod (this is required for most other mods){' '}
-					<a href="https://modrinth.com/mod/fabric-api/versions">here</a>
-				</li>
-				<li>
-					Download <code>simple-voice-chat</code>{' '}
-					<a href="https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat/files/3551416">
-						here
-					</a>{' '}
-					(choose the latest [FABRIC] 1.18 version)
-				</li>
-				<li>
-					Head over to the &quot;Loader Mods&quot; tab in the instance settings
-					and add the <code>.jar</code> Files of all mods which you want to
-					install
+					Copy the following link and paste it in your MultiMC window:
+					<input
+						readOnly
+						onClick={e => (e.target as any).select()}
+						value="https://github.com/explodingcamera/files/releases/download/v2/1.18.1-codecraft.zip"
+					/>
 				</li>
 				<li>
 					Press Launch and login to your minecraft account to launch the game!
 				</li>
-			</ul>
+			</ol>
 		</li>
 	</ul>
 );
 
-export default Whitelist;
+export default Guide;
