@@ -70,7 +70,7 @@ const Guide = () => (
 					</li>
 					<li>
 						Download <code>simple-voice-chat</code>{' '}
-						<a href="https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat/files/3551416">
+						<a href="https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat/files/3557160">
 							here
 						</a>{' '}
 						(choose the latest [FABRIC] 1.18.1 version)
