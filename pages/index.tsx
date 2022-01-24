@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Link from './../components/link';
 import Layout from '../components/layout';
+import Head from 'next/head';
 
 const gradient = keyframes`
 	0%{background-position:0% 50%}
@@ -28,7 +29,7 @@ const Home = styled.div`
 		font-size: 3rem;
 		margin: 1rem 0;
 		font-weight: 400;
-		max-width: 50rem;
+		max-width: 48rem;
 
 		span,
 		a {
@@ -72,19 +73,25 @@ const Home = styled.div`
 
 const HomeComponent = () => (
 	<Layout>
-		<Home>
-			<h2>
-				<span>Hi!</span> I'm an open source and freelance software engineer
-				<br />
-				<br />
-				<Link href="/work">work</Link>
-				<br />
-				<Link href="mailto:mail@henrygressmann.de">contact</Link> <br />
-				<Link href="/me">about me</Link> <br />
-				<Link href="/meet">schedule a meeting</Link> <br />
-			</h2>
-			<h2 />
-		</Home>
+		<>
+			<Head>
+				<meta name="keywords" content="freelancer, berlin, react, rust, open-source, henry gressmann, typescript, go, crypto" />
+				<meta name="description" content="Hi! I'm a freelance software engineer based in Berlin specializing in react, open-source software, and cryptocurrencies." />
+			</Head>
+			<Home>
+				<h2>
+					<span>Hi!</span> I'm an open source and freelance software engineer based in Berlin
+					<br />
+					<br />
+					<Link href="/work">work</Link>
+					<br />
+					<Link href="mailto:mail@henrygressmann.de">contact</Link> <br />
+					<Link href="/me">about me</Link> <br />
+					<Link href="/meet">schedule a meeting</Link> <br />
+				</h2>
+				<h2 />
+			</Home>
+		</>
 	</Layout>
 );
 
