@@ -10,6 +10,7 @@ const ProjectWrapper = styled.div`
 	flex-direction: column;
 	border-radius: 12px;
 	background: #4f4f4f69;
+	backdrop-filter: blur(10px);
 	background: linear-gradient(
 		135deg,
 		rgb(0 0 0 / 41%) 10%,
@@ -139,9 +140,31 @@ const Project = ({ title, from, img, text, buttons }: ProjectInterface) => (
 
 const projects: ProjectInterface[] = [
 	{
-		title: 'POG.network',
+		title: 'JustMeet',
+		from: '2022-now',
+		img: 'justmeet.gif',
+		text: `JustMeet is a fresh new take on making friends bringing video game Matchmaking to the real world. Currently in development.`,
+	},
+	{
+		title: 'pog.network wallet',
 		from: '2021-now',
-		img: 'pog.png',
+		img: 'pogwallet.png',
+		text: `Official wallet application for connecting to the pog.network cryptocurrency`,
+		buttons: [
+			{
+				link: 'https://github.com/pognetwork/catjam',
+				name: 'code',
+			},
+			{
+				link: 'https://wallet.pog.network',
+				name: 'wallet.pog.network',
+			},
+		],
+	},
+	{
+		title: 'pog.network',
+		from: '2021-now',
+		img: 'pognetwork.gif',
 		text: `With POG.network we're striving to build a green and fast cryptocurrency. I'm focusing on designing the protocol and overall architecture of the project`,
 		buttons: [
 			{
@@ -154,7 +177,6 @@ const projects: ProjectInterface[] = [
 			},
 		],
 	},
-
 	{
 		title: 'Snowstorm',
 		from: '2021-now',
@@ -199,6 +221,13 @@ I created the software architecture and designed and implemented the react front
 			},
 		],
 	},
+	{
+		title: 'clickland.app',
+		from: '2020',
+		img: 'clickland.gif',
+		text: `Clickland is a game platform I was working on at the start of 2020, based around a central clicker-based gameworld connected to many mini-games similar to neopets.`,
+	},
+
 	{
 		title: 'TwoWeeksOfFood',
 		from: '2020',
