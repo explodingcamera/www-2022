@@ -10,7 +10,7 @@ import { modernNormalize } from '../components/normalize';
 if (process.browser) {
 	console.clear();
 	console.log(
-		`\n%chenrygressmann.com\n%cc3RhcnRUaGVBZHZlbnR1cmUoKQ==`,
+		`\n%chenrygressmann.de\n%cc3RhcnRUaGVBZHZlbnR1cmUoKQ==`,
 		`
 		background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
 		background-size: cover;
