@@ -75,12 +75,19 @@ const HomeComponent = () => (
 	<Layout>
 		<>
 			<Head>
-				<meta name="keywords" content="freelancer, berlin, react, rust, open-source, henry gressmann, typescript, go, crypto" />
-				<meta name="description" content="Hi! I'm a freelance software engineer based in Berlin specializing in react, open-source software, and cryptocurrencies." />
+				<meta
+					name="keywords"
+					content="freelancer, berlin, react, rust, open-source, henry gressmann, typescript, go, crypto"
+				/>
+				<meta
+					name="description"
+					content="Hi! I'm a freelance software engineer based in Berlin specializing in react, open-source software, and cryptocurrencies."
+				/>
 			</Head>
 			<Home>
 				<h2>
-					<span>Hi!</span> I'm an open source and freelance software engineer based in Berlin
+					<span>Hi!</span> I'm an open source and freelance software engineer
+					based in Berlin
 					<br />
 					<br />
 					<Link href="/work">work</Link>
