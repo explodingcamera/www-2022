@@ -1,6 +1,6 @@
 # [henrygressmann.de](https://henrygressmann.de)
 
-This repository contains my website/portfolio. Feel free to use anything contained here as a starting point for your projects.
+This repository contains my website/portfolio. Feel free to use anything contained here as a starting point for your projects as long as you honor the MIT license.
 
 # Requirements
 
