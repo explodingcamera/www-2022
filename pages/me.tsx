@@ -69,7 +69,7 @@ const MeComponent = () => (
 				<br />
 				<br />
 				If you're into that sort of thing, you can also check out my{' '}
-				<Link href="/static/henry-gressmann-cv.pdf">CV</Link>,{' '}
+				<Link target={"_blank"} href="/static/henry-gressmann-cv.pdf">CV</Link>,{' '}
 				<Link href="mailto:mail@henrygressmann.de">contact me</Link> or{' '}
 				<Link href="/meet">schedule a meeting</Link> right away.
 				<br />
