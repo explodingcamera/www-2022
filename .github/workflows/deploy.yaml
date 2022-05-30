@@ -1,0 +1,32 @@
+name: Eleventy Build
+on:
+  push:
+    paths-ignore:
+      - README.md
+
+jobs:
+  build-deploy:
+    name: Eleventy Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - uses: pnpm/action-setup@v2.0.1
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: true
+      - name: Build
+        run: pnpm build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./out
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          enable_jekyll: false
+          cname: henrygressmann.de

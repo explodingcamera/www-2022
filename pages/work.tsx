@@ -87,9 +87,8 @@ const ProjectButton = styled.button`
 `;
 
 const ImageWrapper = styled.div`
-	min-height: 12rem;
 	position: relative;
-	height: 12rem;
+	aspect-ratio: 16/9;
 	margin: 1rem 0;
 	box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.6);
 	border-radius: 8px;
