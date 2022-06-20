@@ -7,7 +7,7 @@ export default class CustomDoc extends Document {
 			<Html>
 				<Head>
 					<link
-						href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+						href="https://fonts.bunny.net/css?family=inter:800,500,300"
 						rel="stylesheet"
 					/>
 					<meta name="referrer" content="no-referrer" />

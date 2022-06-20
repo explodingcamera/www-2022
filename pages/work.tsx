@@ -43,8 +43,7 @@ const ProjectWrapper = styled.div`
 	}
 
 	div:last-of-type {
-		padding-top: 1rem;
-		margin-top: auto;
+		margin-top: 1rem;
 		display: flex;
 		a {
 			text-decoration: none;
@@ -97,8 +96,10 @@ const ImageWrapper = styled.div`
 	img {
 		height: inherit;
 		width: 100%;
+		width:100%;
+		height:100%;
 		object-fit: cover;
-		object-position: center top;
+		overflow: hidden;
 	}
 `;
 
@@ -154,16 +155,12 @@ const projects: ProjectInterface[] = [
 				link: 'https://github.com/pognetwork/catjam',
 				name: 'code',
 			},
-			{
-				link: 'https://wallet.pog.network',
-				name: 'wallet.pog.network',
-			},
 		],
 	},
 	{
 		title: 'pog.network',
 		from: '2021-now',
-		img: 'pognetwork.gif',
+		img: 'pog.network.webp',
 		text: `With POG.network we're striving to build a green and fast cryptocurrency. I'm focusing on designing the protocol and overall architecture of the project`,
 		buttons: [
 			{

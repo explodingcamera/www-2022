@@ -37,7 +37,7 @@ const Header = styled.nav`
 	}
 `;
 
-const Title = styled.li`
+const Title = styled.li<{hasAnimated: boolean}>`
 	margin-right: auto;
 	font-size: 1rem;
 
@@ -57,7 +57,7 @@ const Title = styled.li`
 		`}
 `;
 
-const Item = styled.li`
+const Item = styled.li<{hasAnimated: boolean, delay?: string}>`
 	margin-right: 0.5rem;
 	display: flex;
 	transform: translateY(0);
@@ -70,7 +70,7 @@ const Item = styled.li`
 			animation-fill-mode: forwards;
 			animation-name: ${slideIn};
 			transform: translateY(1.6rem);
-			animation-delay: ${props => props.delay};
+			animation-delay: ${props.delay};
 		`}
 
 	&:last-of-type {
@@ -82,22 +82,22 @@ const HeaderComponent = ({ hasAnimated }) => (
 	<Header>
 		<ol>
 			<Title hasAnimated={hasAnimated}>
-				<Link prefetch href="/" animateFontColor>
+				<Link href="/" animateFontColor>
 					henry gressmann
 				</Link>
 			</Title>
 			<Item className="home" hasAnimated={hasAnimated}>
-				<Link prefetch href="/" animateFontColor>
+				<Link href="/" animateFontColor>
 					home
 				</Link>
 			</Item>
 			<Item hasAnimated={hasAnimated} delay=".3s">
-				<Link prefetch href="/work">
+				<Link href="/work">
 					work
 				</Link>
 			</Item>
 			<Item hasAnimated={hasAnimated} delay=".4s">
-				<Link prefetch href="/me">
+				<Link href="/me">
 					about me
 				</Link>
 			</Item>
