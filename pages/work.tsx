@@ -9,13 +9,20 @@ const ProjectWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	border-radius: 12px;
-	background: #4f4f4f69;
+	background: #0f1011e0;
+
+	transition: all 0.2s linear;
+
+	&:hover {
+		background: #1b1b1ddf;
+	}
+
 	backdrop-filter: blur(10px);
-	background: linear-gradient(
+	/* background: linear-gradient(
 		135deg,
 		rgb(0 0 0 / 41%) 10%,
 		rgb(72 72 72 / 40%) 100%
-	);
+	); */
 	margin: 0.5rem;
 	padding: 1rem;
 	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.35);
@@ -72,11 +79,12 @@ const ProjectButton = styled.button`
 	border-style: none;
 	border-color: initial;
 	border-image: initial;
-	background: linear-gradient(
+	background-color: #46424266;
+	/* background: linear-gradient(
 		135deg,
 		rgba(97, 97, 97, 0.63) 10%,
 		rgba(72, 72, 72, 0.15) 100%
-	);
+	); */
 	transition: all 0.2s ease-in-out 0s;
 	&:hover {
 		transform: translateY(-1px);
@@ -88,6 +96,7 @@ const ProjectButton = styled.button`
 const ImageWrapper = styled.div`
 	position: relative;
 	aspect-ratio: 16/9;
+	background-color: black;
 	margin: 1rem 0;
 	box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.6);
 	border-radius: 8px;
@@ -96,8 +105,8 @@ const ImageWrapper = styled.div`
 	img {
 		height: inherit;
 		width: 100%;
-		width:100%;
-		height:100%;
+		width: 100%;
+		height: 100%;
 		object-fit: cover;
 		overflow: hidden;
 	}

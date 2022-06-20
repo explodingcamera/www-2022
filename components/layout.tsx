@@ -47,9 +47,9 @@ const FallbackBG = styled.div<{ backgroundColor?: string }>`
 	right: 0;
 	bottom: 0;
 	background: ${props => props.backgroundColor || 'black'};
-	background-image: url("/static/bg.webp");
-	background-size: contain;
-	background-position: center;
+	/* background-image: url("/static/bg.webp"); */
+	/* background-size: contain; */
+	/* background-position: center; */
 	z-index: -1;
 	overflow: hidden;
 `;

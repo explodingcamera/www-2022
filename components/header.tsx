@@ -37,7 +37,7 @@ const Header = styled.nav`
 	}
 `;
 
-const Title = styled.li<{hasAnimated: boolean}>`
+const Title = styled.li<{ hasAnimated: boolean }>`
 	margin-right: auto;
 	font-size: 1rem;
 
@@ -57,7 +57,7 @@ const Title = styled.li<{hasAnimated: boolean}>`
 		`}
 `;
 
-const Item = styled.li<{hasAnimated: boolean, delay?: string}>`
+const Item = styled.li<{ hasAnimated: boolean; delay?: string }>`
 	margin-right: 0.5rem;
 	display: flex;
 	transform: translateY(0);
@@ -92,14 +92,10 @@ const HeaderComponent = ({ hasAnimated }) => (
 				</Link>
 			</Item>
 			<Item hasAnimated={hasAnimated} delay=".3s">
-				<Link href="/work">
-					work
-				</Link>
+				<Link href="/work">work</Link>
 			</Item>
 			<Item hasAnimated={hasAnimated} delay=".4s">
-				<Link href="/me">
-					about me
-				</Link>
+				<Link href="/me">about me</Link>
 			</Item>
 			&nbsp;
 			<Item hasAnimated={hasAnimated} delay=".5s">

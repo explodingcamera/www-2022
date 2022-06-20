@@ -64,7 +64,13 @@ const Link = styled.a<{ active?: boolean; animateFontColor?: boolean }>`
 	}
 `;
 
-const Item = ({ children, router, href, animateFontColor, target }: ItemProps) => {
+const Item = ({
+	children,
+	router,
+	href,
+	animateFontColor,
+	target,
+}: ItemProps) => {
 	const handleClick = e => {
 		e.preventDefault();
 		void router.push(href);
@@ -74,7 +80,7 @@ const Item = ({ children, router, href, animateFontColor, target }: ItemProps) =
 		<Link
 			href={href}
 			target={target}
-			onClick={(target||href.includes(':') )? undefined : handleClick}
+			onClick={target || href.includes(':') ? undefined : handleClick}
 			active={router.pathname === href}
 			animateFontColor={animateFontColor}
 		>

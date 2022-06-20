@@ -42,22 +42,22 @@ const MeComponent = () => (
 			<h1>about me</h1>
 			<p>
 				I've been working on open-source projects since about 2014 and mainly
-				work with Typescript, Rust, React, React Native, Docker/Kubernetes and
+				work with Typescript, Rust, React/React Native, Docker/Kubernetes and
 				Go. My expertise also includes cybersecurity, cryptography,{' '}
 				<Link href="https://pog.network">cryptocurrencies</Link> and CI/CD
-				Workflows.
+				workflows.
 				<br />
 				<br />
 				I offer end-to-end full-stack development, including UI designs,
-				consulting for software architectures, upgrading legacy codebases,
-				react/react-native, open-source software, and cryptocurrency
-				development.
+				consulting for software architectures, upgrading legacy codebases, and
+				open-source software development.
 				<br />
 				<br />
 				If you're into that sort of thing, you can also check out my{' '}
 				<Link target="_blank" href="/static/henry-gressmann-cv.pdf">
 					CV
-				</Link>, <Link href="mailto:mail@henrygressmann.de">contact me</Link> or{' '}
+				</Link>
+				, <Link href="mailto:mail@henrygressmann.de">contact me</Link> or{' '}
 				<Link href="/meet">schedule a meeting</Link> right away.
 				<br />
 				<br />

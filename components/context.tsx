@@ -1,4 +1,4 @@
-import React, { ReactChildren, ReactElement, useMemo } from 'react';
+import React, { ReactElement, useMemo } from 'react';
 
 const defaultState = {
 	hasAnimated: false,

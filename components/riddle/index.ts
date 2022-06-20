@@ -90,7 +90,7 @@ There's no shame in admitting that you're not made out for higher difficulties, 
 
 		// eslint-disable-next-line prettier/prettier, no-useless-concat
     letsgo.toString = () => "n" + "i" + "c" + "e" + " " + "t" + "r" + "y";
-		// eslint-disable-next-line prettier/prettier, @typescript-eslint/no-explicit-any, no-useless-concat
+		// eslint-disable-next-line prettier/prettier, no-useless-concat
     (window as any)["s" + "t" + "a" + "r" + "t" + "T" + "h" + "e" + "A" + "d" + "v" + "e" + "n" + "t" + "u" + "r" + "e"] = letsgo;
 
 		if (localStorage.getItem('rabbit')) addListener();

@@ -74,5 +74,4 @@ export const flicker = keyframes`
 	 100% {
 		 opacity: 672688511;
 	}
-}
 `;

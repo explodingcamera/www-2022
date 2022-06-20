@@ -12,6 +12,7 @@ const Whitelist = () => (
 			width="100%"
 			height="10000rem"
 			frameBorder="0"
+			sandbox=""
 		>
 			Wird geladen…
 		</iframe>
