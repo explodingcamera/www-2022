@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { XTerm } from 'xterm-for-react';
 import { FitAddon } from 'xterm-addon-fit';
 

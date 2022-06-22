@@ -1,6 +1,6 @@
 import Link from '../../components/link';
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import Layout from '../../components/layout';
 
 const Wrapper = styled.div`
@@ -57,7 +57,6 @@ const CodeCraft = () => (
 	<Layout
 		disableHeader
 		backgroundColor="linear-gradient(45deg, #07070b, #1155ff63)"
-		disableBackground
 	>
 		<Wrapper>
 			<h1 id="codecraft-guide">CodeCraft 1.18</h1>
@@ -91,5 +90,7 @@ const CodeCraft = () => (
 		</Wrapper>
 	</Layout>
 );
+
+CodeCraft.disableBackground = true;
 
 export default CodeCraft;

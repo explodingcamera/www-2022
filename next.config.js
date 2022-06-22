@@ -7,10 +7,6 @@ const config = {
 		ignoreDuringBuilds: true,
 	},
 	reactStrictMode: true,
-	compiler: {
-		styledComponents: true,
-		removeConsole: true,
-	},
 };
 
 module.exports = withTM(config);

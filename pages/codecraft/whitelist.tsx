@@ -5,7 +5,6 @@ const Whitelist = () => (
 	<Layout
 		disableHeader
 		backgroundColor="linear-gradient(45deg, #07070b, #1155ff63)"
-		disableBackground
 	>
 		<iframe
 			src="https://docs.google.com/forms/d/e/1FAIpQLSfG78epWmNmg89DmBWg_ysb1etW2DCPdu2Fw1C_-1Fa15Klzw/viewform?embedded=true"
@@ -18,5 +17,7 @@ const Whitelist = () => (
 		</iframe>
 	</Layout>
 );
+
+Whitelist.disableBackground = true;
 
 export default Whitelist;

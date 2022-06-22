@@ -1,9 +1,11 @@
 import React from 'react';
-import styled, { css, keyframes } from 'styled-components';
+import styled from '@emotion/styled';
 import Link from './link';
 
 import { FiTwitter, FiGithub, FiLinkedin } from 'react-icons/fi';
 import { FaKey } from 'react-icons/fa';
+
+import { css, keyframes } from '@emotion/react';
 
 const slideIn = keyframes`
 	0% {transform: translateY(1.6rem);}
@@ -45,6 +47,7 @@ const Title = styled.li<{ hasAnimated: boolean }>`
 	@media only screen and (max-device-width: 400px) {
 		display: none;
 	}
+
 	${props =>
 		!props.hasAnimated &&
 		css`

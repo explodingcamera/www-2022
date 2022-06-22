@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react';
-import styled, { css, keyframes } from 'styled-components';
+
+import styled from '@emotion/styled';
+import { css, keyframes } from '@emotion/react';
 
 import { NextRouter, withRouter } from 'next/router';
 
@@ -14,7 +16,7 @@ const activeCSS = css`
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	bottom: -5px;
+	bottom: 0px;
 	left: 0;
 	background: linear-gradient(270deg, #ff0000, #008cff, #50ff00);
 	background-size: 600% 600%;
@@ -34,9 +36,6 @@ const fontColorCSS = css`
 `;
 
 const Link = styled.a<{ active?: boolean; animateFontColor?: boolean }>`
-	animation-delay: 0.5s;
-	animation-duration: 0.6s;
-	animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
 	transition: color 0.6s ease-in-out;
 	position: relative;
 	transition: color 0.6s ease-in-out;
@@ -46,8 +45,13 @@ const Link = styled.a<{ active?: boolean; animateFontColor?: boolean }>`
 
 	&:before {
 		${props => !props.animateFontColor && activeCSS}
-		${props => props.active && 'transform: scaleX(1);'}
+		${props =>
+			props.active &&
+			css`
+				transform: scaleX(1);
+			`}
 	}
+
 	&:hover {
 		color: white;
 		${props => props.animateFontColor && fontColorCSS}

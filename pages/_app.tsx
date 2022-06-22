@@ -6,6 +6,7 @@ import NextNprogress from 'nextjs-progressbar';
 import { initRiddle } from './../components/riddle';
 
 import '../styles/global.css';
+import { Background } from '../components/background';
 
 if (process.browser) {
 	console.clear();
@@ -33,6 +34,7 @@ export default function customApp({ Component, pageProps }: AppProps) {
 			<Head>
 				<title>henrygressmann.de</title>
 			</Head>
+			{!pageProps.disableBackground && <Background />}
 			<NextNprogress />
 			<GlobalProvider>
 				<Component {...pageProps} />

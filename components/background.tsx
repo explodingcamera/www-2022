@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Bloom, EffectComposer } from '@react-three/postprocessing';
-import { OrbitControls, PointMaterial, Points } from '@react-three/drei';
+import { PointMaterial, Points } from '@react-three/drei';
 
 import * as random from 'maath/random/dist/maath-random.cjs';
 import { KernelSize } from 'postprocessing';
@@ -15,6 +15,7 @@ const Wrapper = styled.div`
 	bottom: 0;
 	left: 0;
 	right: 0;
+	width: 100vw;
 `;
 
 function Starfield(props) {
@@ -27,6 +28,12 @@ function Starfield(props) {
 	useFrame((_state, delta) => {
 		ref.current.rotation.x -= delta / 10;
 		ref.current.rotation.y -= delta / 15;
+	});
+
+	useFrame(({ clock }) => {
+		const opacity = Math.max((clock.getElapsedTime() - 0.3) / 5, 0);
+		if (opacity > 1 || Array.isArray(ref.current.material)) return;
+		ref.current.material.opacity = opacity;
 	});
 
 	return (
@@ -52,11 +59,11 @@ export const Background = () => (
 	<Wrapper>
 		<Canvas camera={{ position: [0, 0, 1] }}>
 			<Starfield />
-			<OrbitControls
+			{/* <OrbitControls
 				enableZoom={false}
 				enablePan={false}
 				enableRotate={false}
-			/>
+			/> */}
 			<EffectComposer multisampling={8}>
 				<Bloom
 					kernelSize={KernelSize.HUGE}

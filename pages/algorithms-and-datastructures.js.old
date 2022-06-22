@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Runtime, Inspector } from '@observablehq/runtime';
 import notebook from '1dca47f33f5a5cce';
-import styled, { css } from 'styled-components';
+import styled, { css } from '@emotion/styled';
 import Layout from '../components/layout';
 import DarkModeToggel from 'react-dark-mode-toggle';
 

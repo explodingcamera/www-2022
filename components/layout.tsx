@@ -1,9 +1,12 @@
 import React, { ReactElement, useEffect } from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from '@emotion/styled';
 import { Background } from './../components/background';
 import Header from './../components/header';
 import { useGlobal } from './context';
 import Link from './link';
+
+import { keyframes } from '@emotion/react';
+import { useEffectOnce } from './use-effect-once';
 
 const slideIn = keyframes`
 	0% {transform: translateY(1rem);opacity: 0;}
@@ -28,8 +31,10 @@ const LayoutWrapper = styled.div`
 		padding: 1rem;
 	}
 
-	& > :not(:first-child) {
-		animation-duration: 0.6s;
+	& > :not(nav) {
+		opacity: 0;
+		animation-delay: 0.1s;
+		animation-duration: 0.9s;
 		animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
 		animation-fill-mode: forwards;
 		animation-name: ${slideIn};
@@ -75,17 +80,16 @@ const Layout = ({
 }) => {
 	const { hasAnimated, update } = useGlobal();
 
-	useEffect(() => () => update('hasAnimated', true), []);
+	useEffectOnce(() => () => update('hasAnimated', true));
 
 	return (
 		<>
 			<FallbackBG backgroundColor={backgroundColor} />
-			{!disableBackground && <Background />}
+			<Impressum>
+				<Link href="/impressum">legal notice/privacy policy</Link>
+			</Impressum>
 			<LayoutWrapper {...props}>
 				{!disableHeader && <Header hasAnimated={hasAnimated} />}
-				<Impressum>
-					<Link href="/impressum">legal notice/privacy policy</Link>
-				</Impressum>
 				{children}
 			</LayoutWrapper>
 		</>

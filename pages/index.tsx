@@ -1,5 +1,6 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from '@emotion/styled';
+import { keyframes } from '@emotion/react';
 import Link from './../components/link';
 import Layout from '../components/layout';
 import Head from 'next/head';
