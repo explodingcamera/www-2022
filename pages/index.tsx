@@ -87,8 +87,7 @@ const HomeComponent = () => (
 			</Head>
 			<Home>
 				<h2>
-					<span>Hi!</span> I'm an open source and freelance software engineer
-					based in Berlin
+					<span>Hey!</span> I'm a freelance software engineer based in Berlin
 					<br />
 					<br />
 					<Link href="/work">work</Link>

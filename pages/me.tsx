@@ -34,6 +34,34 @@ const Me = styled.div`
 		a {
 			white-space: pre;
 		}
+
+		> span {
+			color: white;
+			padding: 0.1rem 0.4rem;
+			border-radius: 4px;
+			margin: 0.1rem 0.2rem;
+			backdrop-filter: blur(1px);
+			box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 35%);
+
+			&:nth-of-type(1) {
+				background-image: linear-gradient(270deg, #3179c6c1, #3179c6c1);
+			}
+
+			&:nth-of-type(2) {
+				background-image: linear-gradient(270deg, #0b7261c1, #23d1b4c1);
+			}
+
+			&:nth-of-type(3) {
+				background-image: linear-gradient(270deg, #61dafbc1, #45b4d3c1);
+			}
+
+			&:nth-of-type(4) {
+				background-image: linear-gradient(270deg, #002c66, #072957);
+			}
+			&:nth-of-type(5) {
+				background-image: linear-gradient(270deg, #007d9c, #117088);
+			}
+		}
 	}
 `;
 
@@ -42,20 +70,22 @@ const MeComponent = () => (
 		<Me>
 			<h1>about me</h1>
 			<p>
-				I've been working on open-source projects since about 2014 and mainly
-				work with Typescript, Rust, React/React Native, Docker/Kubernetes and
-				Go. My expertise also includes cybersecurity, cryptography,{' '}
-				<Link href="https://pog.network">cryptocurrencies</Link> and CI/CD
-				workflows.
+				I've been creating production-ready software for more than 7 years and
+				mainly work with <span>TypeScript</span>, <span>Rust</span>,{' '}
+				<span>React/React Native</span>, <span>Docker/Kubernetes</span> and{' '}
+				<span>Go</span>. This includes a deep knowledge in cybersecurity,
+				cryptography, cryptocurrencies and CI/CD workflows.
 				<br />
 				<br />
-				I offer end-to-end full-stack development, including UI designs,
-				consulting for software architectures, upgrading legacy codebases, and
-				open-source software development.
+				I offer end-to-end full-stack development and consulting on scalable
+				software architectures, right now I'm mainly working on creating
+				developer tooling, building large and maintainable codebases in various
+				languages and frameworks, security analysis and performance
+				optimization.
 				<br />
 				<br />
 				If you're into that sort of thing, you can also check out my{' '}
-				<Link target="_blank" href="/static/henry-gressmann-cv.pdf">
+				<Link target="_blank" href="/static/cv-henry-gressmann.pdf">
 					CV
 				</Link>
 				, <Link href="mailto:mail@henrygressmann.de">contact me</Link> or{' '}

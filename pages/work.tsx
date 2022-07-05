@@ -170,7 +170,7 @@ const projects: ProjectInterface[] = [
 		title: 'pog.network',
 		from: '2021-now',
 		img: 'pog.network.webp',
-		text: `With POG.network we're striving to build a green and fast cryptocurrency. I'm focusing on designing the protocol and overall architecture of the project`,
+		text: `With POG.network we're striving to build a green and fast cryptocurrency. I'm leading the protocol design and created architecture of the project`,
 		buttons: [
 			{
 				link: 'https://github.com/pognetwork',
@@ -257,9 +257,9 @@ I created the software architecture and designed and implemented the react front
 		title: 'recordskip',
 		from: '2019',
 		img: 'recordskip.jpeg',
-		text: `Recordskip was my first Semester Project at Code University. It's an app for record music lovers that tracks your collection and gives you music recommendations for expanding your record collation.
+		text: `Recordskip is an app for vinyl record lovers tracks your collection with the help of Image Recognition and gives you music recommendations for expanding your musical horizons.
 
-I designed the App in Figma and implemented it with React Native.`,
+I designed the App and implemented it with React Native.`,
 		buttons: [
 			{
 				link: 'https://github.com/recordskip/recordskip-app',
@@ -271,9 +271,9 @@ I designed the App in Figma and implemented it with React Native.`,
 		title: 'canX',
 		from: '2018 - 2020',
 		img: 'canx-min.png',
-		text: `canX was my first startup. We created a multimedia streaming platform that isn't supported by ads. Creators could earn money through donations made possible by our microtransaction platform.
+		text: `canX was my first startup. We created a multimedia streaming platform that isn't supported by ads. Creators instead earn money through donations made possible by our microtransaction platform.
 
-I started the microservice architecture, implemented and designed the frontend, and created the CDN and media processing pipeline`,
+I designed the microservice architecture, implemented and designed the frontend, created the CDN and media processing pipeline, and lead a small team of developers.`,
 		buttons: [
 			{
 				link: 'https://canx.org',
@@ -285,7 +285,7 @@ I started the microservice architecture, implemented and designed the frontend, 
 		title: 'livecount.pro',
 		from: '2017 - 2019',
 		img: 'livecount-min.png',
-		text: `LiveCount Pro was a real-time follower/subscriber counter with support for multiple social networks and multiple channels simultaneously. I created the first version over the course of one weekend.`,
+		text: `LiveCount Pro is a real-time anaylytics platform with support for multiple social networks and multiple channels simultaneously.`,
 		buttons: [
 			{
 				link: 'https://livecount.pro',
@@ -301,7 +301,7 @@ I started the microservice architecture, implemented and designed the frontend, 
 		title: 'musiqpad',
 		from: '2016',
 		img: 'musiqpad-min.png',
-		text: `Musiqpad was an open-source social-music software platform for users to host their own chatrooms and enjoy music together with others.
+		text: `Musiqpad ia an open-source social-music software platform for users to host their own chatrooms and enjoy music together with others.
 
 I worked on modernizing the codebase and finding and fixing security vulnerabilities.`,
 		buttons: [
@@ -315,7 +315,7 @@ I worked on modernizing the codebase and finding and fixing security vulnerabili
 		title: 'musiqplus',
 		from: '2015-2016',
 		img: 'musiqplus.jpg',
-		text: `MusiqPlus was a Chrome plugin that enhanced the experience on musiqpad servers with a ton of extra features. This started my involvement with Musiqpad and was one of my first larger projects.`,
+		text: `MusiqPlus ia a Google Chrome plugin that enhanced the experience on musiqpad servers with a ton of extra features. This started my involvement with Musiqpad and was one of my first larger projects.`,
 		buttons: [
 			{
 				link: 'https://github.com/explodingcamera/musiqplus',
@@ -327,7 +327,7 @@ I worked on modernizing the codebase and finding and fixing security vulnerabili
 		title: 'multitube.cf',
 		from: '2014',
 		img: 'multitube-min.png',
-		text: `Multitube was one of my first larger projects. I created a website for viewing two YouTube videos side-by-side to enable interesting ways for collaborations with other YouTubers. Multitube was inspired by youtubemultiplier.com, but - since their implementation lacked features and UX was horrible - I built my own site.`,
+		text: `Multitube enables users to view multiple YouTube-Videos side-by-side to enable interesting ways for collaboration.`,
 		buttons: [
 			{
 				link: 'https://github.com/explodingcamera/multitube',
