@@ -7,6 +7,9 @@ const config = {
 		ignoreDuringBuilds: true,
 	},
 	reactStrictMode: true,
+	compiler: {
+		emotion: true,
+	},
 };
 
 module.exports = withTM(config);

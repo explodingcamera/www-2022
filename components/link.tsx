@@ -74,11 +74,14 @@ const Item = ({
 	href,
 	animateFontColor,
 	target,
+	...rest
 }: ItemProps) => {
 	const handleClick = e => {
 		e.preventDefault();
 		void router.push(href);
 	};
+
+	const props = rest as React.ComponentProps<typeof Link>;
 
 	return (
 		<Link
@@ -87,19 +90,20 @@ const Item = ({
 			onClick={target || href.includes(':') ? undefined : handleClick}
 			active={router.pathname === href}
 			animateFontColor={animateFontColor}
+			{...props}
 		>
 			{children}
 		</Link>
 	);
 };
 
-interface ItemProps {
+type ItemProps = {
 	target?: string;
 	href: string;
 	router: NextRouter;
 	children?: ReactNode;
 	animateFontColor?: boolean;
-}
+} & React.HTMLProps<HTMLAnchorElement>;
 
 Item.defaultProps = {
 	animateFontColor: false,

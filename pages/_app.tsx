@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import GlobalProvider from './../components/context';
@@ -6,7 +6,11 @@ import NextNprogress from 'nextjs-progressbar';
 import { initRiddle } from './../components/riddle';
 
 import '../styles/global.css';
-import { Background } from '../components/background';
+import dynamic from 'next/dynamic';
+
+const Background = dynamic(async () => import('../components/background'), {
+	suspense: true,
+});
 
 if (process.browser) {
 	console.clear();
@@ -34,7 +38,12 @@ export default function customApp({ Component, pageProps }: AppProps) {
 			<Head>
 				<title>henrygressmann.de</title>
 			</Head>
-			{!pageProps.disableBackground && <Background />}
+
+			{!pageProps.disableBackground && (
+				<Suspense fallback="">
+					<Background />
+				</Suspense>
+			)}
 			<NextNprogress />
 			<GlobalProvider>
 				<Component {...pageProps} />

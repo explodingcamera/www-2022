@@ -4,12 +4,8 @@ import Document, { Head, Html, Main, NextScript } from 'next/document';
 export default class CustomDoc extends Document {
 	render() {
 		return (
-			<Html>
+			<Html lang="en">
 				<Head>
-					<link
-						href="https://fonts.bunny.net/css?family=inter:800,500,300"
-						rel="stylesheet"
-					/>
 					<meta name="referrer" content="no-referrer" />
 					<meta name="theme-color" content="#ffffff" />
 					<meta name="google" content="notranslate" />

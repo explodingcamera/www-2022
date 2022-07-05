@@ -1,6 +1,5 @@
 import React, { ReactElement, useEffect } from 'react';
 import styled from '@emotion/styled';
-import { Background } from './../components/background';
 import Header from './../components/header';
 import { useGlobal } from './context';
 import Link from './link';

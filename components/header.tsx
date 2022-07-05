@@ -101,23 +101,24 @@ const HeaderComponent = ({ hasAnimated }) => (
 				<Link href="/me">about me</Link>
 			</Item>
 			&nbsp;
-			<Item hasAnimated={hasAnimated} delay=".5s">
-				<Link href="https://twitter.com/explodingcamera">
-					<FiTwitter />
-				</Link>
-			</Item>
 			<Item hasAnimated={hasAnimated} delay=".6s">
-				<Link href="https://github.com/explodingcamera">
+				<Link aria-label="Github" href="https://github.com/explodingcamera">
 					<FiGithub />
 				</Link>
 			</Item>
 			<Item hasAnimated={hasAnimated} delay=".7s">
-				<Link href="https://keybase.io/explodingcamera/pgp_keys.asc">
+				<Link
+					aria-label="PGP Keys"
+					href="https://keybase.io/explodingcamera/pgp_keys.asc"
+				>
 					<FaKey />
 				</Link>
 			</Item>
 			<Item hasAnimated={hasAnimated} delay=".8s">
-				<Link href="https://www.linkedin.com/in/henrygressmann/">
+				<Link
+					aria-label="LinkedIn"
+					href="https://www.linkedin.com/in/henrygressmann/"
+				>
 					<FiLinkedin />
 				</Link>
 			</Item>

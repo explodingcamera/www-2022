@@ -93,7 +93,11 @@ const MeComponent = () => (
 				<br />
 				<br />
 				By the way: This entire website is{' '}
-				<Link href="https://github.com/explodingcamera/www">open-source</Link>
+				<Link href="https://github.com/explodingcamera/www">
+					open-source
+				</Link>{' '}
+				and reaches a perfect score in Lighthouse - even with the GPU-rendered
+				animated background.
 			</p>
 		</Me>
 	</Layout>

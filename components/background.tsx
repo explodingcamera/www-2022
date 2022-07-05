@@ -5,9 +5,9 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Bloom, EffectComposer } from '@react-three/postprocessing';
 import { PointMaterial, Points } from '@react-three/drei';
 
-import * as random from 'maath/random/dist/maath-random.cjs';
+import { inSphere } from 'maath/random';
 import { KernelSize } from 'postprocessing';
-import * as THREE from 'three';
+import * as THREE from 'three/build/three.module';
 
 const Wrapper = styled.div`
 	position: fixed;
@@ -22,7 +22,7 @@ function Starfield(props) {
 	const ref = useRef<THREE.Points>();
 
 	const [sphere] = useState(() =>
-		random.inSphere(new Float32Array(5000), { radius: 1.5 }),
+		inSphere(new Float32Array(5000), { radius: 1.5 }),
 	);
 
 	useFrame((_state, delta) => {
@@ -75,3 +75,5 @@ export const Background = () => (
 		</Canvas>
 	</Wrapper>
 );
+
+export default Background;
