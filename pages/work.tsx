@@ -170,7 +170,7 @@ const projects: ProjectInterface[] = [
 		title: 'pog.network',
 		from: '2021-now',
 		img: 'pog.network.webp',
-		text: `With POG.network we're striving to build a green and fast cryptocurrency. I'm leading the protocol design and created architecture of the project`,
+		text: `With POG.network we're striving to build a green and fast cryptocurrency. I'm the team lead and design protocol and created the architecture of the project`,
 		buttons: [
 			{
 				link: 'https://github.com/pognetwork',
