@@ -31,7 +31,7 @@
 		"maath": "^0.0.2",
 		"modern-normalize": "1.1.0",
 		"murmurhash": "^2.0.1",
-		"next": "12.2.0",
+		"next": "12.2.1-canary.2",
 		"next-transpile-modules": "^9.0.0",
 		"nextjs-progressbar": "^0.0.14",
 		"parallax-js": "3.1.0",
