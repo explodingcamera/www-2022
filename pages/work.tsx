@@ -152,7 +152,7 @@ const projects: ProjectInterface[] = [
 		title: 'JustMeet',
 		from: '2022-now',
 		img: 'justmeet.gif',
-		text: `JustMeet is a fresh new take on making friends bringing video game Matchmaking to the real world. Currently in development.`,
+		text: `JustMeet is a fresh new take on making friends by bringing video game Matchmaking to the real world. Currently in development.`,
 	},
 	{
 		title: 'pog.network wallet',
@@ -170,7 +170,7 @@ const projects: ProjectInterface[] = [
 		title: 'pog.network',
 		from: '2021-now',
 		img: 'pog.network.webp',
-		text: `With POG.network we're striving to build a green and fast cryptocurrency. I'm the team lead and design protocol and created the architecture of the project`,
+		text: `With POG.network we're striving to build a green and fast cryptocurrency. I'm the team lead, designed the protocol and created the architecture of the project`,
 		buttons: [
 			{
 				link: 'https://github.com/pognetwork',
@@ -186,7 +186,7 @@ const projects: ProjectInterface[] = [
 		title: 'Snowstorm',
 		from: '2021-now',
 		img: 'snowstorm.png',
-		text: `Snowstorm is a React framework I am working on. The goal is to create a lean and fast alternative to next.js by utilizing new technologies like es-modules and ESbuild. Further, Snowstorm is build from the ground up with features of react's upcoming version in mind. It supports a broader ecosystem instead of building a walled garden.`,
+		text: `Snowstorm is a lean and fast alternative to next.js, made possible by utilizing new technologies like ES modules and new build tools like es-build. Further, Snowstorm is build from the ground up with React 18.0 in mind. It supports a broader ecosystem instead of building a walled garden.`,
 		buttons: [
 			{
 				link: 'https://github.com/explodingcamera/snowstorm',
@@ -204,7 +204,7 @@ const projects: ProjectInterface[] = [
 		img: 'etournity.png',
 		text: `Etournity wants gamers to organize and participate in online esports tournaments effortlessly.
 
-I've joined the Etournity team as a developer in the summer of 2020. My focus was on transitioning the project to next.js and securing the GraphQL API.`,
+I joined the Etournity team as a developer in the summer of 2020. My focus was on transitioning the project to next.js and securing the GraphQL API.`,
 		buttons: [
 			{
 				link: 'https://etournity.com',
@@ -271,7 +271,7 @@ I designed the App and implemented it with React Native.`,
 		title: 'canX',
 		from: '2018 - 2020',
 		img: 'canx-min.png',
-		text: `canX was my first startup. We created a multimedia streaming platform that isn't supported by ads. Creators instead earn money through donations made possible by our microtransaction platform.
+		text: `canX was my first startup. We created a multimedia streaming platform that isn't supported by ads. Creators instead earn money through donations made possible by our micropayments platform.
 
 I designed the microservice architecture, implemented and designed the frontend, created the CDN and media processing pipeline, and lead a small team of developers.`,
 		buttons: [
@@ -285,7 +285,7 @@ I designed the microservice architecture, implemented and designed the frontend,
 		title: 'livecount.pro',
 		from: '2017 - 2019',
 		img: 'livecount-min.png',
-		text: `LiveCount Pro is a real-time anaylytics platform with support for multiple social networks and multiple channels simultaneously.`,
+		text: `LiveCount Pro is a real-time anaylytics platform and dashboard with support for multiple social networks and multiple channels simultaneously.`,
 		buttons: [
 			{
 				link: 'https://livecount.pro',
