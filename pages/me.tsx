@@ -96,8 +96,8 @@ const MeComponent = () => (
 				<Link href="https://github.com/explodingcamera/www">
 					open-source
 				</Link>{' '}
-				and reaches a perfect score in Lighthouse - even with the GPU-rendered
-				animated background.
+				{/* and reaches a perfect score in Lighthouse - even with the GPU-rendered
+				animated background. */}
 			</p>
 		</Me>
 	</Layout>
