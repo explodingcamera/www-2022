@@ -70,7 +70,7 @@ const MeComponent = () => (
 		<Me>
 			<h1>about me</h1>
 			<p>
-				I've been creating production-ready software for more than 7 years and
+				I've been creating production-ready software for more than 6 years and
 				mainly work with <span>TypeScript</span>, <span>Rust</span>,{' '}
 				<span>React/React Native</span>, <span>Docker/Kubernetes</span> and{' '}
 				<span>Go</span>. This includes a deep knowledge in cybersecurity,
