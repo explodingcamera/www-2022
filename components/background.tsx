@@ -7,7 +7,7 @@ import { PointMaterial, Points } from '@react-three/drei';
 
 import { inSphere } from 'maath/random';
 import { KernelSize } from 'postprocessing';
-import * as THREE from 'three/build/three.module';
+import * as THREE from 'three';
 
 const Wrapper = styled.div`
 	position: fixed;

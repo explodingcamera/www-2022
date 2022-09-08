@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import GlobalProvider from './../components/context';
@@ -32,22 +32,22 @@ if (process.browser) {
 	initRiddle();
 }
 
-export default function customApp({ Component, pageProps }: AppProps) {
-	return (
-		<>
-			<Head>
-				<title>henrygressmann.de</title>
-			</Head>
+const CustomApp = ({ Component, pageProps }: AppProps) => (
+	<>
+		<Head>
+			<title>henrygressmann.de</title>
+		</Head>
 
-			{!pageProps.disableBackground && (
-				<Suspense fallback="">
-					<Background />
-				</Suspense>
-			)}
-			<NextNprogress />
-			<GlobalProvider>
-				<Component {...pageProps} />
-			</GlobalProvider>
-		</>
-	);
-}
+		{!pageProps.disableBackground && (
+			<Suspense fallback="">
+				<Background />
+			</Suspense>
+		)}
+		<NextNprogress />
+		<GlobalProvider>
+			<Component {...pageProps} />
+		</GlobalProvider>
+	</>
+);
+
+export default CustomApp;

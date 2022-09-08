@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Link from './link';
 
-import { FiTwitter, FiGithub, FiLinkedin } from 'react-icons/fi';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import { FaKey } from 'react-icons/fa';
 
 import { css, keyframes } from '@emotion/react';
