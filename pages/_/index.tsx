@@ -1,4 +1,5 @@
-import React, { ReactNode } from 'react';
+import type { ReactNode } from 'react';
+import React from 'react';
 import Head from 'next/head';
 
 // NOTE: This is part of an easteregg

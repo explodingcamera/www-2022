@@ -1,9 +1,11 @@
-import React, { ReactNode } from 'react';
+import type { ReactNode } from 'react';
+import React from 'react';
 
 import styled from '@emotion/styled';
 import { css, keyframes } from '@emotion/react';
 
-import { NextRouter, withRouter } from 'next/router';
+import type { NextRouter } from 'next/router';
+import { withRouter } from 'next/router';
 
 const gradient = keyframes`
   0%{background-position:0% 50%}

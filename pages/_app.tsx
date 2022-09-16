@@ -1,5 +1,5 @@
-import React, { Suspense, useEffect, useState } from 'react';
-import { AppProps } from 'next/app';
+import React, { Suspense } from 'react';
+import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import GlobalProvider from './../components/context';
 import NextNprogress from 'nextjs-progressbar';
@@ -32,7 +32,10 @@ if (process.browser) {
 	initRiddle();
 }
 
-const CustomApp = ({ Component, pageProps }: AppProps) => (
+const CustomApp = ({
+	Component,
+	pageProps,
+}: AppProps<{ disableBackground: boolean }>) => (
 	<>
 		<Head>
 			<title>henrygressmann.de</title>

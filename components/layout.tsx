@@ -1,4 +1,5 @@
-import React, { ReactElement, useEffect } from 'react';
+import type { ReactElement } from 'react';
+import React from 'react';
 import styled from '@emotion/styled';
 import Header from './../components/header';
 import { useGlobal } from './context';

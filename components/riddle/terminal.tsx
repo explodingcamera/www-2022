@@ -108,8 +108,8 @@ export const Terminal = () => {
 	const xtermRef = React.useRef<XTerm>(null);
 	const fitAddon = React.useRef(new FitAddon());
 
-	const [value, setValue] = useState('');
-	const [disableInput, setDisableInput] = useState(true);
+	const [, setValue] = useState('');
+	const [disableInput] = useState(true);
 
 	const writeWithPause = async (text: string, time: number) => {
 		for (const c of text) {
@@ -119,7 +119,7 @@ export const Terminal = () => {
 		}
 	};
 
-	const clear = () => xtermRef.current?.terminal.write('\x1bc');
+	// const clear = () => xtermRef.current?.terminal.write('\x1bc');
 
 	useEffect(() => {
 		const handleResize = () => fitAddon.current.fit();
