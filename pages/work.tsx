@@ -148,11 +148,29 @@ const Project = ({ title, from, img, text, buttons }: ProjectInterface) => (
 );
 
 const projects: ProjectInterface[] = [
-	{
-		title: 'JustMeet',
+		{
+		title: 'Keygate',
 		from: '2022-now',
-		img: 'justmeet.gif',
-		text: `JustMeet is a fresh new take on making friends by bringing video game Matchmaking to the real world. Currently in development.`,
+		img: 'keygate.png',
+		text: `Modular and open-source identity managment, authentication and authorization. Currently in development.`,
+		buttons: [
+			{
+				link: 'https://keygate.io',
+				name: 'keygate.io',
+			},
+		],
+	},
+	{
+		title: 'dawdle.space',
+		from: '2022-now',
+		img: 'dawdle.png',
+		text: `A home for many of my smaller and experimental projects`,
+		buttons: [
+			{
+				link: 'https://dawdle.space',
+				name: 'dawdle.space',
+			},
+		],
 	},
 	{
 		title: 'pog.network wallet',
@@ -166,6 +184,24 @@ const projects: ProjectInterface[] = [
 			},
 		],
 	},
+	// {
+	// 	title: 'JustMeet',
+	// 	from: '2022-now',
+	// 	img: 'justmeet.gif',
+	// 	text: `JustMeet is a fresh new take on making friends by bringing video game Matchmaking to the real world. Currently in development.`,
+	// },
+	// {
+	// 	title: 'pog.network wallet',
+	// 	from: '2021-now',
+	// 	img: 'pogwallet.png',
+	// 	text: `Official wallet application for connecting to the pog.network cryptocurrency`,
+	// 	buttons: [
+	// 		{
+	// 			link: 'https://github.com/pognetwork/catjam',
+	// 			name: 'code',
+	// 		},
+	// 	],
+	// },
 	{
 		title: 'pog.network',
 		from: '2021-now',

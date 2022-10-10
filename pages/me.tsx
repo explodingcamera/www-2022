@@ -71,7 +71,7 @@ const MeComponent = () => (
 			<h1>about me</h1>
 			<p>
 				I've been creating production-ready software for more than 6 years and
-				mainly work with <span>TypeScript</span>, <span>Rust</span>,{' '}
+				mainly work with <span>TypeScript</span>,<br/><span>Rust</span> (my current main focus),{' '}
 				<span>React/React Native</span>, <span>Docker/Kubernetes</span> and{' '}
 				<span>Go</span>. This includes a deep knowledge in cybersecurity,
 				cryptography, cryptocurrencies and CI/CD workflows.
