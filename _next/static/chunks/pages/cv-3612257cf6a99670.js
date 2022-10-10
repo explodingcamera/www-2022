@@ -1,0 +1,2 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[920],{7314:function(n,u,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/cv",function(){return t(875)}])},875:function(n,u,t){"use strict";t.r(u);var c=t(4941),f=t.n(c),_=t(959);u.default=function(){return(0,_.useEffect)((function(){f().push("/")})),null}}},function(n){n.O(0,[774,888,179],(function(){return u=7314,n(n.s=u);var u}));var u=n.O();_N_E=u}]);
+//# sourceMappingURL=cv-3612257cf6a99670.js.map
