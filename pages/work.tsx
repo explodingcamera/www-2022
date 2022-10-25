@@ -148,7 +148,7 @@ const Project = ({ title, from, img, text, buttons }: ProjectInterface) => (
 );
 
 const projects: ProjectInterface[] = [
-		{
+	{
 		title: 'Keygate',
 		from: '2022-now',
 		img: 'keygate.png',
