@@ -164,7 +164,7 @@ const projects: ProjectInterface[] = [
 		title: 'dawdle.space',
 		from: '2022-now',
 		img: 'dawdle.png',
-		text: `A home for many of my smaller and experimental projects`,
+		text: `A home for many of my smaller, experimental and older projects`,
 		buttons: [
 			{
 				link: 'https://dawdle.space',
@@ -174,7 +174,7 @@ const projects: ProjectInterface[] = [
 	},
 	{
 		title: 'pog.network wallet',
-		from: '2021-now',
+		from: '2021-2022',
 		img: 'pogwallet.png',
 		text: `Official wallet application for connecting to the pog.network cryptocurrency`,
 		buttons: [
@@ -190,21 +190,9 @@ const projects: ProjectInterface[] = [
 	// 	img: 'justmeet.gif',
 	// 	text: `JustMeet is a fresh new take on making friends by bringing video game Matchmaking to the real world. Currently in development.`,
 	// },
-	// {
-	// 	title: 'pog.network wallet',
-	// 	from: '2021-now',
-	// 	img: 'pogwallet.png',
-	// 	text: `Official wallet application for connecting to the pog.network cryptocurrency`,
-	// 	buttons: [
-	// 		{
-	// 			link: 'https://github.com/pognetwork/catjam',
-	// 			name: 'code',
-	// 		},
-	// 	],
-	// },
 	{
 		title: 'pog.network',
-		from: '2021-now',
+		from: '2021-2022',
 		img: 'pog.network.webp',
 		text: `With POG.network we're striving to build a green and fast cryptocurrency. I'm the team lead, designed the protocol and created the architecture of the project`,
 		buttons: [
@@ -220,7 +208,7 @@ const projects: ProjectInterface[] = [
 	},
 	{
 		title: 'Snowstorm',
-		from: '2021-now',
+		from: '2021-2022',
 		img: 'snowstorm.png',
 		text: `Snowstorm is a lean and fast alternative to next.js, made possible by utilizing new technologies like ES modules and new build tools like es-build. Further, Snowstorm is build from the ground up with React 18.0 in mind. It supports a broader ecosystem instead of building a walled garden.`,
 		buttons: [
