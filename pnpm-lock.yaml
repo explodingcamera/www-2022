@@ -9,7 +9,7 @@ specifiers:
   '@ibm/plex': 6.1.1
   '@next/bundle-analyzer': ^13.0.4
   '@observablehq/runtime': 4.28.0
-  '@react-three/drei': ^9.42.2
+  '@react-three/drei': ^9.43.2
   '@react-three/fiber': ^8.9.1
   '@react-three/postprocessing': 2.7.0
   '@types/node': ^18.11.9
@@ -44,7 +44,7 @@ dependencies:
   '@ibm/plex': 6.1.1
   '@next/bundle-analyzer': 13.0.4
   '@observablehq/runtime': 4.28.0
-  '@react-three/drei': 9.42.2_xwynmv5llzsuuouxruzymqw67e
+  '@react-three/drei': 9.43.2_xwynmv5llzsuuouxruzymqw67e
   '@react-three/fiber': 8.9.1_mjlgqb43i6mvslmnwgzrdumoh4
   '@react-three/postprocessing': 2.7.0_aj5kj473hsgheg4miwvuwybosy
   chalk: 5.1.2
@@ -257,7 +257,7 @@ packages:
     resolution: {integrity: sha512-mrzLkl6U9YLF8qpqI7TB82PESyEGjm/0Ly91jG575eVxMMlb8fYfOXFZIJ8XfLrJZQbm7dlKry2bJmXBUEkdFg==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      regenerator-runtime: 0.13.10
+      regenerator-runtime: 0.13.11
     dev: false
 
   /@babel/template/7.18.10:
@@ -296,26 +296,11 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@chevrotain/cst-dts-gen/10.4.1:
-    resolution: {integrity: sha512-wNDw9Rh6dPJKH275er8nijuDIpTcG2GjQANjnG8RaeGkZ3JN99+u6HRtnjKhjoi4NY9rg+udHChHQSskZtlkPw==}
-    dependencies:
-      '@chevrotain/gast': 10.4.1
-      '@chevrotain/types': 10.4.1
-      lodash: 4.17.21
-    dev: false
-
   /@chevrotain/cst-dts-gen/10.4.2:
     resolution: {integrity: sha512-0+4bNjlndNWMoVLH/+y4uHnf6GrTipsC+YTppJxelVJo+xeRVQ0s2PpkdDCVTsu7efyj+8r1gFiwVXsp6JZ0iQ==}
     dependencies:
       '@chevrotain/gast': 10.4.2
       '@chevrotain/types': 10.4.2
-      lodash: 4.17.21
-    dev: false
-
-  /@chevrotain/gast/10.4.1:
-    resolution: {integrity: sha512-HRv66QVbmC7eb/ppwsPCfNH4oZ/VV+thuMZILm7A7W6Q5M0tqiZv0ecdiB8hydmPO8je0aSrXEOCcaA6fuXc3Q==}
-    dependencies:
-      '@chevrotain/types': 10.4.1
       lodash: 4.17.21
     dev: false
 
@@ -326,16 +311,8 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@chevrotain/types/10.4.1:
-    resolution: {integrity: sha512-J8iyZNn/RGYWSyNJdGd3QI01gKFUx4mCSM0+vEqmIw9TXFlxj1IsHteXFahtezSHjgMtBTqWn6hb2YxCLjpHVg==}
-    dev: false
-
   /@chevrotain/types/10.4.2:
     resolution: {integrity: sha512-QzSCjg6G4MvIoLeIgOiMR0IgzkGEQqrNJJIr3T5ETRa7l4Av4AMIiEctV99mvDr57iXwwk0/kr3RJxiU36Nevw==}
-    dev: false
-
-  /@chevrotain/utils/10.4.1:
-    resolution: {integrity: sha512-vPIgzES8QhHMchb5UaQ4V/c9xmoaECN+4EXpuhWE+pu3LXJUUtAwDn/SEKFgtyiRo269Hxv3b0NbPlQfH0jeVA==}
     dev: false
 
   /@chevrotain/utils/10.4.2:
@@ -816,8 +793,8 @@ packages:
     resolution: {integrity: sha512-7I/qY8H7Enwasxr4jU6WmtNK+RZ4Z/XvSlDvjXFVe7ii1x0MoSlkw6pD7xuac8qrHQRm9BTcbZNyeeKApYsvCg==}
     dev: false
 
-  /@react-three/drei/9.42.2_xwynmv5llzsuuouxruzymqw67e:
-    resolution: {integrity: sha512-/+5LPj7NOpuXm55oaRveVlZklf+uVe8UD/c++Tr4H3zeKs6sWbguHmgZo0WPudk19rRMDFuA0xhEHfzPXPxu3w==}
+  /@react-three/drei/9.43.2_xwynmv5llzsuuouxruzymqw67e:
+    resolution: {integrity: sha512-zVEbnlSWYxuvyD2rpSAGkoDvYOxON/wsPPc96APYOCC+m+u1w5HEFfF/5ivTroL9XQBIClWTO6RxxBI9ucmd+w==}
     peerDependencies:
       '@react-three/fiber': '>=8.0'
       react: '>=18.0'
@@ -899,7 +876,7 @@ packages:
       react-merge-refs: 1.1.0
       screen-space-reflections: 2.5.0_5omioxbl5saqstlpr2ucnm3pdi
       three: 0.146.0
-      three-stdlib: 2.17.3_three@0.146.0
+      three-stdlib: 2.19.0_three@0.146.0
     dev: false
 
   /@swc/helpers/0.4.11:
@@ -1222,7 +1199,7 @@ packages:
     engines: {node: '>=10', npm: '>=6'}
     dependencies:
       '@babel/runtime': 7.20.1
-      cosmiconfig: 7.0.1
+      cosmiconfig: 7.1.0
       resolve: 1.22.1
     dev: false
 
@@ -1255,7 +1232,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001431
+      caniuse-lite: 1.0.30001434
       electron-to-chromium: 1.4.284
       node-releases: 2.0.6
       update-browserslist-db: 1.0.10_browserslist@4.21.4
@@ -1276,10 +1253,6 @@ packages:
   /callsites/3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
-
-  /caniuse-lite/1.0.30001431:
-    resolution: {integrity: sha512-zBUoFU0ZcxpvSt9IU66dXVT/3ctO1cy4y9cscs1szkPlcWb6pasYM144GqrUygUbT+k7cmUCW61cvskjcv0enQ==}
-    dev: false
 
   /caniuse-lite/1.0.30001434:
     resolution: {integrity: sha512-aOBHrLmTQw//WFa2rcF1If9fa3ypkC1wzqqiKHgfdrXTWcU8C4gKVZT77eQAPWN1APys3+uQ0Df07rKauXGEYA==}
@@ -1305,17 +1278,6 @@ packages:
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: false
 
-  /chevrotain/10.4.1:
-    resolution: {integrity: sha512-1y4vnssauVmrrP5MBaJ6DZvsv3BpXLlKVNK5S52fTGQHqg09qxMDBAz0wZbb04Ovc1pBCA4obcCjOlRioIV+cA==}
-    dependencies:
-      '@chevrotain/cst-dts-gen': 10.4.1
-      '@chevrotain/gast': 10.4.1
-      '@chevrotain/types': 10.4.1
-      '@chevrotain/utils': 10.4.1
-      lodash: 4.17.21
-      regexp-to-ast: 0.5.0
-    dev: false
-
   /chevrotain/10.4.2:
     resolution: {integrity: sha512-gzF5GxE0Ckti5kZVuKEZycLntB5X2aj9RVY0r4/220GwQjdnljU+/t3kP74/FMWC7IzCDDEjQ9wsFUf0WCdSHg==}
     dependencies:
@@ -1327,8 +1289,8 @@ packages:
       regexp-to-ast: 0.5.0
     dev: false
 
-  /ci-info/3.6.1:
-    resolution: {integrity: sha512-up5ggbaDqOqJ4UqLKZ2naVkyqSJQgJi5lwD6b6mM748ysrghDBX0bx/qJTUHzw7zu6Mq4gycviSF5hJnwceD8w==}
+  /ci-info/3.6.2:
+    resolution: {integrity: sha512-lVZdhvbEudris15CLytp2u6Y0p5EKfztae9Fqa189MfNmln9F33XuH69v5fvNfiRN5/0eAUz2yJL3mo+nhaRKg==}
     engines: {node: '>=8'}
     dev: true
 
@@ -1380,8 +1342,8 @@ packages:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
     dev: false
 
-  /cosmiconfig/7.0.1:
-    resolution: {integrity: sha512-a1YWNUV2HwGimB7dU2s1wUMurNKjpx60HxBB6xUM8Re+2s1g1IIfJvFR0/iCF+XHdE0GMTKTuLR32UQff4TEyQ==}
+  /cosmiconfig/7.1.0:
+    resolution: {integrity: sha512-AdmX6xUzdNASswsFtmwSt7Vj8po9IuqXm0UXz7QKPuEUmPB4XyjGfaAr2PSuELMwkRMVH1EpIkX5bTZGRB3eCA==}
     engines: {node: '>=10'}
     dependencies:
       '@types/parse-json': 4.0.0
@@ -1486,8 +1448,8 @@ packages:
     resolution: {integrity: sha512-k0/r7GrWVL32kZlGwfPNgB2Y/mMXVTq/decgLczm/j34whdaspNrZO8CnXPf1laaHxI6ptUlsnAxN+UAPw+fzg==}
     dev: true
 
-  /enhanced-resolve/5.10.0:
-    resolution: {integrity: sha512-T0yTFjdpldGY8PmuXXR0PyQ1ufZpEGiHVrp7zHKB7jdR4qlmZHhONVM5AQOAWXuF/w3dnHbEQVrNptJgt7F+cQ==}
+  /enhanced-resolve/5.11.0:
+    resolution: {integrity: sha512-0Gcraf7gAJSQoPg+bTSXNhuzAYtXqLc4C011vb8S3B8XUSEkGYNBk20c68X9291VF4vvsCD8SPkr6Mza+DwU+g==}
     engines: {node: '>=10.13.0'}
     dependencies:
       graceful-fs: 4.2.10
@@ -1622,7 +1584,7 @@ packages:
       eslint: '>=8.28.0'
     dependencies:
       '@babel/helper-validator-identifier': 7.19.1
-      ci-info: 3.6.1
+      ci-info: 3.6.2
       clean-regexp: 1.0.0
       eslint: 8.28.0
       eslint-utils: 3.0.0_eslint@8.28.0
@@ -2438,7 +2400,7 @@ packages:
   /next-transpile-modules/10.0.0:
     resolution: {integrity: sha512-FyeJ++Lm2Fq31gbThiRCrJlYpIY9QaI7A3TjuhQLzOix8ChQrvn5ny4MhfIthS5cy6+uK1AhDRvxVdW17y3Xdw==}
     dependencies:
-      enhanced-resolve: 5.10.0
+      enhanced-resolve: 5.11.0
     dev: false
 
   /next/13.0.4_mqvh5p7ejg4taogoj6tpk3gd5a:
@@ -2855,8 +2817,8 @@ packages:
       type-fest: 0.6.0
     dev: true
 
-  /regenerator-runtime/0.13.10:
-    resolution: {integrity: sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==}
+  /regenerator-runtime/0.13.11:
+    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
     dev: false
 
   /regexp-to-ast/0.5.0:
@@ -3184,25 +3146,6 @@ packages:
       three: '>= 0.123.0'
     dependencies:
       three: 0.146.0
-    dev: false
-
-  /three-stdlib/2.17.3_three@0.146.0:
-    resolution: {integrity: sha512-k2VwPXi75ySy0fxPIeUk3mLkj3/j+sCFK4g9Kp5J7w0PUh6qrCdhah7L6+On6fW5mBdVtML4Q5yEyN1R0Cfvqw==}
-    peerDependencies:
-      three: '>=0.122.0'
-    dependencies:
-      '@babel/runtime': 7.20.1
-      '@types/offscreencanvas': 2019.7.0
-      '@webgpu/glslang': 0.0.15
-      chevrotain: 10.4.1
-      draco3d: 1.5.5
-      fflate: 0.6.10
-      ktx-parse: 0.4.5
-      mmd-parser: 1.0.4
-      opentype.js: 1.3.4
-      potpack: 1.0.2
-      three: 0.146.0
-      zstddec: 0.0.2
     dev: false
 
   /three-stdlib/2.19.0_three@0.146.0:

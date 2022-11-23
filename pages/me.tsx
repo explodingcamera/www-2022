@@ -30,7 +30,7 @@ const Me = styled.div`
 	p {
 		font-size: 1.4rem;
 		line-height: 1.5;
-		max-width: 40rem;
+		max-width: 38rem;
 		a {
 			white-space: pre;
 		}
@@ -42,13 +42,14 @@ const Me = styled.div`
 			margin: 0.1rem 0.2rem;
 			backdrop-filter: blur(1px);
 			box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 35%);
+			white-space: nowrap;
 
 			&:nth-of-type(1) {
-				background-image: linear-gradient(270deg, #3179c6c1, #3179c6c1);
+				background-image: linear-gradient(270deg, #0b7261c1, #23d1b4c1);
 			}
 
 			&:nth-of-type(2) {
-				background-image: linear-gradient(270deg, #0b7261c1, #23d1b4c1);
+				background-image: linear-gradient(270deg, #3179c6c1, #3179c6c1);
 			}
 
 			&:nth-of-type(3) {
@@ -57,9 +58,6 @@ const Me = styled.div`
 
 			&:nth-of-type(4) {
 				background-image: linear-gradient(270deg, #002c66, #072957);
-			}
-			&:nth-of-type(5) {
-				background-image: linear-gradient(270deg, #007d9c, #117088);
 			}
 		}
 	}
@@ -70,33 +68,28 @@ const MeComponent = () => (
 		<Me>
 			<h1>about me</h1>
 			<p>
-				I've been creating production-ready software for more than 6 years and
-				mainly work with <span>TypeScript</span>,<br />
-				<span>Rust</span>, <span>React/React Native</span>,{' '}
-				<span>Docker/Kubernetes</span> and <span>Go</span>. This includes a deep
-				knowledge in cybersecurity, cryptography, cryptocurrencies and CI/CD
-				workflows.
+				I've been creating production-ready software for more than six years.
+				I'm currently working on creating developer tooling, application
+				security, and react/react-native apps.
 				<br />
 				<br />
-				I offer end-to-end full-stack development and consulting on scalable
-				software architectures, right now I'm mainly working on creating
-				developer tooling, building large and maintainable codebases in various
-				languages and frameworks, security analysis and performance
-				optimization.
+				The core technologies I currently work with are <span>Rust</span>,{' '}
+				<span>TypeScript</span>, <span>React/React Native</span>, and{' '}
+				<span>containers (Docker)</span>.
 				<br />
 				<br />
-				If you're into that sort of thing, you can also check out my{' '}
+				While you are here, you can also check out my{' '}
 				<Link target="_blank" href="/static/cv-henry-gressmann.pdf">
 					CV
 				</Link>
 				, <Link href="mailto:mail@henrygressmann.de">contact me</Link> or{' '}
 				<Link href="/meet">schedule a meeting</Link> right away.
-				<br />
+				{/* <br />
 				<br />
 				By the way: This entire website is{' '}
 				<Link href="https://github.com/explodingcamera/www">
 					open-source
-				</Link>{' '}
+				</Link>{' '} */}
 				{/* and reaches a perfect score in Lighthouse - even with the GPU-rendered
 				animated background. */}
 			</p>

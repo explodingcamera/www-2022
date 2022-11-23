@@ -152,7 +152,7 @@ const projects: ProjectInterface[] = [
 		title: 'Keygate',
 		from: '2022-now',
 		img: 'keygate.png',
-		text: `Modular and open-source identity managment, authentication and authorization. Currently in development.`,
+		text: `Modular and open-source identity management, authentication and authorization. Currently in development.`,
 		buttons: [
 			{
 				link: 'https://keygate.io',
@@ -347,18 +347,18 @@ I worked on modernizing the codebase and finding and fixing security vulnerabili
 			},
 		],
 	},
-	{
-		title: 'multitube.cf',
-		from: '2014',
-		img: 'multitube-min.png',
-		text: `Multitube enables users to view multiple YouTube-Videos side-by-side to enable interesting ways for collaboration.`,
-		buttons: [
-			{
-				link: 'https://github.com/explodingcamera/multitube',
-				name: 'code',
-			},
-		],
-	},
+	// {
+	// 	title: 'multitube.cf',
+	// 	from: '2014',
+	// 	img: 'multitube-min.png',
+	// 	text: `Multitube enables users to view multiple YouTube-Videos side-by-side to enable interesting ways for collaboration.`,
+	// 	buttons: [
+	// 		{
+	// 			link: 'https://github.com/explodingcamera/multitube',
+	// 			name: 'code',
+	// 		},
+	// 	],
+	// },
 ];
 
 const ProjectsComponent = () => (
