@@ -30,11 +30,15 @@ const ProjectWrapper = styled.div`
 	h1 {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 		font-size: 1.7rem;
 		letter-spacing: -1px;
+		align-items: center;
+		align-items: first baseline;
 
 		span {
+			padding-left: 0.5rem;
+			font-weight: 400;
+			font-feature-settings: 'ss12' 1;
 			font-size: 1rem;
 			color: aqua;
 			letter-spacing: -0.3px;

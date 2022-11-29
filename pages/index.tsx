@@ -34,11 +34,11 @@ const Home = styled.div`
 
 		span,
 		a {
-			font-weight: 700;
+			font-weight: 500;
 		}
 
 		span {
-			font-weight: 800;
+			font-weight: 700;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			background-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);
@@ -87,7 +87,7 @@ const HomeComponent = () => (
 			</Head>
 			<Home>
 				<h2>
-					<span>Hey!</span> I'm a freelance software engineer based in Berlin
+					<span>hey!</span> I'm a freelance software engineer based in Berlin
 					<br />
 					<br />
 					<Link href="/work">work</Link>

@@ -75,7 +75,7 @@ const MeComponent = () => (
 				<br />
 				The core technologies I currently work with are <span>Rust</span>,{' '}
 				<span>TypeScript</span>, <span>React/React Native</span>, and{' '}
-				<span>containers (Docker)</span>.
+				<span>Docker</span>.
 				<br />
 				<br />
 				While you are here, you can also check out my{' '}

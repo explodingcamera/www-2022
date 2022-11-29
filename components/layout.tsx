@@ -14,7 +14,7 @@ const slideIn = keyframes`
 `;
 
 const LayoutWrapper = styled.div`
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+	font-family: 'Euclid Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
 		'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 		sans-serif;
 	color: white;
@@ -64,6 +64,9 @@ const Impressum = styled.div`
 	bottom: 0;
 	right: 0;
 	padding: 1rem;
+
+	font-family: 'Euclid Flex';
+	font-weight: 500;
 `;
 
 const Layout = ({

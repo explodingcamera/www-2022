@@ -161,11 +161,11 @@ const ImpressumComponent = () => (
 				Datenübermittlungen umgesetzt. Diese gelten für alle weltweiten
 				Aktivitäten, bei denen Cloudflare personenbezogene Daten von natürlichen
 				Personen in der EU verarbeitet. Diese Maßnahmen basieren auf den
-				EU-Standardvertragsklauseln (SCCs). Weitere Informationen finden Sie
-				unter:
+				EU-Standardvertragsklauseln (SCCs). Weitere Informationen finden Sie{' '}
 				<a href="https://www.cloudflare.com/cloudflare_customer_SCCs-German.pdf">
-					https://www.cloudflare.com/cloudflare_customer_SCCs-German.pdf
+					hier
 				</a>
+				.
 			</p>
 		</Impressum>
 	</Layout>
