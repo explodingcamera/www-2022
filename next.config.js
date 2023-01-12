@@ -1,4 +1,3 @@
-const withTM = require('next-transpile-modules')(['xterm-for-react']); // Pass the modules you would like to see transpiled
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
 	enabled: process.env.ANALYZE === 'true',
 	openAnalyzer: false,
@@ -15,6 +14,7 @@ const config = {
 		emotion: true,
 	},
 	productionBrowserSourceMaps: true,
+	transpilePackages: ['xterm-for-react'],
 };
 
-module.exports = withTM(withBundleAnalyzer(config));
+module.exports = withBundleAnalyzer(config);
