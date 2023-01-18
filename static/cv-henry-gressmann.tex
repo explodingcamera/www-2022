@@ -1,0 +1,136 @@
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+							
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+	\textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+\hyphenation{thatshouldnot}
+ 
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+\setlength{\parindent}{0pt}
+
+\sectionfont{%			            % Change font of \section command
+	\usefont{OT1}{phv}{b}{n}%		% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}		% Vertical space macro
+
+\newcommand{\MyName}[1]{ % Name
+		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+		\par \normalsize \normalfont}
+		
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}		       % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}			   % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value	
+		
+\newcommand{\EducationEntry}[4]{
+		\noindent \textbf{#1} \hfill      % Study
+		\colorbox{Black}{%
+			\parbox{6em}{%
+			\hfill\color{White}#2}} \par  % Duration
+		\noindent \textit{#3} \par        % School
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+\newcommand{\WorkEntry}[4]{				  % Same as \EducationEntry
+		\noindent \textbf{#1} \hfill      % Jobname
+		\colorbox{Black}{\color{White}#2} \par  % Duration
+		\noindent \textit{#3} \par              % Company
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+\begin{document}
+% you can upload a photo and include it here...
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%	\vspace*{-2em}
+%		\includegraphics[width=0.15\textwidth]{photo}
+%\end{wrapfigure}
+
+\MyName{Henry Gressmann}
+% \MySlogan{Freelance Software Engineer}
+
+\sepspace
+
+%%% Personal details
+%%% ------------------------------------------------------------
+\NewPart{Personal details}{}
+
+\PersonalEntry{Web}{\url{henrygressmann.de}}
+\PersonalEntry{Mail}{\url{mail@henrygressmann.de}}
+\PersonalEntry{Github}{\url{github.com/explodingcamera}}
+\PersonalEntry{Linkedin}{\url{linkedin.com/in/henrygressmann}}
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}{}
+
+\EducationEntry{Bachelor of Science in Software Engineering}{2019-present}{CODE University of Applied Science}{}
+\EducationEntry{Abitur (Main Focus: Design and Media Technology)}{2016-2019}{Berufliche Schulen Bebra
+}{}
+
+%%% Work experience
+%%% ------------------------------------------------------------
+\NewPart{Experience}{}
+
+\EducationEntry{Co-Founder, Product Owner, Lead Developer
+}{2017-2020}{canX GmbH}{
+    I managed a team of 2 other Developers, designed a micro-payment solution, and created our microservice architecture, custom multimedia player, and video CDN
+}
+\sepspace
+\EducationEntry{Co-Founder, Lead Developer
+}{2021-2022}{pog.network}{
+    I managed a team of 3 other developers and designed a new proof-of-stake-based cryptocurrency protocol
+}
+\sepspace
+\EducationEntry{Solo Founder
+}{2021-2022}{keygate.io}{
+    I'm creating an open-source identity management solution focused on startups creating web and mobile apps
+}
+\sepspace
+\EducationEntry{Freelancing}{2021-present}{Henry Gressmann Software Engineering}{
+I've worked with various companies ranging from startups in the fin-tech space to enterprise software
+}
+\sepspace
+\sepspace
+
+I've been creating production-ready software for more than six years. I'm currently working on creating developer tooling, application security, and react/react-native apps. The core technologies I currently work with are Rust, Typescript, React, and containers (Docker).
+\sepspace
+
+You can check out the full portfolio of my work on \underline{henrygressmann.de/work}
+
+%%% References
+%%% ------------------------------------------------------------
+% \NewPart{References}{}
+% Available upon request
+\end{document}
