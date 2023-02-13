@@ -2,11 +2,10 @@ import React, { useRef, useState } from 'react';
 import styled from '@emotion/styled';
 
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Bloom, EffectComposer } from '@react-three/postprocessing';
+// import { Bloom, EffectComposer } from '@react-three/postprocessing';
 import { PointMaterial, Points } from '@react-three/drei';
 
 import { inSphere } from 'maath/random';
-import { KernelSize } from 'postprocessing';
 import type * as THREE from 'three';
 
 const Wrapper = styled.div`
@@ -55,6 +54,8 @@ function Starfield(props) {
 	);
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-expressions, prettier/prettier
+'use client';
 export const Background = () => (
 	<Wrapper>
 		<Canvas camera={{ position: [0, 0, 1] }}>
@@ -64,14 +65,14 @@ export const Background = () => (
 				enablePan={false}
 				enableRotate={false}
 			/> */}
-			<EffectComposer multisampling={8}>
+			{/* <EffectComposer multisampling={8}>
 				<Bloom
-					kernelSize={KernelSize.HUGE}
+					kernelSize={5}
 					luminanceThreshold={0}
 					luminanceSmoothing={0}
 					intensity={0.5}
 				/>
-			</EffectComposer>
+			</EffectComposer> */}
 		</Canvas>
 	</Wrapper>
 );

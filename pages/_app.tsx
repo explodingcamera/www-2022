@@ -10,6 +10,7 @@ import dynamic from 'next/dynamic';
 
 const Background = dynamic(async () => import('../components/background'), {
 	suspense: true,
+	ssr: false,
 });
 
 if (process.browser) {
