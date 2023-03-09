@@ -72,8 +72,8 @@ export default function Page() {
 					</li>
 					<li>The Kill Bill movies</li>
 					<li>
-						<Link href="https://github.com/baskerville/bspwm">
-							bspwm (tiling window manager)
+						<Link href="https://github.com/hyprwm/Hyprland">
+							Hyprland (tiling window manager)
 						</Link>
 					</li>
 					<li>Updating project dependencies</li>
