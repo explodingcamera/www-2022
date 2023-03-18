@@ -18,19 +18,19 @@
 		"start": "next start"
 	},
 	"dependencies": {
-		"@babel/core": "^7.21.0",
+		"@babel/core": "^7.21.3",
 		"@emotion/css": "^11.10.6",
 		"@emotion/react": "^11.10.6",
 		"@emotion/styled": "^11.10.6",
 		"@ibm/plex": "6.2.0",
-		"@next/bundle-analyzer": "^13.2.3",
-		"@react-three/drei": "^9.57.1",
+		"@next/bundle-analyzer": "^13.2.4",
+		"@react-three/drei": "^9.57.3",
 		"@react-three/fiber": "^8.12.0",
 		"@react-three/postprocessing": "2.7.0",
 		"chalk": "^5.2.0",
-		"maath": "^0.5.2",
+		"maath": "^0.5.3",
 		"modern-normalize": "1.1.0",
-		"next": "13.2.3",
+		"next": "13.2.4",
 		"nextjs-progressbar": "^0.0.16",
 		"postprocessing": "^6.30.1",
 		"prop-types": "15.8.1",
@@ -44,13 +44,13 @@
 		"xterm-for-react": "^1.0.4"
 	},
 	"devDependencies": {
-		"@explodingcamera/eslint-config": "26.1.0",
-		"@types/node": "^18.15.0",
+		"@explodingcamera/eslint-config": "26.2.1",
+		"@types/node": "^18.15.3",
 		"@types/react": "18.0.28",
 		"@types/three": "^0.149.0",
-		"eslint": "8.35.0",
+		"eslint": "8.36.0",
 		"gh-pages": "5.0.0",
 		"prettier": "2.8.4",
-		"typescript": "^4.9.5"
+		"typescript": "^5.0.2"
 	}
 }
