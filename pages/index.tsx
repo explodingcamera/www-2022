@@ -30,7 +30,7 @@ const Home = styled.div`
 		font-size: 3rem;
 		margin: 1rem 0;
 		font-weight: 400;
-		max-width: 48rem;
+		max-width: 44rem;
 
 		span,
 		a {
@@ -82,12 +82,12 @@ const HomeComponent = () => (
 				/>
 				<meta
 					name="description"
-					content="Hi! I'm a freelance software engineer based in Berlin specializing in react, open-source software, and cryptocurrencies."
+					content="Hi! I'm a software engineer based in Berlin specializing in react, open-source software, and cryptocurrencies."
 				/>
 			</Head>
 			<Home>
 				<h2>
-					<span>hey!</span> I'm a freelance software engineer based in Berlin
+					<span>hey!</span> I'm a software engineer based in Berlin
 					<br />
 					<br />
 					<Link href="/work">work</Link>

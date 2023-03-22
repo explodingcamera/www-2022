@@ -153,6 +153,18 @@ const Project = ({ title, from, img, text, buttons }: ProjectInterface) => (
 
 const projects: ProjectInterface[] = [
 	{
+		title: 'StayGo',
+		from: '2023-now',
+		img: 'staygo.svg',
+		text: `canX StayGo helps you keep track of all your things and helps you to see if you really need them.`,
+		buttons: [
+			{
+				link: 'https://staygo.app',
+				name: 'staygo.app',
+			},
+		],
+	},
+	{
 		title: 'Keygate',
 		from: '2022-now',
 		img: 'keygate.png',

@@ -94,6 +94,11 @@ const HeaderComponent = ({ hasAnimated }) => (
 					home
 				</Link>
 			</Item>
+			<Item hasAnimated={hasAnimated} delay=".2s">
+				<Link target="_blank" href="https://blog.henrygressmann.de">
+					blog
+				</Link>
+			</Item>
 			<Item hasAnimated={hasAnimated} delay=".3s">
 				<Link href="/work">work</Link>
 			</Item>

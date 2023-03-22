@@ -14,9 +14,9 @@ const slideIn = keyframes`
 `;
 
 const LayoutWrapper = styled.div`
-	font-family: 'Euclid Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-		'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
+	font-family: 'Euclid Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+		'Helvetica Neue', sans-serif;
 	color: white;
 
 	display: flex;
