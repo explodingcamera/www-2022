@@ -25,7 +25,7 @@ const ProjectWrapper = styled.div`
 	); */
 	margin: 0.5rem;
 	padding: 1rem;
-	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.14);
 
 	h1 {
 		display: flex;

@@ -24,9 +24,9 @@
 		"@emotion/styled": "^11.10.6",
 		"@ibm/plex": "6.2.0",
 		"@next/bundle-analyzer": "^13.2.4",
-		"@react-three/drei": "^9.58.2",
+		"@react-three/drei": "^9.59.0",
 		"@react-three/fiber": "^8.12.0",
-		"@react-three/postprocessing": "2.7.0",
+		"@react-three/postprocessing": "2.7.1",
 		"chalk": "^5.2.0",
 		"maath": "^0.5.3",
 		"modern-normalize": "1.1.0",
@@ -38,19 +38,19 @@
 		"react-dom": "18.2.0",
 		"react-icons": "4.8.0",
 		"react-responsive-masonry": "^2.1.7",
-		"three": "^0.150.1",
+		"three": "^0.151.0",
 		"xterm": "^5.1.0",
 		"xterm-addon-fit": "^0.7.0",
 		"xterm-for-react": "^1.0.4"
 	},
 	"devDependencies": {
 		"@explodingcamera/eslint-config": "26.2.1",
-		"@types/node": "^18.15.5",
-		"@types/react": "18.0.28",
-		"@types/three": "^0.149.0",
-		"eslint": "8.36.0",
+		"@types/node": "^18.15.11",
+		"@types/react": "18.0.31",
+		"@types/three": "^0.150.0",
+		"eslint": "8.37.0",
 		"gh-pages": "5.0.0",
-		"prettier": "2.8.6",
+		"prettier": "2.8.7",
 		"typescript": "^5.0.2"
 	}
 }

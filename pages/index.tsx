@@ -94,7 +94,7 @@ const HomeComponent = () => (
 					<br />
 					<Link href="mailto:mail@henrygressmann.de">contact</Link> <br />
 					<Link href="/me">about me</Link> <br />
-					<Link href="/meet">schedule a meeting</Link> <br />
+					{/* <Link href="/meet">schedule a meeting</Link> <br /> */}
 				</h2>
 				<h2 />
 			</Home>
