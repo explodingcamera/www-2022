@@ -5,7 +5,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 /** @type {import('next').NextConfig} */
 const config = {
+	output: 'export',
 	poweredByHeader: false,
+	trailingSlash: true,
 	eslint: {
 		ignoreDuringBuilds: true,
 	},
