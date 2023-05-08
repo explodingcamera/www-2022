@@ -167,6 +167,23 @@ const ImpressumComponent = () => (
 				</a>
 				.
 			</p>
+			<p>
+				Um die Nutzung unserer Website zu verstehen und sie regelmäßig zu
+				verbessern, nutzen wir das Webanalyse Tool Plausible Analytics.
+				Plausible setzt keine Cookies und speichert keine Informationen im
+				Browser. Plausible Analytics erhebt auch keinerlei personenenbezogenen
+				Daten. Mehr Informationen zum Datenschutz von Plausible Analytics finden
+				Sie hier. Dienstanbieter: OÜ Plausible Insights, Västriku tn 2, Tartu
+				50403, Estland.
+				<br />
+				Die Software läuft dabei ausschließlich auf den Servern unserer
+				Webseite. Eine Speicherung der personenbezogenen Daten der Nutzer findet
+				nur dort statt. Eine Weitergabe der Daten an Dritte erfolgt nicht. Die
+				Software ist so eingestellt, dass die IP-Adressen nicht vollständig
+				gespeichert werden, sondern 2 Bytes der IP-Adresse maskiert werden
+				(Bsp.: 192.168.xxx.xxx). Auf diese Weise ist eine Zuordnung der
+				gekürzten IP-Adresse zum aufrufenden Rechner nicht mehr möglich.
+			</p>
 		</Impressum>
 	</Layout>
 );

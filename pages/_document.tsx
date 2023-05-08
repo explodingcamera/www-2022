@@ -37,6 +37,11 @@ export default class CustomDoc extends Document {
 				<body>
 					<Main />
 					<NextScript />
+					<script
+						defer
+						data-domain="henrygressmann.de"
+						src="https://a.explodingcamera.com/js/script.js"
+					/>
 				</body>
 			</Html>
 		);
