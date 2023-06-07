@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef, useState } from 'react';
 import styled from '@emotion/styled';
 
@@ -54,8 +56,6 @@ function Starfield(props) {
 	);
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-expressions, prettier/prettier
-'use client';
 export const Background = () => (
 	<Wrapper>
 		<Canvas camera={{ position: [0, 0, 1] }}>
