@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Layout from '../components/layout';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import Link from '../components/link';
 
 const Projects = styled(Masonry)``;
 
@@ -18,16 +19,12 @@ const ProjectWrapper = styled.div`
 	}
 
 	backdrop-filter: blur(10px);
-	/* background: linear-gradient(
-		135deg,
-		rgb(0 0 0 / 41%) 10%,
-		rgb(72 72 72 / 40%) 100%
-	); */
 	margin: 0.5rem;
 	padding: 1rem;
 	box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.14);
 
 	h1 {
+		margin-bottom: 1rem;
 		display: flex;
 		justify-content: space-between;
 		font-size: 1.7rem;
@@ -101,7 +98,7 @@ const ImageWrapper = styled.div`
 	position: relative;
 	aspect-ratio: 16/9;
 	background-color: black;
-	margin: 1rem 0;
+	margin-bottom: 1rem;
 	box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.6);
 	border-radius: 8px;
 	overflow: hidden;
@@ -119,7 +116,7 @@ const ImageWrapper = styled.div`
 interface ProjectInterface {
 	title: string;
 	from: string;
-	img: string;
+	img?: string;
 	text: string;
 	buttons?: Array<{ link: string; name: string }>;
 }
@@ -130,9 +127,11 @@ const Project = ({ title, from, img, text, buttons }: ProjectInterface) => (
 			{title}
 			<span>{from}</span>
 		</h1>
-		<ImageWrapper>
-			<img src={`/static/projects/${img}`} alt={title} />
-		</ImageWrapper>
+		{img && (
+			<ImageWrapper>
+				<img src={`/static/projects/${img}`} alt={title} />
+			</ImageWrapper>
+		)}
 		<p>{text}</p>
 		{buttons && (
 			<div>
@@ -153,10 +152,26 @@ const Project = ({ title, from, img, text, buttons }: ProjectInterface) => (
 
 const projects: ProjectInterface[] = [
 	{
+		title: 'Creating a Kernel in Rust',
+		from: '2023',
+		text: `A series of blog posts about creating Operating Systems in Rust.`,
+		buttons: [
+			{
+				link: 'https://blog.henrygressmann.de/series/rust-os/',
+				name: 'blog',
+			},
+			{
+				link: 'https://github.com/explodingcamera/pogos',
+				name: 'code',
+			},
+		],
+	},
+	{
 		title: 'StayGo',
 		from: '2023-now',
-		img: 'staygo.svg',
-		text: `canX StayGo helps you keep track of all your things and helps you to see if you really need them.`,
+		img: 'staygo-app.png',
+		text: `canX StayGo helps you keep track of all your things and helps you to see if you really need them.
+I am currently working on the first version of the app.`,
 		buttons: [
 			{
 				link: 'https://staygo.app',
@@ -165,10 +180,25 @@ const projects: ProjectInterface[] = [
 		],
 	},
 	{
+		title: 'Koi',
+		from: '2023',
+		text: 'Koi is a new lossless image format that is designed for embedded systems and game engines',
+		buttons: [
+			{
+				link: 'https://github.com/explodingcamera/koi-rs',
+				name: 'code',
+			},
+			{
+				link: 'https://blog.henrygressmann.de/koi',
+				name: 'blog post',
+			},
+		],
+	},
+	{
 		title: 'Keygate',
 		from: '2022-now',
 		img: 'keygate.png',
-		text: `Modular and open-source identity management, authentication and authorization. Currently in development.`,
+		text: `Modular and open-source identity management, authentication and authorization. Coming out Q3 2023`,
 		buttons: [
 			{
 				link: 'https://keygate.io',
@@ -176,18 +206,7 @@ const projects: ProjectInterface[] = [
 			},
 		],
 	},
-	{
-		title: 'dawdle.space',
-		from: '2022-now',
-		img: 'dawdle.png',
-		text: `A home for many of my smaller, experimental and older projects`,
-		buttons: [
-			{
-				link: 'https://dawdle.space',
-				name: 'dawdle.space',
-			},
-		],
-	},
+
 	{
 		title: 'pog.network wallet',
 		from: '2021-2022',
@@ -226,7 +245,7 @@ const projects: ProjectInterface[] = [
 		title: 'Snowstorm',
 		from: '2021-2022',
 		img: 'snowstorm.png',
-		text: `Snowstorm is a lean and fast alternative to next.js, made possible by utilizing new technologies like ES modules and new build tools like es-build. Further, Snowstorm is build from the ground up with React 18.0 in mind. It supports a broader ecosystem instead of building a walled garden.`,
+		text: 'Snowstorm is a lean and fast alternative to next.js, made possible by utilizing new technologies like ES modules and new build tools like es-build. Further, Snowstorm is build from the ground up with React 18.0 in mind. It supports a broader ecosystem instead of building a walled garden.',
 		buttons: [
 			{
 				link: 'https://github.com/explodingcamera/snowstorm',
@@ -238,6 +257,19 @@ const projects: ProjectInterface[] = [
 			},
 		],
 	},
+	{
+		title: 'dawdle.space',
+		from: '2021-now',
+		img: 'dawdle.png',
+		text: 'A home for many of my smaller, experimental and older projects',
+		buttons: [
+			{
+				link: 'https://dawdle.space',
+				name: 'dawdle.space',
+			},
+		],
+	},
+
 	{
 		title: 'Etournity',
 		from: '2020',
@@ -385,6 +417,19 @@ const ProjectsComponent = () => (
 					<Project key={projects.indexOf(p)} {...p} />
 				))}
 			</Projects>
+			<br />
+			<br />
+			<br />
+			<br />
+			<h2>
+				You can find more of my projects on{' '}
+				<Link href="https://github.com/explodingcamera">
+					github
+				</Link>
+			</h2>
+			<br />
+			<br />
+			<br />
 		</ResponsiveMasonry>
 	</Layout>
 );
