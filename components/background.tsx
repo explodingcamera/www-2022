@@ -4,11 +4,9 @@ import React, { useRef, useState } from 'react';
 import styled from '@emotion/styled';
 
 import { Canvas, useFrame } from '@react-three/fiber';
-// import { Bloom, EffectComposer } from '@react-three/postprocessing';
 import { PointMaterial, Points } from '@react-three/drei';
 
 import { inSphere } from 'maath/random';
-import type * as THREE from 'three';
 
 const Wrapper = styled.div`
 	position: fixed;
@@ -23,10 +21,10 @@ function Starfield(props) {
 	const ref = useRef<THREE.Points>();
 
 	const [sphere] = useState(() =>
-		inSphere(new Float32Array(5000), { radius: 1.5 }),
+		inSphere(new Float32Array(900), { radius: 2 }),
 	);
 
-	useFrame((_state, delta) => {
+	useFrame((state, delta) => {
 		ref.current.rotation.x -= delta / 10;
 		ref.current.rotation.y -= delta / 15;
 	});
@@ -47,7 +45,7 @@ function Starfield(props) {
 		>
 			<PointMaterial
 				transparent
-				color="#a0ffff"
+				color="#ffa0e0"
 				size={0.005}
 				sizeAttenuation
 				depthWrite={false}
@@ -60,19 +58,6 @@ export const Background = () => (
 	<Wrapper>
 		<Canvas camera={{ position: [0, 0, 1] }}>
 			<Starfield />
-			{/* <OrbitControls
-				enableZoom={false}
-				enablePan={false}
-				enableRotate={false}
-			/> */}
-			{/* <EffectComposer multisampling={8}>
-				<Bloom
-					kernelSize={5}
-					luminanceThreshold={0}
-					luminanceSmoothing={0}
-					intensity={0.5}
-				/>
-			</EffectComposer> */}
 		</Canvas>
 	</Wrapper>
 );

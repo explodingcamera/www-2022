@@ -114,11 +114,11 @@ const ImageWrapper = styled.div`
 `;
 
 interface ProjectInterface {
-	title: string;
-	from: string;
-	img?: string;
-	text: string;
-	buttons?: Array<{ link: string; name: string }>;
+	readonly title: string;
+	readonly from: string;
+	readonly img?: string;
+	readonly text: string;
+	readonly buttons?: Array<{ link: string; name: string }>;
 }
 
 const Project = ({ title, from, img, text, buttons }: ProjectInterface) => (
@@ -423,9 +423,7 @@ const ProjectsComponent = () => (
 			<br />
 			<h2>
 				You can find more of my projects on{' '}
-				<Link href="https://github.com/explodingcamera">
-					github
-				</Link>
+				<Link href="https://github.com/explodingcamera">github</Link>
 			</h2>
 			<br />
 			<br />

@@ -17,7 +17,7 @@
 		"@emotion/styled": "^11.11.0",
 		"@ibm/plex": "6.3.0",
 		"@next/bundle-analyzer": "^13.4.12",
-		"@react-three/drei": "^9.79.4",
+		"@react-three/drei": "^9.80.0",
 		"@react-three/fiber": "^8.13.6",
 		"@react-three/postprocessing": "2.15.0",
 		"chalk": "^5.3.0",
@@ -31,7 +31,7 @@
 		"react-dom": "18.2.0",
 		"react-icons": "4.10.1",
 		"react-responsive-masonry": "^2.1.7",
-		"three": "^0.154.0",
+		"three": "^0.150.0",
 		"xterm": "^5.2.1",
 		"xterm-addon-fit": "^0.7.0",
 		"xterm-for-react": "^1.0.4"
@@ -40,8 +40,7 @@
 		"@explodingcamera/eslint-config": "26.2.1",
 		"@types/node": "^20.4.5",
 		"@types/react": "18.2.17",
-		"@types/three": "^0.154.0",
-		"eslint": "8.45.0",
+		"eslint": "8.46.0",
 		"gh-pages": "5.0.0",
 		"prettier": "3.0.0",
 		"typescript": "^5.1.6"
