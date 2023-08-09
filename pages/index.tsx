@@ -87,13 +87,13 @@ const HomeComponent = () => (
 			</Head>
 			<Home>
 				<h2>
-					<span>hey!</span> I'm a software engineer based in Berlin
+					<span>Hi!</span> I'm Henry, a freelance software engineer based in
+					Berlin.
 					<br />
 					<br />
-					<Link href="/work">work</Link>
-					<br />
-					<Link href="mailto:mail@henrygressmann.de">contact</Link> <br />
-					<Link href="/me">about me</Link> <br />
+					<Link href="/work">My work</Link> <br />
+					<Link href="/me">About me</Link> <br />
+					<Link href="mailto:mail@henrygressmann.de">Contact</Link> <br />
 					{/* <Link href="/meet">schedule a meeting</Link> <br /> */}
 				</h2>
 				<h2 />

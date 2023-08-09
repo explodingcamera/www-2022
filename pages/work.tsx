@@ -154,7 +154,7 @@ const projects: ProjectInterface[] = [
 	{
 		title: 'Creating a Kernel in Rust',
 		from: '2023',
-		text: `A series of blog posts about creating Operating Systems in Rust.`,
+		text: 'A series of blog posts about creating Operating Systems in Rust.',
 		buttons: [
 			{
 				link: 'https://blog.henrygressmann.de/series/rust-os/',
@@ -198,7 +198,7 @@ I am currently working on the first version of the app.`,
 		title: 'Keygate',
 		from: '2022-now',
 		img: 'keygate.png',
-		text: `Modular and open-source identity management, authentication and authorization. Coming out Q3 2023`,
+		text: 'Modular and open-source identity management, authentication and authorization. Coming out Q3 2023',
 		buttons: [
 			{
 				link: 'https://keygate.io',
@@ -211,7 +211,7 @@ I am currently working on the first version of the app.`,
 		title: 'pog.network wallet',
 		from: '2021-2022',
 		img: 'pogwallet.png',
-		text: `Official wallet application for connecting to the pog.network cryptocurrency`,
+		text: 'Official wallet application for connecting to the pog.network cryptocurrency',
 		buttons: [
 			{
 				link: 'https://github.com/pognetwork/catjam',
@@ -302,7 +302,7 @@ I created the software architecture and designed and implemented the react front
 		title: 'clickland.app',
 		from: '2020',
 		img: 'clickland.gif',
-		text: `Clickland is a game platform I was working on at the start of 2020, based around a central clicker-based gameworld connected to many mini-games similar to neopets.`,
+		text: 'Clickland is a game platform I was working on at the start of 2020, based around a central clicker-based gameworld connected to many mini-games similar to neopets.',
 	},
 
 	{
@@ -357,7 +357,7 @@ I designed the microservice architecture, implemented and designed the frontend,
 		title: 'livecount.pro',
 		from: '2017 - 2019',
 		img: 'livecount-min.png',
-		text: `LiveCount Pro is a real-time anaylytics platform and dashboard with support for multiple social networks and multiple channels simultaneously.`,
+		text: 'LiveCount Pro is a real-time anaylytics platform and dashboard with support for multiple social networks and multiple channels simultaneously.',
 		buttons: [
 			{
 				link: 'https://livecount.pro',
@@ -387,7 +387,7 @@ I worked on modernizing the codebase and finding and fixing security vulnerabili
 		title: 'musiqplus',
 		from: '2015-2016',
 		img: 'musiqplus.jpg',
-		text: `MusiqPlus ia a Google Chrome plugin that enhanced the experience on musiqpad servers with a ton of extra features. This started my involvement with Musiqpad and was one of my first larger projects.`,
+		text: 'MusiqPlus is a Google Chrome extension that enhanced the experience on musiqpad servers with a ton of extra features. This started my involvement with Musiqpad and was one of my first larger projects.',
 		buttons: [
 			{
 				link: 'https://github.com/explodingcamera/musiqplus',

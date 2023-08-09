@@ -86,24 +86,24 @@ const HeaderComponent = ({ hasAnimated }) => (
 		<ol>
 			<Title hasAnimated={hasAnimated}>
 				<Link href="/" animateFontColor>
-					henry gressmann
+					Henry Gressmann
 				</Link>
 			</Title>
 			<Item className="home" hasAnimated={hasAnimated}>
 				<Link href="/" animateFontColor>
-					home
+					Home
 				</Link>
 			</Item>
 			<Item hasAnimated={hasAnimated} delay=".2s">
 				<Link target="_blank" href="https://blog.henrygressmann.de">
-					blog
+					Blog
 				</Link>
 			</Item>
 			<Item hasAnimated={hasAnimated} delay=".3s">
-				<Link href="/work">work</Link>
+				<Link href="/work">Work</Link>
 			</Item>
 			<Item hasAnimated={hasAnimated} delay=".4s">
-				<Link href="/me">about me</Link>
+				<Link href="/me">About</Link>
 			</Item>
 			&nbsp;
 			<Item hasAnimated={hasAnimated} delay=".6s">
