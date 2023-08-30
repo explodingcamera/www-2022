@@ -17,7 +17,7 @@
 		"@emotion/styled": "^11.11.0",
 		"@ibm/plex": "6.3.0",
 		"@next/bundle-analyzer": "^13.4.19",
-		"@react-three/drei": "^9.80.7",
+		"@react-three/drei": "^9.80.9",
 		"@react-three/fiber": "^8.13.7",
 		"@react-three/postprocessing": "2.15.1",
 		"chalk": "^5.3.0",
@@ -38,11 +38,11 @@
 	},
 	"devDependencies": {
 		"@explodingcamera/eslint-config": "26.2.1",
-		"@types/node": "^20.5.6",
+		"@types/node": "^20.5.7",
 		"@types/react": "18.2.21",
 		"eslint": "8.48.0",
 		"gh-pages": "6.0.0",
-		"prettier": "3.0.2",
+		"prettier": "3.0.3",
 		"typescript": "^5.2.2"
 	}
 }
