@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import Layout from '../components/layout';
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-import Link from '../components/link';
+import React from "react";
+import styled from "@emotion/styled";
+import Layout from "../components/layout";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Link from "../components/link";
 
 const Projects = styled(Masonry)``;
 
@@ -135,13 +135,8 @@ const Project = ({ title, from, img, text, buttons }: ProjectInterface) => (
 		<p>{text}</p>
 		{buttons && (
 			<div>
-				{buttons.map(b => (
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						key={buttons.indexOf(b)}
-						href={b.link}
-					>
+				{buttons.map((b) => (
+					<a target="_blank" rel="noopener noreferrer" key={buttons.indexOf(b)} href={b.link}>
 						<ProjectButton>{b.name}</ProjectButton>
 					</a>
 				))}
@@ -152,70 +147,70 @@ const Project = ({ title, from, img, text, buttons }: ProjectInterface) => (
 
 const projects: ProjectInterface[] = [
 	{
-		title: 'Creating a Kernel in Rust',
-		from: '2023',
-		text: 'A series of blog posts about creating Operating Systems in Rust.',
+		title: "Creating a Kernel in Rust",
+		from: "2023",
+		text: "A series of blog posts about creating Operating Systems in Rust.",
 		buttons: [
 			{
-				link: 'https://blog.henrygressmann.de/series/rust-os/',
-				name: 'blog',
+				link: "https://blog.henrygressmann.de/series/rust-os/",
+				name: "blog",
 			},
 			{
-				link: 'https://github.com/explodingcamera/pogos',
-				name: 'code',
+				link: "https://github.com/explodingcamera/pogos",
+				name: "code",
 			},
 		],
 	},
 	{
-		title: 'StayGo',
-		from: '2023-now',
-		img: 'staygo-app.png',
+		title: "StayGo",
+		from: "2023-now",
+		img: "staygo-app.png",
 		text: `canX StayGo helps you keep track of all your things and helps you to see if you really need them.
 I am currently working on the first version of the app.`,
 		buttons: [
 			{
-				link: 'https://staygo.app',
-				name: 'staygo.app',
+				link: "https://staygo.app",
+				name: "staygo.app",
 			},
 		],
 	},
 	{
-		title: 'Koi',
-		from: '2023',
-		text: 'Koi is a new lossless image format that is designed for embedded systems and game engines',
+		title: "Koi",
+		from: "2023",
+		text: "Koi is a new lossless image format that is designed for embedded systems and game engines",
 		buttons: [
 			{
-				link: 'https://github.com/explodingcamera/koi-rs',
-				name: 'code',
+				link: "https://github.com/explodingcamera/koi-rs",
+				name: "code",
 			},
 			{
-				link: 'https://blog.henrygressmann.de/koi',
-				name: 'blog post',
+				link: "https://blog.henrygressmann.de/koi",
+				name: "blog post",
 			},
 		],
 	},
 	{
-		title: 'Keygate',
-		from: '2022-now',
-		img: 'keygate.png',
-		text: 'Modular and open-source identity management, authentication and authorization. Coming out Q3 2023',
+		title: "Keygate",
+		from: "2022-now",
+		img: "keygate.png",
+		text: "Modular and open-source identity management, authentication and authorization. Coming out Q3 2023",
 		buttons: [
 			{
-				link: 'https://keygate.io',
-				name: 'keygate.io',
+				link: "https://keygate.io",
+				name: "keygate.io",
 			},
 		],
 	},
 
 	{
-		title: 'pog.network wallet',
-		from: '2021-2022',
-		img: 'pogwallet.png',
-		text: 'Official wallet application for connecting to the pog.network cryptocurrency',
+		title: "pog.network wallet",
+		from: "2021-2022",
+		img: "pogwallet.png",
+		text: "Official wallet application for connecting to the pog.network cryptocurrency",
 		buttons: [
 			{
-				link: 'https://github.com/pognetwork/catjam',
-				name: 'code',
+				link: "https://github.com/pognetwork/catjam",
+				name: "code",
 			},
 		],
 	},
@@ -226,172 +221,172 @@ I am currently working on the first version of the app.`,
 	// 	text: `JustMeet is a fresh new take on making friends by bringing video game Matchmaking to the real world. Currently in development.`,
 	// },
 	{
-		title: 'pog.network',
-		from: '2021-2022',
-		img: 'pog.network.webp',
+		title: "pog.network",
+		from: "2021-2022",
+		img: "pog.network.webp",
 		text: `With POG.network we're striving to build a green and fast cryptocurrency. I'm the team lead, designed the protocol and created the architecture of the project`,
 		buttons: [
 			{
-				link: 'https://github.com/pognetwork',
-				name: 'code',
+				link: "https://github.com/pognetwork",
+				name: "code",
 			},
 			{
-				link: 'https://pog.network',
-				name: 'pog.network',
-			},
-		],
-	},
-	{
-		title: 'Snowstorm',
-		from: '2021-2022',
-		img: 'snowstorm.png',
-		text: 'Snowstorm is a lean and fast alternative to next.js, made possible by utilizing new technologies like ES modules and new build tools like es-build. Further, Snowstorm is build from the ground up with React 18.0 in mind. It supports a broader ecosystem instead of building a walled garden.',
-		buttons: [
-			{
-				link: 'https://github.com/explodingcamera/snowstorm',
-				name: 'code',
-			},
-			{
-				link: 'https://snowstorm.js.org',
-				name: 'snowstorm.js.org',
+				link: "https://pog.network",
+				name: "pog.network",
 			},
 		],
 	},
 	{
-		title: 'dawdle.space',
-		from: '2021-now',
-		img: 'dawdle.png',
-		text: 'A home for many of my smaller, experimental and older projects',
+		title: "Snowstorm",
+		from: "2021-2022",
+		img: "snowstorm.png",
+		text: "Snowstorm is a lean and fast alternative to next.js, made possible by utilizing new technologies like ES modules and new build tools like es-build. Further, Snowstorm is build from the ground up with React 18.0 in mind. It supports a broader ecosystem instead of building a walled garden.",
 		buttons: [
 			{
-				link: 'https://dawdle.space',
-				name: 'dawdle.space',
+				link: "https://github.com/explodingcamera/snowstorm",
+				name: "code",
+			},
+			{
+				link: "https://snowstorm.js.org",
+				name: "snowstorm.js.org",
+			},
+		],
+	},
+	{
+		title: "dawdle.space",
+		from: "2021-now",
+		img: "dawdle.png",
+		text: "A home for many of my smaller, experimental and older projects",
+		buttons: [
+			{
+				link: "https://dawdle.space",
+				name: "dawdle.space",
 			},
 		],
 	},
 
 	{
-		title: 'Etournity',
-		from: '2020',
-		img: 'etournity.png',
+		title: "Etournity",
+		from: "2020",
+		img: "etournity.png",
 		text: `Etournity wants gamers to organize and participate in online esports tournaments effortlessly.
 
 I joined the Etournity team as a developer in the summer of 2020. My focus was on transitioning the project to next.js and securing the GraphQL API.`,
 		buttons: [
 			{
-				link: 'https://etournity.com',
-				name: 'etournity.com',
+				link: "https://etournity.com",
+				name: "etournity.com",
 			},
 		],
 	},
 	{
-		title: 'FantasyMarket',
-		from: '2020',
-		img: 'fantasymarket.png',
+		title: "FantasyMarket",
+		from: "2020",
+		img: "fantasymarket.png",
 		text: `FantasyMarket is a working stock market simulation where the user can invest in-game currency in a simulated market wholly separated from the real world.
 
 I created the software architecture and designed and implemented the react frontend.`,
 		buttons: [
 			{
-				link: 'https://github.com/fantasymarket',
-				name: 'code',
+				link: "https://github.com/fantasymarket",
+				name: "code",
 			},
 		],
 	},
 	{
-		title: 'clickland.app',
-		from: '2020',
-		img: 'clickland.gif',
-		text: 'Clickland is a game platform I was working on at the start of 2020, based around a central clicker-based gameworld connected to many mini-games similar to neopets.',
+		title: "clickland.app",
+		from: "2020",
+		img: "clickland.gif",
+		text: "Clickland is a game platform I was working on at the start of 2020, based around a central clicker-based gameworld connected to many mini-games similar to neopets.",
 	},
 
 	{
-		title: 'TwoWeeksOfFood',
-		from: '2020',
-		img: 'twof.jpeg',
+		title: "TwoWeeksOfFood",
+		from: "2020",
+		img: "twof.jpeg",
 		text: `Created at the #wirvsvirus hackathon, TwoWeeksOfFood aims to help with some of the supply issues created by the COVID-19 Crisis. It is a small project I've created together with Arthur Hoge on a single weekend.`,
 		buttons: [
 			{
-				link: 'https://twoweeksoffood.netlify.com',
-				name: 'website',
+				link: "https://twoweeksoffood.netlify.com",
+				name: "website",
 			},
 			{
-				link: 'https://www.linkedin.com/posts/arthurhoge_wevsvirus-activity-6648368790553800704-gTAQ',
-				name: 'more info',
+				link: "https://www.linkedin.com/posts/arthurhoge_wevsvirus-activity-6648368790553800704-gTAQ",
+				name: "more info",
 			},
 			{
-				link: 'https://github.com/twoweeksoffood/twoweeksoffood',
-				name: 'code',
+				link: "https://github.com/twoweeksoffood/twoweeksoffood",
+				name: "code",
 			},
 		],
 	},
 	{
-		title: 'recordskip',
-		from: '2019',
-		img: 'recordskip.jpeg',
+		title: "recordskip",
+		from: "2019",
+		img: "recordskip.jpeg",
 		text: `Recordskip is an app for vinyl record lovers tracks your collection with the help of Image Recognition and gives you music recommendations for expanding your musical horizons.
 
 I designed the App and implemented it with React Native.`,
 		buttons: [
 			{
-				link: 'https://github.com/recordskip/recordskip-app',
-				name: 'code',
+				link: "https://github.com/recordskip/recordskip-app",
+				name: "code",
 			},
 		],
 	},
 	{
-		title: 'canX',
-		from: '2018 - 2020',
-		img: 'canx-min.png',
+		title: "canX",
+		from: "2018 - 2020",
+		img: "canx-min.png",
 		text: `canX was my first startup. We created a multimedia streaming platform that isn't supported by ads. Creators instead earn money through donations made possible by our micropayments platform.
 
 I designed the microservice architecture, implemented and designed the frontend, created the CDN and media processing pipeline, and lead a small team of developers.`,
 		buttons: [
 			{
-				link: 'https://canx.org',
-				name: 'canX.org',
+				link: "https://canx.org",
+				name: "canX.org",
 			},
 		],
 	},
 	{
-		title: 'livecount.pro',
-		from: '2017 - 2019',
-		img: 'livecount-min.png',
-		text: 'LiveCount Pro is a real-time anaylytics platform and dashboard with support for multiple social networks and multiple channels simultaneously.',
+		title: "livecount.pro",
+		from: "2017 - 2019",
+		img: "livecount-min.png",
+		text: "LiveCount Pro is a real-time anaylytics platform and dashboard with support for multiple social networks and multiple channels simultaneously.",
 		buttons: [
 			{
-				link: 'https://livecount.pro',
-				name: 'livecount.pro',
+				link: "https://livecount.pro",
+				name: "livecount.pro",
 			},
 			{
-				link: 'https://github.com/explodingcamera/livecount.pro',
-				name: 'code',
+				link: "https://github.com/explodingcamera/livecount.pro",
+				name: "code",
 			},
 		],
 	},
 	{
-		title: 'musiqpad',
-		from: '2016',
-		img: 'musiqpad-min.png',
+		title: "musiqpad",
+		from: "2016",
+		img: "musiqpad-min.png",
 		text: `Musiqpad ia an open-source social-music software platform for users to host their own chatrooms and enjoy music together with others.
 
 I worked on modernizing the codebase and finding and fixing security vulnerabilities.`,
 		buttons: [
 			{
-				link: 'https://github.com/musiqpad/mqp-server',
-				name: 'code',
+				link: "https://github.com/musiqpad/mqp-server",
+				name: "code",
 			},
 		],
 	},
 	{
-		title: 'musiqplus',
-		from: '2015-2016',
-		img: 'musiqplus.jpg',
-		text: 'MusiqPlus is a Google Chrome extension that enhanced the experience on musiqpad servers with a ton of extra features. This started my involvement with Musiqpad and was one of my first larger projects.',
+		title: "musiqplus",
+		from: "2015-2016",
+		img: "musiqplus.jpg",
+		text: "MusiqPlus is a Google Chrome extension that enhanced the experience on musiqpad servers with a ton of extra features. This started my involvement with Musiqpad and was one of my first larger projects.",
 		buttons: [
 			{
-				link: 'https://github.com/explodingcamera/musiqplus',
-				name: 'code',
+				link: "https://github.com/explodingcamera/musiqplus",
+				name: "code",
 			},
 		],
 	},
@@ -413,7 +408,7 @@ const ProjectsComponent = () => (
 	<Layout>
 		<ResponsiveMasonry>
 			<Projects>
-				{projects.map(p => (
+				{projects.map((p) => (
 					<Project key={projects.indexOf(p)} {...p} />
 				))}
 			</Projects>
@@ -422,8 +417,7 @@ const ProjectsComponent = () => (
 			<br />
 			<br />
 			<h2>
-				You can find more of my projects on{' '}
-				<Link href="https://github.com/explodingcamera">github</Link>
+				You can find more of my projects on <Link href="https://github.com/explodingcamera">github</Link>
 			</h2>
 			<br />
 			<br />

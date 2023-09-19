@@ -1,5 +1,5 @@
-import type { ReactElement } from 'react';
-import React, { useMemo } from 'react';
+import type { ReactElement } from "react";
+import React, { useMemo } from "react";
 
 const defaultState = {
 	hasAnimated: false,
@@ -16,15 +16,12 @@ const GlobalProvider = ({ children }: { children: ReactElement }) => {
 	const value = useMemo(
 		() => ({
 			...state,
-			update: (key: string, value: boolean) =>
-				setState(s => ({ ...s, [key]: value })),
+			update: (key: string, value: boolean) => setState((s) => ({ ...s, [key]: value })),
 		}),
 		[state],
 	);
 
-	return (
-		<GlobalContext.Provider value={value}>{children}</GlobalContext.Provider>
-	);
+	return <GlobalContext.Provider value={value}>{children}</GlobalContext.Provider>;
 };
 
 export default GlobalProvider;

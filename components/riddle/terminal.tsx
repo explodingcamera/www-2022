@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import styled from '@emotion/styled';
-import { XTerm } from 'xterm-for-react';
-import { FitAddon } from 'xterm-addon-fit';
+import React, { useState, useEffect } from "react";
+import styled from "@emotion/styled";
+import { XTerm } from "xterm-for-react";
+import { FitAddon } from "xterm-addon-fit";
 
-import chalk from 'chalk';
+import chalk from "chalk";
 
-import { flicker, blink } from './keyframes';
+import { flicker, blink } from "./keyframes";
 
 const Wrapper = styled.div`
 	min-height: 100vh;
@@ -100,7 +100,7 @@ const Wrapper = styled.div`
 `;
 
 const wait = async (ms: number) =>
-	new Promise(resolve => {
+	new Promise((resolve) => {
 		setTimeout(resolve, ms);
 	});
 
@@ -108,7 +108,7 @@ export const Terminal = () => {
 	const xtermRef = React.useRef<XTerm>(null);
 	const fitAddon = React.useRef(new FitAddon());
 
-	const [, setValue] = useState('');
+	const [, setValue] = useState("");
 	const [disableInput] = useState(true);
 
 	const writeWithPause = async (text: string, time: number) => {
@@ -123,9 +123,9 @@ export const Terminal = () => {
 
 	useEffect(() => {
 		const handleResize = () => fitAddon.current.fit();
-		window.addEventListener('resize', handleResize);
+		window.addEventListener("resize", handleResize);
 		console.clear();
-		return () => window.removeEventListener('resize', handleResize);
+		return () => window.removeEventListener("resize", handleResize);
 	});
 
 	useEffect(() => {
@@ -133,21 +133,16 @@ export const Terminal = () => {
 		fitAddon.current.fit();
 
 		const intro = async () => {
-			await writeWithPause(
-				chalk.hex('#00ff09')("You're finally awake..."),
-				200,
-			);
+			await writeWithPause(chalk.hex("#00ff09")("You're finally awake..."), 200);
 			await wait(2000);
-			xterm?.terminal.writeln('');
+			xterm?.terminal.writeln("");
 			await writeWithPause(
-				chalk.hex('#00ff09')(
-					'You might think you have come far, but this is only the beginning...',
-				),
+				chalk.hex("#00ff09")("You might think you have come far, but this is only the beginning..."),
 				50,
 			);
 
 			await writeWithPause(
-				chalk.hex('#00ff09')(
+				chalk.hex("#00ff09")(
 					`We want the best,  
 not the followers.  Thus, the first few there will receive
 the prize.`,
@@ -156,7 +151,7 @@ the prize.`,
 			);
 
 			await writeWithPause(
-				chalk.hex('#00ff09')(
+				chalk.hex("#00ff09")(
 					// eslint-disable-next-line no-irregular-whitespace
 					`Yo​u​​ w​ill ​se​​​e m​e, w​here​ th​e​re i​​s​ ​​no d​arkn​ess`,
 				),
@@ -170,7 +165,7 @@ the prize.`,
 
 		return () => {
 			xterm?.terminal.reset();
-			setValue('');
+			setValue("");
 		};
 	}, [xtermRef]);
 
@@ -184,7 +179,7 @@ the prize.`,
 
 		xtermRef?.current?.terminal.write(data);
 
-		setValue(v => v + data);
+		setValue((v) => v + data);
 	};
 
 	return (
@@ -193,9 +188,9 @@ the prize.`,
 				addons={[fitAddon.current]}
 				options={{
 					lineHeight: 1,
-					cursorStyle: 'bar',
-					rendererType: 'dom',
-					fontFamily: 'Roboto Mono',
+					cursorStyle: "bar",
+					rendererType: "dom",
+					fontFamily: "Roboto Mono",
 					windowOptions: {
 						fullscreenWin: true,
 					},

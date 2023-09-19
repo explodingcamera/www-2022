@@ -1,7 +1,7 @@
-import Link from '../../components/link';
-import React from 'react';
-import styled from '@emotion/styled';
-import Layout from '../../components/layout';
+import Link from "../../components/link";
+import React from "react";
+import styled from "@emotion/styled";
+import Layout from "../../components/layout";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -54,10 +54,7 @@ const Wrapper = styled.div`
 `;
 
 const CodeCraft = () => (
-	<Layout
-		disableHeader
-		backgroundColor="linear-gradient(45deg, #07070b, #1155ff63)"
-	>
+	<Layout disableHeader backgroundColor="linear-gradient(45deg, #07070b, #1155ff63)">
 		<Wrapper>
 			<h1 id="codecraft-guide">CodeCraft 1.18</h1>
 			<div className="info">
@@ -82,10 +79,9 @@ const CodeCraft = () => (
 				</div>
 			</div>
 			<p>
-				Welcome to CodeCraft 1.18! If you want to join the server, be sure to
-				check out our whitelisting process and the mod guide above. This season,
-				we're playing on the latest Minecraft update and with proximity voice
-				chat.
+				Welcome to CodeCraft 1.18! If you want to join the server, be sure to check out our whitelisting
+				process and the mod guide above. This season, we're playing on the latest Minecraft update and with
+				proximity voice chat.
 			</p>
 		</Wrapper>
 	</Layout>

@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { keyframes } from '@emotion/react';
+import React from "react";
+import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
 
-import Layout from '../components/layout';
+import Layout from "../components/layout";
 
 const gradient = keyframes`
 	0%{background-position:0% 50%}

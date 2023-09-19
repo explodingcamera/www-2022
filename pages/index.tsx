@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { keyframes } from '@emotion/react';
-import Link from './../components/link';
-import Layout from '../components/layout';
-import Head from 'next/head';
+import React from "react";
+import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
+import Link from "./../components/link";
+import Layout from "../components/layout";
+import Head from "next/head";
 
 const gradient = keyframes`
 	0%{background-position:0% 50%}
@@ -87,8 +87,7 @@ const HomeComponent = () => (
 			</Head>
 			<Home>
 				<h2>
-					<span>Hi!</span> I'm Henry, a freelance software engineer based in
-					Berlin.
+					<span>Hi!</span> I'm Henry, a freelance software engineer based in Berlin.
 					<br />
 					<br />
 					<Link href="/work">My work</Link> <br />

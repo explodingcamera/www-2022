@@ -4,8 +4,8 @@ This repository contains my website/portfolio. Feel free to use anything contain
 
 # Requirements
 
-- node.js `16.x`
-- PNPM >= `7.x`
+- node.js `20.x`
+- PNPM >= `8.x`
 
 # Development
 

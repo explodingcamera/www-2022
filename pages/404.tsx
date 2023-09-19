@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import styled from '@emotion/styled';
-import { keyframes } from '@emotion/react';
-import Layout from '../components/layout';
+import React, { useEffect, useState } from "react";
+import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
+import Layout from "../components/layout";
 
 const gradient = keyframes`
 	0%{background-position:0% 50%}
@@ -42,8 +42,7 @@ const Home = styled.div`
 	}
 `;
 
-const GITHUB_ISSUES_LINK =
-	'https://api.github.com/repos/explodingcamera/www-linkshortener/issues/';
+const GITHUB_ISSUES_LINK = "https://api.github.com/repos/explodingcamera/www-linkshortener/issues/";
 const PATH_SEGMENTS_TO_SKIP = 0;
 
 function isUrl(url) {
@@ -55,7 +54,7 @@ function isUrl(url) {
 
 async function redirect() {
 	const { location } = window;
-	const issueNumber = location.pathname.split('/')[PATH_SEGMENTS_TO_SKIP + 1];
+	const issueNumber = location.pathname.split("/")[PATH_SEGMENTS_TO_SKIP + 1];
 
 	const response = await fetch(GITHUB_ISSUES_LINK + issueNumber);
 
@@ -68,33 +67,30 @@ async function redirect() {
 	const { message } = payload;
 	const { title } = payload;
 
-	if (message !== 'Not Found' && title && isUrl(title)) {
+	if (message !== "Not Found" && title && isUrl(title)) {
 		// Check if the title of issue is a legitimate URL
 		const url = new URL(title);
-		if (
-			(url.protocol !== 'https:' && url.protocol !== 'http:') ||
-			url.host === location.host
-		) {
+		if ((url.protocol !== "https:" && url.protocol !== "http:") || url.host === location.host) {
 			// Prevent recursive redirects and XSS
-			throw new Error('URL to redirect to is invalid!');
+			throw new Error("URL to redirect to is invalid!");
 		} else {
 			location.replace(title);
 		}
 	} else {
-		throw new Error('issueNumber does not exist in gh issues');
+		throw new Error("issueNumber does not exist in gh issues");
 	}
 }
 
 const ErrorComponent = () => {
 	const [error, setError] = useState(false);
 	useEffect(() => {
-		if (process.browser) redirect().catch(e => setError(e));
+		if (process.browser) redirect().catch((e) => setError(e));
 	}, []);
 
 	return (
 		<Layout>
 			<Home>
-				<div className={error ? 'animate' : ''}>
+				<div className={error ? "animate" : ""}>
 					<h1>Not Found</h1>
 					<p>
 						These three are certain:

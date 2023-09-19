@@ -1,12 +1,12 @@
-import type { ReactElement } from 'react';
-import React from 'react';
-import styled from '@emotion/styled';
-import Header from './../components/header';
-import { useGlobal } from './context';
-import Link from './link';
+import type { ReactElement } from "react";
+import React from "react";
+import styled from "@emotion/styled";
+import Header from "./../components/header";
+import { useGlobal } from "./context";
+import Link from "./link";
 
-import { keyframes } from '@emotion/react';
-import { useEffectOnce } from './use-effect-once';
+import { keyframes } from "@emotion/react";
+import { useEffectOnce } from "./use-effect-once";
 
 const slideIn = keyframes`
 	0% {transform: translateY(1rem);opacity: 0;}
@@ -51,7 +51,7 @@ const FallbackBG = styled.div<{ backgroundColor?: string }>`
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: ${props => props.backgroundColor || 'black'};
+	background: ${(props) => props.backgroundColor || "black"};
 	/* background-image: url("/static/bg.webp"); */
 	/* background-size: contain; */
 	/* background-position: center; */
@@ -83,7 +83,7 @@ const Layout = ({
 }) => {
 	const { hasAnimated, update } = useGlobal();
 
-	useEffectOnce(() => () => update('hasAnimated', true));
+	useEffectOnce(() => () => update("hasAnimated", true));
 
 	return (
 		<>

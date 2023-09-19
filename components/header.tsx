@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import Link from './link';
+import React from "react";
+import styled from "@emotion/styled";
+import Link from "./link";
 
-import { FiGithub, FiLinkedin } from 'react-icons/fi';
-import { FaKey } from 'react-icons/fa';
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { FaKey } from "react-icons/fa";
 
-import { css, keyframes } from '@emotion/react';
+import { css, keyframes } from "@emotion/react";
 
 const slideIn = keyframes`
 	0% {transform: translateY(1.6rem);}
@@ -48,7 +48,7 @@ const Title = styled.li<{ hasAnimated: boolean }>`
 		display: none;
 	}
 
-	${props =>
+	${(props) =>
 		!props.hasAnimated &&
 		css`
 			animation-duration: 0.6s;
@@ -65,7 +65,7 @@ const Item = styled.li<{ hasAnimated: boolean; delay?: string }>`
 	display: flex;
 	transform: translateY(0);
 
-	${props =>
+	${(props) =>
 		!props.hasAnimated &&
 		css`
 			animation-duration: 0.6s;
@@ -112,18 +112,12 @@ const HeaderComponent = ({ hasAnimated }) => (
 				</Link>
 			</Item>
 			<Item hasAnimated={hasAnimated} delay=".7s">
-				<Link
-					aria-label="PGP Keys"
-					href="https://keybase.io/explodingcamera/pgp_keys.asc"
-				>
+				<Link aria-label="PGP Keys" href="https://keybase.io/explodingcamera/pgp_keys.asc">
 					<FaKey />
 				</Link>
 			</Item>
 			<Item hasAnimated={hasAnimated} delay=".8s">
-				<Link
-					aria-label="LinkedIn"
-					href="https://www.linkedin.com/in/henrygressmann/"
-				>
+				<Link aria-label="LinkedIn" href="https://www.linkedin.com/in/henrygressmann/">
 					<FiLinkedin />
 				</Link>
 			</Item>

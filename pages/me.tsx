@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { keyframes } from '@emotion/react';
+import React from "react";
+import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
 
-import Link from './../components/link';
-import Layout from '../components/layout';
+import Link from "./../components/link";
+import Layout from "../components/layout";
 
 const gradient = keyframes`
 	0%{background-position:0% 50%}
@@ -68,22 +68,20 @@ const MeComponent = () => (
 		<Me>
 			<h1>about me</h1>
 			<p>
-				I've been creating production-ready software for more than six years.
-				I'm currently working on creating developer tooling, application
-				security, and react/react-native apps.
+				I've been creating production-ready software for more than six years. I'm currently working on
+				creating developer tooling, application security, and react/react-native apps.
 				<br />
 				<br />
-				The core technologies I currently work with are <span>Rust</span>,{' '}
-				<span>TypeScript</span>, <span>React/React Native</span>, and{' '}
-				<span>Docker</span>.
+				The core technologies I currently work with are <span>Rust</span>, <span>TypeScript</span>,{" "}
+				<span>React/React Native</span>, and <span>Docker</span>.
 				<br />
 				<br />
-				While you are here, you can also check out my{' '}
+				While you are here, you can also check out my{" "}
 				<Link target="_blank" href="/static/cv-henry-gressmann.pdf">
 					CV
 				</Link>
-				, <Link href="/love">things I love</Link>,{' '}
-				<Link href="mailto:mail@henrygressmann.de">contact me</Link> or{' '}
+				, <Link href="/love">things I love</Link>,{" "}
+				<Link href="mailto:mail@henrygressmann.de">contact me</Link> or{" "}
 				<Link href="/meet">schedule a meeting</Link> right away.
 				{/* <br />
 				<br />

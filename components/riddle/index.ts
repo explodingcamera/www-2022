@@ -1,7 +1,7 @@
 declare global {
 	interface Window {
 		// eslint-disable-next-line prettier/prettier
-    "startTheAdventure": unknown;
+		startTheAdventure: unknown;
 	}
 }
 
@@ -10,26 +10,26 @@ declare global {
 // If you found this, don't worry - the next mysteries won't be so easy to find...
 
 // @ts-expect-error that's expected lol
-// eslint-disable-next-line prettier/prettier, @typescript-eslint/restrict-plus-operands
-const checkSecret = (s: string) => s === (Boolean([]) + [])[!Number([]) + !Number([]) + !Number([])] + (![] + [])[Number(!Number([]))] + (![] + [])[!Number([]) + !Number([]) + !Number([])] + (Number([![]]) + [Number(Number(!Number([])) + (!Number([]) + [])[!Number([]) + !Number([]) + !Number([])] + [Number(!Number([]))] + [Number([])] + [Number([])] + [Number([])])])[Number(!Number([])) + [Number([])]];
+// biome-ignore format: :)
+const checkSecret = (s: string) => s === (Boolean([]) + [])[!Number([]) + !Number([]) + !Number([])] + (![] + [])[Number(!Number([]))] + (![] + [])[!Number([]) + !Number([]) + !Number([])] +(Number([![]]) +	[	Number(	Number(!Number([])) +	(!Number([]) + [])[!Number([]) + !Number([]) + !Number([])] +[Number(!Number([]))] +[Number([])] +[Number([])] +[Number([])],	),	])[Number(!Number([])) + [Number([])]];
 
 const addListener = () => {
 	// eslint-disable-next-line no-useless-concat
-	if (localStorage.getItem('r' + 'a' + 'b' + 'b' + 'i' + 't')) {
+	if (localStorage.getItem("r" + "a" + "b" + "b" + "i" + "t")) {
 		let lastESC = false;
 		let timeSinceLastKey = 0;
-		document.addEventListener('keydown', event => {
-			const isEsc = event.key === 'Escape';
+		document.addEventListener("keydown", (event) => {
+			const isEsc = event.key === "Escape";
 
 			console.log(lastESC, isEsc, timeSinceLastKey + 2000 > Date.now());
 
 			if (lastESC && isEsc && timeSinceLastKey + 2000 > Date.now()) {
-				console.log('pog');
+				console.log("pog");
 				event.preventDefault();
 				event.stopPropagation();
-				document.location.href = '/_';
+				document.location.href = "/_";
 				// eslint-disable-next-line no-useless-concat
-				localStorage.removeItem('r' + 'a' + 'b' + 'b' + 'i' + 't');
+				localStorage.removeItem("r" + "a" + "b" + "b" + "i" + "t");
 			}
 
 			lastESC = isEsc;
@@ -46,7 +46,57 @@ export const initRiddle = () => {
 					console.log.bind(
 						console,
 						// eslint-disable-next-line prettier/prettier, no-useless-concat
-            "Y" + "o" + "u" + " " + "d" + "i" + "d" + "n" + "'" + "t" + " " + "t" + "h" + "i" + "n" + "k" + " " + "i" + "t" + " " + "w" + "o" + "u" + "l" + "d" + " " + "b" + "e" + " " + "t" + "h" + "a" + "t" + " " + "%c" + "e" + "a" + "s" + "y" + "%c" + "," + " " + "d" + "i" + "d" + " " + "y" + "o" + "u" + "?" + "\n\n%c %c\n",
+						"Y" +
+							"o" +
+							"u" +
+							" " +
+							"d" +
+							"i" +
+							"d" +
+							"n" +
+							"'" +
+							"t" +
+							" " +
+							"t" +
+							"h" +
+							"i" +
+							"n" +
+							"k" +
+							" " +
+							"i" +
+							"t" +
+							" " +
+							"w" +
+							"o" +
+							"u" +
+							"l" +
+							"d" +
+							" " +
+							"b" +
+							"e" +
+							" " +
+							"t" +
+							"h" +
+							"a" +
+							"t" +
+							" " +
+							"%c" +
+							"e" +
+							"a" +
+							"s" +
+							"y" +
+							"%c" +
+							"," +
+							" " +
+							"d" +
+							"i" +
+							"d" +
+							" " +
+							"y" +
+							"o" +
+							"u" +
+							"?" +
+							"\n\n%c %c\n",
 						`font-weight: bold`,
 						`font-weight: 200`,
 						`background-image: url("https://media.giphy.com/media/lgcUUCXgC8mEo/giphy.gif");
@@ -83,16 +133,18 @@ There's no shame in admitting that you're not made out for higher difficulties, 
 			);
 
 			// eslint-disable-next-line prettier/prettier, no-useless-concat
-			localStorage.setItem('r' + 'a' + 'b' + 'b' + 'i' + 't', 'h' + 'i' + 'nt:' + ' ma' + 'tri' + 'x');
+			localStorage.setItem("r" + "a" + "b" + "b" + "i" + "t", "h" + "i" + "nt:" + " ma" + "tri" + "x");
 
 			addListener();
 		};
 
 		// eslint-disable-next-line prettier/prettier, no-useless-concat
-    letsgo.toString = () => "n" + "i" + "c" + "e" + " " + "t" + "r" + "y";
+		letsgo.toString = () => "n" + "i" + "c" + "e" + " " + "t" + "r" + "y";
 		// eslint-disable-next-line prettier/prettier, no-useless-concat
-    (window as any)["s" + "t" + "a" + "r" + "t" + "T" + "h" + "e" + "A" + "d" + "v" + "e" + "n" + "t" + "u" + "r" + "e"] = letsgo;
+		(window as any)[
+			"s" + "t" + "a" + "r" + "t" + "T" + "h" + "e" + "A" + "d" + "v" + "e" + "n" + "t" + "u" + "r" + "e"
+		] = letsgo;
 
-		if (localStorage.getItem('rabbit')) addListener();
+		if (localStorage.getItem("rabbit")) addListener();
 	}
 };

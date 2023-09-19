@@ -1,7 +1,7 @@
-import { keyframes } from '@emotion/react';
-import styled from '@emotion/styled';
-import Layout from '../components/layout';
-import Link from '../components/link';
+import { keyframes } from "@emotion/react";
+import styled from "@emotion/styled";
+import Layout from "../components/layout";
+import Link from "../components/link";
 
 const gradient = keyframes`
 	0%{background-position:0% 50%}
@@ -55,15 +55,12 @@ export default function Page() {
 			<Love>
 				<h1>Things I love</h1>
 				<p>
-					Some random things I love in no particular order and without any
-					context that just make me happy. Inspired by{' '}
-					<Link href="https://sriramk.com/love.html">this</Link>.
+					Some random things I love in no particular order and without any context that just make me happy.
+					Inspired by <Link href="https://sriramk.com/love.html">this</Link>.
 				</p>
 				<ul>
 					<li>
-						<Link href="https://custodians.online/">
-							Open access to knowledge
-						</Link>
+						<Link href="https://custodians.online/">Open access to knowledge</Link>
 					</li>
 					<li>
 						<Link href="https://www.goodreads.com/series/189931-remembrance-of-earth-s-past">
@@ -72,9 +69,7 @@ export default function Page() {
 					</li>
 					<li>The Kill Bill movies</li>
 					<li>
-						<Link href="https://github.com/hyprwm/Hyprland">
-							Hyprland (tiling window manager)
-						</Link>
+						<Link href="https://github.com/hyprwm/Hyprland">Hyprland (tiling window manager)</Link>
 					</li>
 					<li>Updating project dependencies</li>
 					<li>
@@ -85,13 +80,8 @@ export default function Page() {
 					<li>Single word domain names</li>
 					<li>The Futura font</li>
 					<li>
-						<Link href="https://dontasktoask.com/">
-							Don't ask to ask, just ask
-						</Link>{' '}
-						and{' '}
-						<Link href="https://nohello.net/en/">
-							Don't say hello, just start talking
-						</Link>
+						<Link href="https://dontasktoask.com/">Don't ask to ask, just ask</Link> and{" "}
+						<Link href="https://nohello.net/en/">Don't say hello, just start talking</Link>
 					</li>
 					<br />
 				</ul>
@@ -103,9 +93,7 @@ export default function Page() {
 					<li>A good negroni with a twist of orange</li>
 					<li>The Shure SM7B</li>
 					<li>
-						<Link href="https://www.discogs.com/de/user/_henry/collection">
-							Records
-						</Link>
+						<Link href="https://www.discogs.com/de/user/_henry/collection">Records</Link>
 					</li>
 					<li>Infinity Mirrors</li>
 				</ul>

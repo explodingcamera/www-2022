@@ -1,6 +1,0 @@
-{
-	"extends": ["@explodingcamera/eslint-config"],
-	"rules": {
-		"react/jsx-key": "off"
-	}
-}

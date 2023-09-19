@@ -1,11 +1,11 @@
-import type { ReactNode } from 'react';
-import React from 'react';
+import type { ReactNode } from "react";
+import React from "react";
 
-import styled from '@emotion/styled';
-import { css, keyframes } from '@emotion/react';
+import styled from "@emotion/styled";
+import { css, keyframes } from "@emotion/react";
 
-import type { NextRouter } from 'next/router';
-import { withRouter } from 'next/router';
+import type { NextRouter } from "next/router";
+import { withRouter } from "next/router";
 
 const gradient = keyframes`
   0%{background-position:0% 50%}
@@ -42,12 +42,11 @@ const Link = styled.a<{ active?: boolean; animateFontColor?: boolean }>`
 	position: relative;
 	transition: color 0.6s ease-in-out;
 	text-decoration: none;
-	color: ${props =>
-		props.active || props.animateFontColor ? 'white' : '#7e7e7e'};
+	color: ${(props) => (props.active || props.animateFontColor ? "white" : "#7e7e7e")};
 
 	&:before {
-		${props => !props.animateFontColor && activeCSS}
-		${props =>
+		${(props) => !props.animateFontColor && activeCSS}
+		${(props) =>
 			props.active &&
 			css`
 				transform: scaleX(1);
@@ -56,7 +55,7 @@ const Link = styled.a<{ active?: boolean; animateFontColor?: boolean }>`
 
 	&:hover {
 		color: white;
-		${props => props.animateFontColor && fontColorCSS}
+		${(props) => props.animateFontColor && fontColorCSS}
 		&::before {
 			transform: scaleX(1);
 		}
@@ -70,15 +69,8 @@ const Link = styled.a<{ active?: boolean; animateFontColor?: boolean }>`
 	}
 `;
 
-const Item = ({
-	children,
-	router,
-	href,
-	animateFontColor,
-	target,
-	...rest
-}: ItemProps) => {
-	const handleClick = e => {
+const Item = ({ children, router, href, animateFontColor, target, ...rest }: ItemProps) => {
+	const handleClick = (e) => {
 		e.preventDefault();
 		void router.push(href);
 	};
@@ -89,7 +81,7 @@ const Item = ({
 		<Link
 			href={href}
 			target={target}
-			onClick={target || href.includes(':') ? undefined : handleClick}
+			onClick={target || href.includes(":") ? undefined : handleClick}
 			active={router.pathname === href}
 			animateFontColor={animateFontColor}
 			{...props}

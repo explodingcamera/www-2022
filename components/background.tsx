@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React, { useRef, useState } from 'react';
-import styled from '@emotion/styled';
+import React, { useRef, useState } from "react";
+import styled from "@emotion/styled";
 
-import { Canvas, useFrame } from '@react-three/fiber';
-import { PointMaterial, Points } from '@react-three/drei';
+import { Canvas, useFrame } from "@react-three/fiber";
+import { PointMaterial, Points } from "@react-three/drei";
 
-import { inSphere } from 'maath/random';
+import { inSphere } from "maath/random";
 
 const Wrapper = styled.div`
 	position: fixed;
@@ -20,9 +20,7 @@ const Wrapper = styled.div`
 function Starfield(props) {
 	const ref = useRef<THREE.Points>();
 
-	const [sphere] = useState(() =>
-		inSphere(new Float32Array(900), { radius: 2 }),
-	);
+	const [sphere] = useState(() => inSphere(new Float32Array(900), { radius: 2 }));
 
 	useFrame((state, delta) => {
 		ref.current.rotation.x -= delta / 10;
@@ -36,20 +34,8 @@ function Starfield(props) {
 	});
 
 	return (
-		<Points
-			ref={ref}
-			positions={sphere}
-			stride={3}
-			frustumCulled={false}
-			{...props}
-		>
-			<PointMaterial
-				transparent
-				color="#ffa0e0"
-				size={0.005}
-				sizeAttenuation
-				depthWrite={false}
-			/>
+		<Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
+			<PointMaterial transparent color="#ffa0e0" size={0.005} sizeAttenuation depthWrite={false} />
 		</Points>
 	);
 }
