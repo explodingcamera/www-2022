@@ -10,22 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version: 20
-
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 8
-          run_install: true
+          bun-version: latest
 
       - name: Build
-        run: pnpm build
+        run: bun run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
