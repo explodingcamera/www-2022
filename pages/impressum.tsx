@@ -5,43 +5,49 @@ import { keyframes } from "@emotion/react";
 import Link from "./../components/link";
 import Layout from "../components/layout";
 
-const gradient = keyframes`
-	0%{background-position:0% 50%}
-	50%{background-position:100% 50%}
-	100%{background-position:0% 50%}
-`;
-
 const Impressum = styled.div`
 	flex: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
+	a {
+		color: #888888;
+
+		&:hover {
+			color: #ffffff;
+		}
+	}
+
 	h1 {
 		font-size: 3em;
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);
-		background-size: 600% 600%;
-		animation: ${gradient} 10s ease infinite;
+		margin-top: 4rem;
+	}
+
+	h2 {
+		font-size: 2em;
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
 	}
 
 	p {
-		font-size: 1.4rem;
-		line-height: 1.5;
-		max-width: 40rem;
+		margin-top: 0.5rem;
+		font-size: 1.3rem;
+		line-height: 1.7;
+		max-width: 60rem;
 		white-space: pre-wrap;
+		color: #ececec;
 		a {
 			white-space: pre;
 		}
 	}
+
 `;
 
 const ImpressumComponent = () => (
 	<Layout>
 		<Impressum>
-			<h1>legal notice</h1>
+			<h1>Legal Notice</h1>
 			<p>
 				Information according to § 5 TMG & Represented by:
 				<br />
@@ -68,23 +74,13 @@ const ImpressumComponent = () => (
 				have the possibility to use this platform for the settlement of their disputes. I am neither obliged
 				nor willing to participate in the dispute resolution procedure
 			</p>
-			<h1>privacy policy</h1>
+			<h1>Pricavy Policy</h1>
 			<p>
-				I personally don't collect any personal data.
-				<br />
-				<br />
-				If you scheudle a meeting, your data will be processed by cal.com, their privacy policy is available
-				at <Link href="https://cal.com/privacy">cal.com/privacy</Link>.
-				<br />
-				<br />
 				Responsible person in terms of data protection laws, in particular the EU General Data Protection
 				Regulation (DSGVO), is Henry Gressmann (contact information are above)
-				<br />
-				<br />
-				<b>
-					<i>Your data protection rights</i>
-				</b>
-				<br />
+			</p>
+			<h2>Your data protection rights</h2>
+			<p>
 				If you contact us by e-mail, the data provided will be stored by us in order to process your request.
 				<br />
 				As a data subject, you have the right to information, the right to rectification or deletion, the
@@ -92,13 +88,11 @@ const ImpressumComponent = () => (
 				us consent, you can revoke this at any time with effect for the future. Please send your objection [or
 				revocation] informally to the following address:{" "}
 				<Link href="mailto:mail@henrygressmann.de">mail@henrygressmann.de</Link>. <br />
-				<br />
 				If you have given us consent, you can revoke it at any time with effect for the future.
 				<br />
 				You may at any time lodge a complaint with a supervisory authority, e.g. the competent supervisory
 				authority in the federal state of your residence or the authority responsible for us as the
 				controller.
-				<br />
 				<br />
 				A list of supervisory authorities (for the non-public sector) with address can be found at{" "}
 				<Link href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html">
@@ -106,55 +100,96 @@ const ImpressumComponent = () => (
 				</Link>
 				.
 			</p>
+
+			<h2>Meetings</h2>
+			<p>
+				If you scheudle a meeting, your data will be processed by cal.com, their privacy policy is available
+				at <Link href="https://cal.com/privacy">cal.com/privacy</Link>.
+			</p>
+
+			<h2>Analytics</h2>
+			<p>
+				We use Plausible Analytics, no personal data is collected. You can find information about the data
+				collected here: <a href="https://plausible.io/data-policy">plausible.io/data-policy</a>. All data is
+				stored on servers in Germany.
+			</p>
+
+			<h2>Hosting</h2>
+			<p>
+				Our hosters collects the following data transmitted by your browser in so-called log files: IP
+				address, the address of the previously visited website (referer request header), date and time of the
+				request, time zone difference from Greenwich Mean Time, content of the request, HTTP status code,
+				amount of data transferred, website from which the request came and information about the browser and
+				operating system. This is necessary to display our website and to ensure stability and security. This
+				corresponds to our legitimate interest within the meaning of Art. 6 para. 1 p. 1 lit. f DSGVO.
+				<br />
+				<br />
+				We use the following hosters to make our website available:
+				<br />
+			</p>
+			<h3>Hetzner Online GmbH</h3>
+			<p>
+				Industriestr. 25, 91710 Gunzenhausen
+				<br />
+				<a href="https://www.hetzner.com/de/rechtliches/datenschutz">
+					www.hetzner.com/de/rechtliches/datenschutz
+				</a>
+			</p>
+			<h3>Github Pages</h3>
+			<p>
+				88 Colin P Kelly Jr St, San Francisco, CA 94107, USA We use GitHub Pages to host static files like
+				images, fonts, and JavaScript files. This entity is the recipient of your personal data. This is in
+				line with our legitimate interest as defined by Art. 6 Para. 1 S. 1 lit. f GDPR, so that we don't have
+				to maintain our own server on our premises. The server location is the USA. For further information on
+				how to object or remove data on GitHub, you can check:{" "}
+				<a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">
+					docs.github.com/en/github/site-policy/github-privacy-statement
+				</a>
+				<br />
+				You have the right to object to the data processing. Whether the objection is successful needs to be
+				determined through a balancing of interests. The data will be deleted as soon as the purpose of its
+				processing has been fulfilled. Processing of the data specified in this section is neither legally nor
+				contractually required. However, the functionality of the website is not guaranteed without this
+				processing. GitHub has implemented compliance measures for international data transfers. These apply
+				to all global activities where GitHub processes personal data of individuals in the EU. These measures
+				are based on EU Standard Contractual Clauses (SCCs). More info can be found at:{" "}
+				<a href="https://docs.github.com/en/site-policy/privacy-policies">
+					https://docs.github.com/en/site-policy/privacy-policies
+				</a>
+			</p>
+
 			<h3>Cloudflare</h3>
 			<p>
-				Wir nutzen das Content Delivery Network (CDN) von Cloudflare Germany GmbH, Rosental 7, c/o Mindspace,
-				80331 München Deutschland (Cloudflare), um die Sicherheit und die Auslieferungsgeschwindigkeit unserer
-				Website zu erhöhen. Dies entspricht unserem berechtigten Interesse (Art. 6 Abs. 1 lit. f DSGVO). Ein
-				CDN ist ein Netzwerk aus [weltweit] verteilten Servern, das in der Lage ist, optimiert Inhalte an den
-				Websitenutzer auszuliefern. Für diesen Zweck können personenbezogene Daten in Server-Logfiles von
-				Cloudflare verarbeitet werden. Bitte vergleichen Sie die Ausführungen unter „Hosting“.
+				We use the Content Delivery Network (CDN) provided by Cloudflare Germany GmbH, Rosental 7, c/o
+				Mindspace, 80331 München, Germany (Cloudflare), to enhance the security and delivery speed of our
+				website. This aligns with our legitimate interest (Art. 6 para. 1 lit. f GDPR). A CDN is a network of
+				globally distributed servers capable of delivering optimized content to website users. For this
+				purpose, personal data may be processed in Cloudflare's server log files. Please refer to the
+				"Hosting" section for more details.
 				<br />
+				Cloudflare acts as a recipient of your personal data and serves as a processor on our behalf. This is
+				also in line with our legitimate interest under Art. 6 para. 1, sentence 1, lit. f GDPR, as it allows
+				us to not operate a CDN ourselves.
 				<br />
-				Cloudflare ist Empfänger Ihrer personenbezogenen Daten und als Auftragsverarbeiter für uns tätig. Die
-				entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO, selbst kein
-				Content Delivery Network zu betreiben.
+				You have the right to object to the processing. Whether the objection is successful will be determined
+				through a balance of interests assessment.
 				<br />
+				The processing of data specified in this section is neither legally nor contractually required.
+				However, the functionality of the website cannot be guaranteed without this processing.
 				<br />
-				Sie haben das Recht der Verarbeitung zu widersprechen. Ob der Widerspruch erfolgreich ist, ist im
-				Rahmen einer Interessenabwägung zu ermitteln.
+				Your personal data will be stored by Cloudflare for as long as necessary for the stated purposes.
 				<br />
+				For more information on objection and deletion options against Cloudflare, please refer to:{" "}
+				<a href="https://www.cloudflare.com/de-de/cloudflare-customer-dpa/">Cloudflare DPA</a>
+
 				<br />
-				Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist weder gesetzlich noch vertraglich
-				vorgeschrieben. Die Funktionsfähigkeit der Website ist ohne die Verarbeitung nicht gewährleistet.
-				<br />
-				<br />
-				Ihre personenbezogenen Daten werden von Cloudflare so lange gespeichert, wie es für die beschriebenen
-				Zwecke erforderlich ist.
-				<br />
-				<br />
-				Weitere Informationen zu Widerspruchs- und Beseitigungsmöglichkeiten gegenüber Cloudflare finden Sie
-				unter: <a href="https://www.cloudflare.com/de-de/cloudflare-customer-dpa/">Cloudflare DPA</a>
-				.<br />
-				<br />
-				Cloudflare hat Compliance-Maßnahmen für internationale Datenübermittlungen umgesetzt. Diese gelten für
-				alle weltweiten Aktivitäten, bei denen Cloudflare personenbezogene Daten von natürlichen Personen in
-				der EU verarbeitet. Diese Maßnahmen basieren auf den EU-Standardvertragsklauseln (SCCs). Weitere
-				Informationen finden Sie{" "}
-				<a href="https://www.cloudflare.com/cloudflare_customer_SCCs-German.pdf">hier</a>.
-			</p>
-			<p>
-				Um die Nutzung unserer Website zu verstehen und sie regelmäßig zu verbessern, nutzen wir das
-				Webanalyse Tool Plausible Analytics. Plausible setzt keine Cookies und speichert keine Informationen
-				im Browser. Plausible Analytics erhebt auch keinerlei personenenbezogenen Daten. Mehr Informationen
-				zum Datenschutz von Plausible Analytics finden Sie hier. Dienstanbieter: OÜ Plausible Insights,
-				Västriku tn 2, Tartu 50403, Estland.
-				<br />
-				Die Software läuft dabei ausschließlich auf den Servern unserer Webseite. Eine Speicherung der
-				personenbezogenen Daten der Nutzer findet nur dort statt. Eine Weitergabe der Daten an Dritte erfolgt
-				nicht. Die Software ist so eingestellt, dass die IP-Adressen nicht vollständig gespeichert werden,
-				sondern 2 Bytes der IP-Adresse maskiert werden (Bsp.: 192.168.xxx.xxx). Auf diese Weise ist eine
-				Zuordnung der gekürzten IP-Adresse zum aufrufenden Rechner nicht mehr möglich.
+				Cloudflare has implemented compliance measures for international data transfers. These apply to all
+				global activities where Cloudflare processes personal data of individuals in the EU. These measures
+				are based on the EU Standard Contractual Clauses (SCCs). For more information, please visit:{" "}
+				<a href="https://www.cloudflare.com/cloudflare_customer_SCCs-German.pdf">
+					www.cloudflare.com/cloudflare_customer_SCCs-German.pdf
+				</a>
+				.
 			</p>
 		</Impressum>
 	</Layout>

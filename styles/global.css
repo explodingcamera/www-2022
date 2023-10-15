@@ -1,58 +1,58 @@
 @font-face {
-	font-family: 'Euclid Flex';
+	font-family: 'Euclid Square';
 	font-style: normal;
 	font-weight: 400;
-	src: url(https://fonts.henrygressmann.de/fonts/euclid/EuclidFlex-Regular-WebXL.woff2)
+	src: url(https://fonts.henrygressmann.de/fonts/euclid/EuclidSquare-Regular-WebXL.woff2)
 			format('woff2'),
-		url(https://fonts.henrygressmann.de/fonts/euclid/EuclidFlex-Regular-WebXL.woff)
+		url(https://fonts.henrygressmann.de/fonts/euclid/EuclidSquare-Regular-WebXL.woff)
 			format('woff');
 	font-display: swap;
 }
 
 /* latin */
 @font-face {
-	font-family: 'Euclid Flex';
+	font-family: 'Euclid Square';
 	font-style: normal;
 	font-weight: 500;
-	src: url(https://fonts.henrygressmann.de/fonts/euclid/EuclidFlex-Medium-WebS.woff2)
+	src: url(https://fonts.henrygressmann.de/fonts/euclid/EuclidSquare-Medium-WebS.woff2)
 			format('woff2'),
-		url(https://fonts.henrygressmann.de/fonts/euclid/EuclidFlex-Medium-WebS.woff)
+		url(https://fonts.henrygressmann.de/fonts/euclid/EuclidSquare-Medium-WebS.woff)
 			format('woff');
 	font-display: swap;
 }
 
 /* latin */
 @font-face {
-	font-family: 'Euclid Flex';
+	font-family: 'Euclid Square';
 	font-style: normal;
 	font-weight: 600;
-	src: url(https://fonts.henrygressmann.de/fonts/euclid/EuclidFlex-Semibold-WebS.woff2)
+	src: url(https://fonts.henrygressmann.de/fonts/euclid/EuclidSquare-Semibold-WebS.woff2)
 			format('woff2'),
-		url(https://fonts.henrygressmann.de/fonts/euclid/EuclidFlex-Semibold-WebS.woff)
+		url(https://fonts.henrygressmann.de/fonts/euclid/EuclidSquare-Semibold-WebS.woff)
 			format('woff');
 	font-display: swap;
 }
 
 /* latin */
 /* @font-face {
-	font-family: 'Euclid Flex';
+	font-family: 'Euclid Square';
 	font-style: normal;
 	font-weight: 700;
-	src: url(https://fonts.henrygressmann.de/fonts/euclid/EuclidFlex-Bold-WebS.woff2)
+	src: url(https://fonts.henrygressmann.de/fonts/euclid/EuclidSquare-Bold-WebS.woff2)
 			format('woff2'),
-		url(https://fonts.henrygressmann.de/fonts/euclid/EuclidFlex-Bold-WebS.woff)
+		url(https://fonts.henrygressmann.de/fonts/euclid/EuclidSquare-Bold-WebS.woff)
 			format('woff');
 	font-display: swap;
 } */
 
 /* latin */
 @font-face {
-	font-family: 'Euclid Flex';
+	font-family: 'Euclid Square';
 	font-style: normal;
 	font-weight: 200;
-	src: url(https://fonts.henrygressmann.de/fonts/euclid/EuclidFlex-Light-WebS.woff2)
+	src: url(https://fonts.henrygressmann.de/fonts/euclid/EuclidSquare-Light-WebS.woff2)
 			format('woff2'),
-		url(https://fonts.henrygressmann.de/fonts/euclid/EuclidFlex-Light-WebS.woff)
+		url(https://fonts.henrygressmann.de/fonts/euclid/EuclidSquare-Light-WebS.woff)
 			format('woff');
 	font-display: swap;
 }
@@ -72,18 +72,23 @@ html {
 	}
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
+	font-weight: 400;
+}
+
+h2 {
+	font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6, body, button, input, optgroup, select, textarea {
 	margin: 0;
 }
+
 body {
 	position: absolute;
 	width: 100vw;
 	overflow-x: hidden;
+	font-family: 'Euclid Square', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 *,
@@ -91,111 +96,47 @@ body {
 ::before {
 	box-sizing: border-box;
 }
-html {
-	-moz-tab-size: 4;
-	tab-size: 4;
-}
-html {
-	line-height: 1.15;
-	-webkit-text-size-adjust: 100%;
-}
-body {
-	margin: 0;
-}
-body {
-	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
-		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-}
+
 hr {
 	height: 0;
-	color: inherit;
 }
+
 abbr[title] {
 	text-decoration: underline dotted;
 }
-b,
-strong {
+
+b, strong {
 	font-weight: bolder;
 }
-code,
-kbd,
-pre,
-samp {
-	font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
-		monospace;
+
+code, kbd, pre, samp {
+	font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
 	font-size: 1em;
 }
+
 small {
 	font-size: 80%;
 }
-sub,
-sup {
+
+sub, sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
 }
+
 sub {
 	bottom: -0.25em;
 }
+
 sup {
 	top: -0.5em;
 }
+
 table {
-	text-indent: 0;
 	border-color: inherit;
 }
-button,
-input,
-optgroup,
-select,
-textarea {
-	font-family: inherit;
-	font-size: 100%;
-	line-height: 1.15;
-	margin: 0;
-}
-button,
-select {
+
+button, select {
 	text-transform: none;
-}
-[type='button'],
-[type='reset'],
-[type='submit'],
-button {
-	-webkit-appearance: button;
-}
-::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
-}
-:-moz-focusring {
-	outline: 1px dotted ButtonText;
-}
-:-moz-ui-invalid {
-	box-shadow: none;
-}
-legend {
-	padding: 0;
-}
-progress {
-	vertical-align: baseline;
-}
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-	height: auto;
-}
-[type='search'] {
-	-webkit-appearance: textfield;
-	outline-offset: -2px;
-}
-::-webkit-search-decoration {
-	-webkit-appearance: none;
-}
-::-webkit-file-upload-button {
-	-webkit-appearance: button;
-	font: inherit;
-}
-summary {
-	display: list-item;
 }

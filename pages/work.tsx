@@ -1,26 +1,25 @@
 import React from "react";
 import styled from "@emotion/styled";
 import Layout from "../components/layout";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Link from "../components/link";
-
-const Projects = styled(Masonry)``;
+import { Masonry } from "../components/masonry";
 
 const ProjectWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	border-radius: 12px;
-	background: #0f1011e0;
-
+	background: #0f10119d;
 	transition: all 0.2s linear;
 
 	&:hover {
-		background: #1b1b1ddf;
+		background: #1b1b1d80;
 	}
 
+	margin-bottom: 1rem;
+
 	backdrop-filter: blur(10px);
-	margin: 0.5rem;
-	padding: 1rem;
+	--padding-lr: 1.3rem;
+	padding: 1.1rem var(--padding-lr);
 	box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.14);
 
 	h1 {
@@ -30,7 +29,6 @@ const ProjectWrapper = styled.div`
 		font-size: 1.7rem;
 		letter-spacing: -1px;
 		align-items: center;
-		align-items: first baseline;
 
 		span {
 			padding-left: 0.5rem;
@@ -43,9 +41,9 @@ const ProjectWrapper = styled.div`
 	}
 
 	p {
+		font-size: 1.1rem;
 		margin: 0;
 		line-height: 1.4;
-		letter-spacing: -0.3px;
 		text-shadow: 0px 0px 5px black;
 		white-space: pre-line;
 	}
@@ -72,7 +70,7 @@ const ProjectButton = styled.button`
 	font-size: 1rem;
 	font-weight: 600;
 	box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 2px 0px,
-		rgba(0, 0, 0, 0.1) 0px 3px 1px -2px, rgba(0, 0, 0, 0.11) 0px 1px 5px 0px;
+		rgba(0, 0, 0, 0.055) 0px 3px 1px -2px, rgba(0, 0, 0, 0.027) 0px 1px 5px 0px;
 	margin: 0px 0.5rem 0px 0px;
 	padding: 0px 0.8rem;
 	outline: none;
@@ -80,17 +78,13 @@ const ProjectButton = styled.button`
 	border-style: none;
 	border-color: initial;
 	border-image: initial;
-	background-color: #46424266;
-	/* background: linear-gradient(
-		135deg,
-		rgba(97, 97, 97, 0.63) 10%,
-		rgba(72, 72, 72, 0.15) 100%
-	); */
+	/* background-color: #46424266; */
+	background-color: #00000000;
+	border: 1.7px solid #46424266;
 	transition: all 0.2s ease-in-out 0s;
+	box-sizing: content-box;
 	&:hover {
-		transform: translateY(-1px);
-		box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 2px 0px,
-			rgba(0, 0, 0, 0.1) 0px 3px 1px -2px, rgba(0, 0, 0, 0.11) 0px 1px 5px 0px;
+		border: 1.7px solid #ffffff;
 	}
 `;
 
@@ -99,9 +93,9 @@ const ImageWrapper = styled.div`
 	aspect-ratio: 16/9;
 	background-color: black;
 	margin-bottom: 1rem;
-	box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.6);
-	border-radius: 8px;
 	overflow: hidden;
+	width: calc(100% + var(--padding-lr) * 2);
+	margin-left: calc(-1 * var(--padding-lr));
 
 	img {
 		height: inherit;
@@ -147,9 +141,22 @@ const Project = ({ title, from, img, text, buttons }: ProjectInterface) => (
 
 const projects: ProjectInterface[] = [
 	{
-		title: "Creating a Kernel in Rust",
+		title: "Keygate",
+		from: "2022-now",
+		img: "keygate.png",
+		text: "Modular and open-source identity management, authentication and authorization. Coming out Q3 2023",
+		buttons: [
+			{
+				link: "https://keygate.io",
+				name: "keygate.io",
+			},
+		],
+	},
+	{
+		title: "Creating an Operating System in Rust",
 		from: "2023",
-		text: "A series of blog posts about creating Operating Systems in Rust.",
+		img: "os.png",
+		text: "A series of blog posts guiding you through the process of creating an operating system in Rust",
 		buttons: [
 			{
 				link: "https://blog.henrygressmann.de/series/rust-os/",
@@ -177,6 +184,7 @@ I am currently working on the first version of the app.`,
 	{
 		title: "Koi",
 		from: "2023",
+		img: "koi.png",
 		text: "Koi is a new lossless image format that is designed for embedded systems and game engines",
 		buttons: [
 			{
@@ -189,31 +197,18 @@ I am currently working on the first version of the app.`,
 			},
 		],
 	},
-	{
-		title: "Keygate",
-		from: "2022-now",
-		img: "keygate.png",
-		text: "Modular and open-source identity management, authentication and authorization. Coming out Q3 2023",
-		buttons: [
-			{
-				link: "https://keygate.io",
-				name: "keygate.io",
-			},
-		],
-	},
-
-	{
-		title: "pog.network wallet",
-		from: "2021-2022",
-		img: "pogwallet.png",
-		text: "Official wallet application for connecting to the pog.network cryptocurrency",
-		buttons: [
-			{
-				link: "https://github.com/pognetwork/catjam",
-				name: "code",
-			},
-		],
-	},
+	// {
+	// 	title: "pog.network wallet",
+	// 	from: "2021-2022",
+	// 	img: "pogwallet.png",
+	// 	text: "Official wallet application for connecting to the pog.network cryptocurrency",
+	// 	buttons: [
+	// 		{
+	// 			link: "https://github.com/pognetwork/catjam",
+	// 			name: "code",
+	// 		},
+	// 	],
+	// },
 	// {
 	// 	title: 'JustMeet',
 	// 	from: '2022-now',
@@ -299,27 +294,26 @@ I created the software architecture and designed and implemented the react front
 		img: "clickland.gif",
 		text: "Clickland is a game platform I was working on at the start of 2020, based around a central clicker-based gameworld connected to many mini-games similar to neopets.",
 	},
-
-	{
-		title: "TwoWeeksOfFood",
-		from: "2020",
-		img: "twof.jpeg",
-		text: `Created at the #wirvsvirus hackathon, TwoWeeksOfFood aims to help with some of the supply issues created by the COVID-19 Crisis. It is a small project I've created together with Arthur Hoge on a single weekend.`,
-		buttons: [
-			{
-				link: "https://twoweeksoffood.netlify.com",
-				name: "website",
-			},
-			{
-				link: "https://www.linkedin.com/posts/arthurhoge_wevsvirus-activity-6648368790553800704-gTAQ",
-				name: "more info",
-			},
-			{
-				link: "https://github.com/twoweeksoffood/twoweeksoffood",
-				name: "code",
-			},
-		],
-	},
+	// {
+	// 	title: "TwoWeeksOfFood",
+	// 	from: "2020",
+	// 	img: "twof.jpeg",
+	// 	text: `Created at the #wirvsvirus hackathon, TwoWeeksOfFood aims to help with some of the supply issues created by the COVID-19 Crisis. It is a small project I've created together with Arthur Hoge on a single weekend.`,
+	// 	buttons: [
+	// 		{
+	// 			link: "https://twoweeksoffood.netlify.com",
+	// 			name: "website",
+	// 		},
+	// 		{
+	// 			link: "https://www.linkedin.com/posts/arthurhoge_wevsvirus-activity-6648368790553800704-gTAQ",
+	// 			name: "more info",
+	// 		},
+	// 		{
+	// 			link: "https://github.com/twoweeksoffood/twoweeksoffood",
+	// 			name: "code",
+	// 		},
+	// 	],
+	// },
 	{
 		title: "recordskip",
 		from: "2019",
@@ -338,9 +332,7 @@ I designed the App and implemented it with React Native.`,
 		title: "canX",
 		from: "2018 - 2020",
 		img: "canx-min.png",
-		text: `canX was my first startup. We created a multimedia streaming platform that isn't supported by ads. Creators instead earn money through donations made possible by our micropayments platform.
-
-I designed the microservice architecture, implemented and designed the frontend, created the CDN and media processing pipeline, and lead a small team of developers.`,
+		text: `canX was my first startup. We created a multimedia streaming platform that isn't supported by ads. Creators instead earn money through donations made possible by our micropayments platform.`,
 		buttons: [
 			{
 				link: "https://canx.org",
@@ -406,23 +398,20 @@ I worked on modernizing the codebase and finding and fixing security vulnerabili
 
 const ProjectsComponent = () => (
 	<Layout>
-		<ResponsiveMasonry>
-			<Projects>
+		<>
+			<Masonry>
 				{projects.map((p) => (
 					<Project key={projects.indexOf(p)} {...p} />
 				))}
-			</Projects>
-			<br />
-			<br />
-			<br />
-			<br />
+			</Masonry>
 			<h2>
 				You can find more of my projects on <Link href="https://github.com/explodingcamera">github</Link>
+				<br />
+				<br />
+				<br />
+				<br />
 			</h2>
-			<br />
-			<br />
-			<br />
-		</ResponsiveMasonry>
+		</>
 	</Layout>
 );
 

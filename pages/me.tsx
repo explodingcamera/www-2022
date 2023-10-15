@@ -82,7 +82,7 @@ const MeComponent = () => (
 				</Link>
 				, <Link href="/love">things I love</Link>,{" "}
 				<Link href="mailto:mail@henrygressmann.de">contact me</Link> or{" "}
-				<Link href="/meet">schedule a meeting</Link> right away.
+				<Link href="/meet">schedule a meeting</Link>.
 				{/* <br />
 				<br />
 				By the way: This entire website is{' '}

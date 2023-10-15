@@ -29,27 +29,21 @@ const Home = styled.div`
 	h2 {
 		font-size: 3rem;
 		margin: 1rem 0;
-		font-weight: 400;
+		font-weight: 200;
 		max-width: 44rem;
 
 		span,
 		a {
-			font-weight: 500;
+			font-weight: 400;
 		}
 
 		span {
-			font-weight: 700;
+			font-weight: 500;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			background-image: linear-gradient(270deg, #ff0000, #008cff, #50ff00);
 			background-size: 600% 600%;
 			animation: ${gradient} 10s ease infinite;
-		}
-
-		&:last-of-type {
-			a {
-				font-weight: 400;
-			}
 		}
 	}
 

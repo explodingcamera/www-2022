@@ -27,7 +27,7 @@ const Love = styled.div`
 
 	h2 {
 		font-size: 1.9em;
-		font-weight: 400;
+		font-weight: 300;
 		margin-top: 1.5rem;
 		margin-bottom: 0.6rem;
 	}
