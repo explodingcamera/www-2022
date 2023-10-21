@@ -42,10 +42,10 @@ export const Masonry = ({ children }: { children: React.ReactNode[] }) => {
 	const childArray = React.Children.toArray(children);
 	const columns = Array.from({ length: numColumns }, () => []);
 
-	childArray.forEach((child, index) => {
+	for (const [index, child] of childArray.entries()) {
 		const col = index % numColumns;
 		columns[col].push(child);
-	});
+	}
 
 	console.log(columns);
 

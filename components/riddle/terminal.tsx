@@ -121,6 +121,7 @@ export const Terminal = () => {
 
 	// const clear = () => xtermRef.current?.terminal.write('\x1bc');
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		const handleResize = () => fitAddon.current.fit();
 		window.addEventListener("resize", handleResize);
@@ -128,6 +129,7 @@ export const Terminal = () => {
 		return () => window.removeEventListener("resize", handleResize);
 	});
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		const xterm = xtermRef.current;
 		fitAddon.current.fit();

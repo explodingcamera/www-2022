@@ -18,7 +18,7 @@ const GlobalProvider = ({ children }: { children: ReactElement }) => {
 			...state,
 			update: (key: string, value: boolean) => setState((s) => ({ ...s, [key]: value })),
 		}),
-		[state],
+		[state, setState],
 	);
 
 	return <GlobalContext.Provider value={value}>{children}</GlobalContext.Provider>;

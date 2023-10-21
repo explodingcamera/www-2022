@@ -2,14 +2,13 @@ import React, { Suspense } from "react";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import GlobalProvider from "./../components/context";
-import NextNprogress from "nextjs-progressbar";
 import { initRiddle } from "./../components/riddle";
+import NextNprogress from "nextjs-progressbar";
 
 import "../styles/global.css";
 import dynamic from "next/dynamic";
 
 const Background = dynamic(async () => import("../components/background"), {
-	suspense: true,
 	ssr: false,
 });
 

@@ -1,11 +1,11 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-	enabled: process.env.ANALYZE === 'true',
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+	enabled: process.env.ANALYZE === "true",
 	openAnalyzer: false,
 });
 
 /** @type {import('next').NextConfig} */
 const config = {
-	output: 'export',
+	output: "export",
 	poweredByHeader: false,
 	trailingSlash: true,
 	eslint: {
@@ -16,7 +16,7 @@ const config = {
 		emotion: true,
 	},
 	productionBrowserSourceMaps: true,
-	transpilePackages: ['xterm-for-react'],
+	transpilePackages: ["xterm-for-react", "three"],
 };
 
 module.exports = withBundleAnalyzer(config);

@@ -17,29 +17,6 @@ const Wrapper = styled.div`
 	width: 100vw;
 `;
 
-function Starfield(props) {
-	const ref = useRef<THREE.Points>();
-
-	const [sphere] = useState(() => inSphere(new Float32Array(900), { radius: 2 }));
-
-	useFrame((state, delta) => {
-		ref.current.rotation.x -= delta / 10;
-		ref.current.rotation.y -= delta / 15;
-	});
-
-	useFrame(({ clock }) => {
-		const opacity = Math.max((clock.getElapsedTime() - 0.3) / 5, 0);
-		if (opacity > 1 || Array.isArray(ref.current.material)) return;
-		ref.current.material.opacity = opacity;
-	});
-
-	return (
-		<Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
-			<PointMaterial transparent color="#ffa0e0" size={0.005} sizeAttenuation depthWrite={false} />
-		</Points>
-	);
-}
-
 export const Background = () => (
 	<Wrapper>
 		<Canvas camera={{ position: [0, 0, 1] }}>
@@ -47,5 +24,26 @@ export const Background = () => (
 		</Canvas>
 	</Wrapper>
 );
+
+const Starfield = () => {
+	const ref = useRef<THREE.Points>();
+
+	const [sphere] = useState(() => inSphere(new Float32Array(900), { radius: 2 }));
+
+	useFrame(({ clock }, delta) => {
+		ref.current.rotation.x -= delta / 10;
+		ref.current.rotation.y -= delta / 15;
+
+		const opacity = Math.max((clock.getElapsedTime() - 0.3) / 5, 0);
+		if (opacity > 1 || Array.isArray(ref.current.material)) return;
+		ref.current.material.opacity = opacity;
+	});
+
+	return (
+		<Points ref={ref} positions={sphere as Float32Array} stride={3} frustumCulled={false}>
+			<PointMaterial transparent color="#ffa0e0" size={0.005} sizeAttenuation depthWrite={false} />
+		</Points>
+	);
+};
 
 export default Background;
