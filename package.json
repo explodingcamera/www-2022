@@ -19,7 +19,7 @@
     "@ibm/plex": "6.3.0",
     "@next/bundle-analyzer": "^13.5.6",
     "@react-three/drei": "^9.88.4",
-    "@react-three/fiber": "^8.15.1",
+    "@react-three/fiber": "^8.15.3",
     "@react-three/postprocessing": "2.15.6",
     "chalk": "^5.3.0",
     "maath": "^0.10.4",
